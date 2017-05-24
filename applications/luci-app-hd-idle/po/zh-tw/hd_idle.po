@@ -29,11 +29,11 @@ msgstr "設定"
 msgid "h"
 msgstr "小時"
 
-msgid "HD-idle"
+msgid "hd-idle"
 msgstr "硬碟休眠"
 
 msgid ""
-"HD-idle is a utility program for spinning-down external disks after a period "
+"hd-idle is a utility program for spinning-down external disks after a period "
 "of idle time."
 msgstr "硬碟休眠是控制當硬碟閒置一段時間後進入休眠模式的工具"
 

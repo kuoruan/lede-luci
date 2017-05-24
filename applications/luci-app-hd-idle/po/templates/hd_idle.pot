@@ -19,11 +19,11 @@ msgstr ""
 msgid "h"
 msgstr ""
 
-msgid "HD-idle"
+msgid "hd-idle"
 msgstr ""
 
 msgid ""
-"HD-idle is a utility program for spinning-down external disks after a period "
+"hd-idle is a utility program for spinning-down external disks after a period "
 "of idle time."
 msgstr ""
 

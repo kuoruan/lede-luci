@@ -34,14 +34,14 @@ msgstr "Настройки"
 msgid "h"
 msgstr "ч"
 
-msgid "HD-idle"
-msgstr "HD-idle"
+msgid "hd-idle"
+msgstr "hd-idle"
 
 msgid ""
-"HD-idle is a utility program for spinning-down external disks after a period "
+"hd-idle is a utility program for spinning-down external disks after a period "
 "of idle time."
 msgstr ""
-"Утилита HD-idle позволяет замедлять внешние диски после определённого "
+"Утилита hd-idle позволяет замедлять внешние диски после определённого "
 "времени бездействия."
 
 # Minutes (not minimum)

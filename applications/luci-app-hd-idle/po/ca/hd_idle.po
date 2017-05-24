@@ -34,14 +34,14 @@ msgstr "Ajusts"
 msgid "h"
 msgstr "h"
 
-msgid "HD-idle"
-msgstr "HD-idle"
+msgid "hd-idle"
+msgstr "hd-idle"
 
 msgid ""
-"HD-idle is a utility program for spinning-down external disks after a period "
+"hd-idle is a utility program for spinning-down external disks after a period "
 "of idle time."
 msgstr ""
-"HD-idle és un programa per ralentitzar els discos externs després d'un "
+"hd-idle és un programa per ralentitzar els discos externs després d'un "
 "període de temps inactiu."
 
 # Minutes (not minimum)

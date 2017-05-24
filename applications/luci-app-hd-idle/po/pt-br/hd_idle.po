@@ -32,11 +32,11 @@ msgstr "Configurações"
 msgid "h"
 msgstr "horas"
 
-msgid "HD-idle"
+msgid "hd-idle"
 msgstr "Hd-idle"
 
 msgid ""
-"HD-idle is a utility program for spinning-down external disks after a period "
+"hd-idle is a utility program for spinning-down external disks after a period "
 "of idle time."
 msgstr ""
 "Hd-idle é um programa utilitário para ativar o modo \"economia de energia"

@@ -22,14 +22,14 @@ msgstr "Innstillinger"
 msgid "h"
 msgstr "timer"
 
-msgid "HD-idle"
+msgid "hd-idle"
 msgstr "Hd-Idle"
 
 msgid ""
-"HD-idle is a utility program for spinning-down external disks after a period "
+"hd-idle is a utility program for spinning-down external disks after a period "
 "of idle time."
 msgstr ""
-"HD-idle er et verktøy for å spinne ned eksterne disker etter en periode med "
+"hd-idle er et verktøy for å spinne ned eksterne disker etter en periode med "
 "inaktivitet."
 
 msgid "min"

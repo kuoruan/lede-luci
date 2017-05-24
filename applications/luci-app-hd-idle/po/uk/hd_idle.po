@@ -36,11 +36,11 @@ msgid "h"
 msgstr ""
 
 #, fuzzy
-msgid "HD-idle"
+msgid "hd-idle"
 msgstr "HD-простій"
 
 msgid ""
-"HD-idle is a utility program for spinning-down external disks after a period "
+"hd-idle is a utility program for spinning-down external disks after a period "
 "of idle time."
 msgstr ""
 

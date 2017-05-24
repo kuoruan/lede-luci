@@ -34,14 +34,14 @@ msgstr "Nastavení"
 msgid "h"
 msgstr "h"
 
-msgid "HD-idle"
-msgstr "HD-idle"
+msgid "hd-idle"
+msgstr "hd-idle"
 
 msgid ""
-"HD-idle is a utility program for spinning-down external disks after a period "
+"hd-idle is a utility program for spinning-down external disks after a period "
 "of idle time."
 msgstr ""
-"HD-idle je utilita pro vypnutí externích pevných disků po určité době "
+"hd-idle je utilita pro vypnutí externích pevných disků po určité době "
 "nečinnosti."
 
 # Minut (ne minimum)
