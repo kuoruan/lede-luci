@@ -146,6 +146,11 @@ msgstr "最大并发查询数"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr "A43C + J43 + A43"
 
@@ -1583,6 +1588,9 @@ msgstr "无效的 VLAN ID！只允许唯一的 ID。"
 
 msgid "Invalid username and/or password! Please try again."
 msgstr "无效的用户名和/或密码！请重试。"
+
+msgid "Isolate Clients"
+msgstr ""
 
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "

@@ -7,11 +7,14 @@ local adbinput = "/etc/config/adblock"
 
 if not nixio.fs.access(adbinput) then
 	m = SimpleForm("error", nil, translate("Input file not found, please check your configuration."))
+	m.reset = false
+	m.submit = false
 	return m
 end
 
 m = SimpleForm("input", nil)
 m:append(Template("adblock/config_css"))
+m.reset = false
 
 s = m:section(SimpleSection, nil,
 	translate("This form allows you to modify the content of the main adblock configuration file (/etc/config/adblock)."))

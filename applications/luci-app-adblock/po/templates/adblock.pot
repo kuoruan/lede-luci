@@ -1,9 +1,6 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-msgid "."
-msgstr ""
-
 msgid "Adblock"
 msgstr ""
 
@@ -26,9 +23,6 @@ msgid "Available blocklist sources."
 msgstr ""
 
 msgid "Backup directory"
-msgstr ""
-
-msgid "Backup options"
 msgstr ""
 
 msgid "Blocked domains (overall)"
@@ -68,10 +62,18 @@ msgstr ""
 msgid "Enable blocklist backup"
 msgstr ""
 
+msgid ""
+"Enable memory intense overall sort / duplicate removal on low memory devices "
+"(&lt; 64 MB RAM)"
+msgstr ""
+
 msgid "Enable verbose debug logging"
 msgstr ""
 
 msgid "Enabled"
+msgstr ""
+
+msgid "Extra options"
 msgstr ""
 
 msgid ""
@@ -79,7 +81,15 @@ msgid ""
 "'libustream-ssl' or the wget 'built-in'."
 msgstr ""
 
-msgid "For further information"
+msgid ""
+"For further information <a href=\"%s\" target=\"_blank\">see online "
+"documentation</a>"
+msgstr ""
+
+msgid "Force Overall Sort"
+msgstr ""
+
+msgid "Force local DNS"
 msgstr ""
 
 msgid "Input file not found, please check your configuration."
@@ -102,6 +112,10 @@ msgid ""
 "the 'Advanced' section."
 msgstr ""
 
+msgid ""
+"Options for further tweaking in case the defaults are not suitable for you."
+msgstr ""
+
 msgid "Overview"
 msgstr ""
 
@@ -110,10 +124,16 @@ msgid ""
 "allowed - ip addresses, wildcards and regex are not."
 msgstr ""
 
+msgid "Please edit this file directly in a terminal session."
+msgstr ""
+
 msgid "Query"
 msgstr ""
 
 msgid "Query domains"
+msgstr ""
+
+msgid "Redirect all DNS queries to the local resolver."
 msgstr ""
 
 msgid "Restrict interface trigger to certain interface(s)"
@@ -140,6 +160,9 @@ msgid "Suspend / Resume adblock"
 msgstr ""
 
 msgid "Suspend adblock"
+msgstr ""
+
+msgid "The file size is too large for online editing in LuCI (&gt; 512 KB)."
 msgstr ""
 
 msgid ""
@@ -186,9 +209,6 @@ msgid "n/a"
 msgstr ""
 
 msgid "no domains blocked"
-msgstr ""
-
-msgid "see online documentation"
 msgstr ""
 
 msgid "suspended"

@@ -163,6 +163,11 @@ msgstr "<abbr title=\"Максимум\">Max.</abbr> одночасних зап
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Парний: %s / Груповий: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -1634,6 +1639,9 @@ msgstr "Задано невірний VLAN ID! Доступні тільки у�
 
 msgid "Invalid username and/or password! Please try again."
 msgstr "Неприпустиме ім’я користувача та/або пароль! Спробуйте ще раз."
+
+msgid "Isolate Clients"
+msgstr ""
 
 #, fuzzy
 msgid ""

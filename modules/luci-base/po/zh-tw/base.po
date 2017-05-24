@@ -147,6 +147,11 @@ msgstr "<abbr title=\"maximal\">最大</abbr>並發查詢數"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -1576,6 +1581,9 @@ msgstr "打入的是不正確的VLAN ID!僅有獨一無二的IDs被允許"
 
 msgid "Invalid username and/or password! Please try again."
 msgstr "不正確的用戶名稱和/或者密碼!請再試一次."
+
+msgid "Isolate Clients"
+msgstr ""
 
 #, fuzzy
 msgid ""

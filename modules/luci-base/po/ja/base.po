@@ -153,6 +153,11 @@ msgstr "<abbr title=\"maximal\">最大</abbr> 並列処理クエリ"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr ""
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -1617,6 +1622,9 @@ msgstr "無効なVLAN IDです! ユニークなIDを入力してください。"
 msgid "Invalid username and/or password! Please try again."
 msgstr ""
 "ユーザー名かパスワード、もしくは両方が不正です！もう一度入力してください。"
+
+msgid "Isolate Clients"
+msgstr ""
 
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "

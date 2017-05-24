@@ -152,6 +152,11 @@ msgstr "Consultes concurrents <abbr title=\"màximes\">max.</abbr>"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Parella: %s / Grup: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -1594,6 +1599,9 @@ msgstr ""
 
 msgid "Invalid username and/or password! Please try again."
 msgstr "Usuari i/o contrasenya invàlids! Si us plau prova-ho de nou."
+
+msgid "Isolate Clients"
+msgstr ""
 
 #, fuzzy
 msgid ""

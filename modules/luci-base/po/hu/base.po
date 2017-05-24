@@ -150,6 +150,11 @@ msgstr "<abbr title=\"maximal\">Max.</abbr> párhuzamos lekérdezés"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -1621,6 +1626,9 @@ msgstr ""
 
 msgid "Invalid username and/or password! Please try again."
 msgstr "Érvénytelen felhasználói név és/vagy jelszó! Kérem próbálja újra!"
+
+msgid "Isolate Clients"
+msgstr ""
 
 #, fuzzy
 msgid ""

@@ -155,6 +155,11 @@ msgstr ""
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Парный: %s / Групповой: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -1627,6 +1632,9 @@ msgstr "Указан неверный VLAN ID! Доступны только у�
 
 msgid "Invalid username and/or password! Please try again."
 msgstr "Неверный логин и/или пароль! Пожалуйста попробуйте снова."
+
+msgid "Isolate Clients"
+msgstr ""
 
 #, fuzzy
 msgid ""
