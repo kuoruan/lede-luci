@@ -45,12 +45,17 @@
 			luci.sys.exec("sysctl net.ipv4.netfilter.ip_conntrack_max") or
 			""):match("%d+")) or 4096
 
+		-- https://github.com/Leo-G/DevopsWiki/wiki/How-Linux-CPU-Usage-Time-and-Percentage-is-calculated
+		local cpuusage = luci.sys.exec("( cat /proc/stat; sleep 1; cat /proc/stat; ) | awk '/^cpu / " ..
+			"{usr=$2-usr; nice=$3-nice; sys=$4-sys; idle=$5-idle; iow=$6-iow; irq=$7-irq; soft=$8-soft; steal=$9-steal} " ..
+			"END {total=usr+nice+sys+idle+iow+irq+soft+steal; print (total-idle)*100/total}'")
+
 		local rv = {
 			uptime     = sysinfo.uptime or 0,
 			localtime  = os.date(),
-			cpuusage   = luci.sys.exec("echo $(grep '^cpu ' /proc/stat; sleep 1; grep '^cpu ' /proc/stat) | awk '{print ($13-$2+$14-$3+$15-$4)*100/($13-$2+$14-$3+$15-$4+$16-$5)}'"),
 			loadavg    = sysinfo.load or { 0, 0, 0 },
 			memory     = meminfo,
+			cpuusage   = cpuusage,
 			swap       = swapinfo,
 			connmax    = conn_max,
 			conncount  = conn_count,
