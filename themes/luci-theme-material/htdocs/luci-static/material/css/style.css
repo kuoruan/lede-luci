@@ -1117,8 +1117,6 @@ header > .container > .pull-right > * {
 }
 
 .node-main-login footer {
-    bottom: 0;
-    position: absolute;
     width: 100%;
 }
 
