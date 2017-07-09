@@ -1,0 +1,42 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "Concurrent Redial"
+msgstr ""
+
+msgid "Create Virtual WAN Interfaces"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Enable Interface Offline Check"
+msgstr ""
+
+msgid "Minimum Number of Online Interfaces"
+msgstr ""
+
+msgid "Number of Virtual WAN Interface"
+msgstr ""
+
+msgid "Redial Waiting Time"
+msgstr ""
+
+msgid "Redial when the number of online interfaces is less than this value."
+msgstr ""
+
+msgid ""
+"Use Macvlan to create multi virtual WAN interfaces.<br />Current online "
+"interface: %s"
+msgstr ""
+
+msgid "Use Old Macvlan Frame to Create Interfaces"
+msgstr ""
+
+msgid "Virtual WAN"
+msgstr ""
+
+msgid ""
+"When interfaces all offline, the waiting time(second) before next redial. "
+"Minimum: 5 seconds"
+msgstr ""
