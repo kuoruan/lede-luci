@@ -108,9 +108,11 @@ check_remove_device() {
 check_remove_interface() {
 	local ifcfg=${1}
 	if [ "${ifcfg::4}" = "vwan" ]; then
-		uci del network.${ifcfg}
-		uci del_list firewall.@zone[1].network=${ifcfg}
-		mwan_cfg_del ${ifcfg}
+		uci -q batch <<-EOF >/dev/null
+			del network.${ifcfg}
+			del_list firewall.@zone[1].network=${ifcfg}
+		EOF
+		mwan_cfg_del "${ifcfg}"
 	fi
 }
 
@@ -121,7 +123,7 @@ general_config_remove() {
 	if [ ."$(uci get network.wan.proto)" = ."none" ]; then
 		uci set network.wan.proto=pppoe
 	fi
-	mwan_cfg_del 'wan'
+	mwan_cfg_del "wan"
 }
 
 
@@ -140,12 +142,12 @@ if [ ."$old_frame" = ."1" ]; then
 		ifconfig macvlan$i up
 	done
 fi
-[ ."$old_frame" = "0" ] && mwan_cfg_add wan
+[ ."$old_frame" = ."0" ] && mwan_cfg_add wan
 
 for i in $(seq 1 $wannum); do
 	[ ."$old_frame" = ."0" ] && macvlan_dev_add macvlan$i $pppoe_ifname
-	pppoe_if_add vwan$i macvlan$i $pppoe_user $pppoe_password $(expr 40 + $i)
-	mwan_cfg_add vwan$i
+	pppoe_if_add "vwan$i" "macvlan$i" "$pppoe_user" "$pppoe_password" $(expr 40 + $i)
+	mwan_cfg_add "vwan$i"
 done
 
 apply_cfg
