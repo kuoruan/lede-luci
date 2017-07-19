@@ -1359,9 +1359,9 @@ function wifidev.hwmodes(self)
 end
 
 function wifidev.get_i18n(self)
-	local t = "Generic"
+	local t = lng.translate("Generic")
 	if self.iwinfo.type == "wl" then
-		t = "Broadcom"
+		t = lng.translate("Broadcom")
 	end
 
 	local m = ""
@@ -1372,7 +1372,7 @@ function wifidev.get_i18n(self)
 	if l.n then m = m .. "n" end
 	if l.ac then m = "ac" end
 
-	return "%s 802.11%s Wireless Controller (%s)" %{ t, m, self:name() }
+	return lng.translatef("%s 802.11%s Wireless Controller (%s)", t, m, self:name())
 end
 
 function wifidev.is_up(self)
