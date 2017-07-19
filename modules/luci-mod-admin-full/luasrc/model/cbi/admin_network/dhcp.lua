@@ -36,10 +36,11 @@ s:taboption("files", Flag, "readethers",
 	translate("Read <code>/etc/ethers</code> to configure the <abbr title=\"Dynamic Host " ..
 		"Configuration Protocol\">DHCP</abbr>-Server"))
 
-s:taboption("files", Value, "leasefile",
+o = s:taboption("files", Value, "leasefile",
 	translate("Leasefile"),
 	translate("file where given <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</" ..
 		"abbr>-leases will be stored"))
+o.placeholder = "/tmp/dhcp.leases"
 
 s:taboption("files", Flag, "noresolv",
 	translate("Ignore resolve file")).optional = true
@@ -49,6 +50,7 @@ rf = s:taboption("files", Value, "resolvfile",
 	translate("local <abbr title=\"Domain Name System\">DNS</abbr> file"))
 
 rf:depends("noresolv", "")
+rf.placeholder = "/tmp/resolv.conf.auto"
 rf.optional = true
 
 
@@ -113,7 +115,7 @@ s:taboption("advanced", Flag, "nonegcache",
 
 s:taboption("advanced", Flag, "allservers",
 	translate("Use all servers"),
-	translate("Setting this flag forces dnsmasq to send all queries to all available servers. The reply from the server which answers first will be returned to the original requester."))
+	translate("Send queries to all available servers. The reply from the server which answers first will be returned to the original requester."))
 
 s:taboption("advanced", Value, "serversfile",
 	translate("Additional servers file"),
@@ -125,6 +127,11 @@ s:taboption("advanced", Flag, "strictorder",
 	translate("<abbr title=\"Domain Name System\">DNS</abbr> servers will be queried in the " ..
 		"order of the resolvfile")).optional = true
 
+o = s:taboption("advanced", Flag, "cachesize",
+	translate("Cache size"),
+	translate("Specify the size of the cache in entries (defaults to 150)."))
+o.datatype = uinteger
+o.placeholder = "150"
 
 bn = s:taboption("advanced", DynamicList, "bogusnxdomain", translate("Bogus NX Domain Override"),
 	translate("List of hosts that supply bogus NX domain results"))
@@ -134,8 +141,7 @@ bn.placeholder = "67.215.65.132"
 
 fl = s:taboption("advanced", Value, "fil_iplist",
 	translate("IP list for DNS Filter"),
-	translate("IP list for dnsmasq to select a server.By using this, dnsmasq will only forward the reply from servers in this list if the replied ip is in the list."..
-		"Or it will forward the reply from other servers.<br />Leave empty to disable this feature."))
+	translate("Dnsmasq will only forward the reply from servers in this list if the replied ip is in the list. Or it will forward the reply from other servers."))
 fl:depends("allservers", "1")
 fl.optional = true
 

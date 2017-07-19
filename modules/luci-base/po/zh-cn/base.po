@@ -1,17 +1,5 @@
 msgid ""
-msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-12-21 23:08+0200\n"
-"PO-Revision-Date: 2017-04-09 15:04+0800\n"
-"Last-Translator: Hsing-Wang Liao <kuoruan@gmail.com>\n"
-"Language: zh_CN\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0\n"
-"Language-Team: \n"
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
 msgid "%s 802.11%s Wireless Controller (%s)"
 msgstr "%s 802.11%s 无线控制器 (%s)"
@@ -426,9 +414,6 @@ msgstr "唯一授权"
 msgid "Authorization Required"
 msgstr "需要授权"
 
-msgid "auto"
-msgstr "自动"
-
 msgid "Auto Refresh"
 msgstr "自动刷新"
 
@@ -567,6 +552,9 @@ msgstr "CA 证书，如果留空的话证书将在第一次连接时被保存。
 
 msgid "CPU usage (%)"
 msgstr "CPU 使用率 (%)"
+
+msgid "Cache size"
+msgstr "缓存大小"
 
 msgid "Cancel"
 msgstr "取消"
@@ -866,12 +854,6 @@ msgstr "停用 DNS 设定"
 msgid "Disable Encryption"
 msgstr "禁用加密"
 
-msgid "Disable HW-Beacon timer"
-msgstr "停用HW-Beacon计时器"
-
-msgid "disabled"
-msgstr "禁用"
-
 msgid "Disabled"
 msgstr "禁用"
 
@@ -905,6 +887,11 @@ msgstr ""
 "Dnsmasq 为 <abbr title=\"网络地址转换\">NAT</abbr> 防火墙提供了一个集成的 "
 "<abbr title=\"动态主机配置协议\">DHCP</abbr> 服务器和 <abbr title=\"域名系统"
 "\">DNS</abbr> 转发器"
+
+msgid ""
+"Dnsmasq will only forward the reply from servers in this list if the replied "
+"ip is in the list. Or it will forward the reply from other servers."
+msgstr "当回复的结果在该列表内时，使用来自在列表内的 DNS 服务器返回的结果，否则使用列表外 DNS 服务器所返回的结果。"
 
 msgid "Do not cache negative replies, e.g. for not existing domains"
 msgstr "不缓存无用的回应, 比如: 不存在的域。"
@@ -1179,9 +1166,6 @@ msgstr "刷新操作"
 msgid "Flashing..."
 msgstr "刷写中..."
 
-msgid "force"
-msgstr "强制"
-
 msgid "Force"
 msgstr "强制"
 
@@ -1360,6 +1344,9 @@ msgstr "IP 地址"
 
 msgid "IP address"
 msgstr "IP 地址"
+
+msgid "IP list for DNS Filter"
+msgstr "DNS过滤器IP列表"
 
 msgid "IPv4"
 msgstr "IPv4"
@@ -2043,14 +2030,14 @@ msgstr "下一步 »"
 msgid "No DHCP Server configured for this interface"
 msgstr "本接口未配置 DHCP 服务器"
 
+msgid "No Encryption"
+msgstr "无加密"
+
 msgid "No NAT-T"
 msgstr "无 NAT-T"
 
 msgid "No chains in this table"
 msgstr "本表中没有链"
-
-msgid "No Encryption"
-msgstr "无加密"
 
 msgid "No files found"
 msgstr "未找到文件"
@@ -2347,6 +2334,9 @@ msgstr "内部私钥的密码"
 
 msgid "Password successfully changed!"
 msgstr "密码修改成功！"
+
+msgid "Password2"
+msgstr "密码 2"
 
 msgid "Path to CA-Certificate"
 msgstr "CA 证书路径"
@@ -2821,6 +2811,11 @@ msgid ""
 "conjunction with failure threshold"
 msgstr "定时发送 LCP 响应 (秒)，仅在结合了故障阈值时有效"
 
+msgid ""
+"Send queries to all available servers. The reply from the server which "
+"answers first will be returned to the original requester."
+msgstr "同时向所有可用服务器发送DNS请求，回复最快的DNS服务器所返回的结果将会被转发给客户端。"
+
 msgid "Separate Clients"
 msgstr "隔离客户端"
 
@@ -2968,6 +2963,9 @@ msgstr "设置 MTU (最大传输单位)，缺省值: 1280 bytes"
 
 msgid "Specify the secret encryption key here."
 msgstr "在此指定密钥。"
+
+msgid "Specify the size of the cache in entries (defaults to 150)."
+msgstr "指定缓存大小（默认 150）"
 
 # 关联了 启动项 和 接口>LAN>DHCP服务器>网址分配基址
 msgid "Start"
@@ -3356,9 +3354,6 @@ msgstr "触发"
 msgid "Trigger Mode"
 msgstr "触发模式"
 
-msgid "try"
-msgstr "尝试"
-
 msgid "Tunnel ID"
 msgstr "隧道 ID"
 
@@ -3460,6 +3455,9 @@ msgstr "隧道接口的 MTU"
 
 msgid "Use TTL on tunnel interface"
 msgstr "隧道接口的 TTL"
+
+msgid "Use all servers"
+msgstr "同时使用所有服务器"
 
 msgid "Use as external overlay (/overlay)"
 msgstr "作为外部 Overlay 使用 (/overlay)"
@@ -3574,9 +3572,6 @@ msgstr "WEP 开放认证"
 msgid "WEP Shared Key"
 msgstr "WEP 共享密钥"
 
-msgid "WPA-PSK/WPA2-PSK Mixed Mode"
-msgstr "WPA-PSK/WPA2-PSK混合模式"
-
 msgid "WEP passphrase"
 msgstr "WEP 密钥"
 
@@ -3586,12 +3581,27 @@ msgstr "WMM 多媒体加速"
 msgid "WPA passphrase"
 msgstr "WPA 密钥"
 
+msgid "WPA-EAP"
+msgstr ""
+
 msgid ""
 "WPA-Encryption requires wpa_supplicant (for client mode) or hostapd (for AP "
 "and ad-hoc mode) to be installed."
 msgstr ""
 "WPA 加密需要安装 wpa_supplicant (客户端模式) 或安装 hostapd (接入点 AP、点对"
 "点 Ad-Hoc 模式)。"
+
+msgid "WPA-PSK"
+msgstr ""
+
+msgid "WPA-PSK/WPA2-PSK Mixed Mode"
+msgstr "WPA-PSK/WPA2-PSK混合模式"
+
+msgid "WPA2-EAP"
+msgstr ""
+
+msgid "WPA2-PSK"
+msgstr ""
 
 msgid ""
 "Wait for NTP sync that many seconds, seting to 0 disables waiting (optional)"
@@ -3711,7 +3721,7 @@ msgid "disable"
 msgstr "禁用"
 
 msgid "disabled"
-msgstr "已禁用"
+msgstr "禁用"
 
 msgid "expired"
 msgstr "过期时间"
@@ -3720,6 +3730,9 @@ msgid ""
 "file where given <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</"
 "abbr>-leases will be stored"
 msgstr "存放 <abbr title=\"动态主机配置协议\">DHCP</abbr> 租约的文件"
+
+msgid "force"
+msgstr "强制"
 
 msgid "forward"
 msgstr "转发"
@@ -3744,18 +3757,6 @@ msgstr "如果对象是一个网络"
 
 msgid "input"
 msgstr "输入"
-
-msgid "IP list for DNS Filter"
-msgstr "DNS过滤器IP列表"
-
-msgid ""
-"IP list for dnsmasq to select a server.By using this, dnsmasq will "
-"only forward the reply from servers in this list if the replied ip "
-"is in the list.Or it will forward the reply from other servers.<br />"
-"Leave empty to disable this feature."
-msgstr ""
-"启用此功能后，当回复的结果在该列表内时，使用来自在列表内的DNS服务器返回的结果，"
-"否则使用列表外DNS服务器所返回的结果。<br />留空则禁用此功能。"
 
 msgid "kB"
 msgstr "kB"
@@ -3808,19 +3809,6 @@ msgstr "已路由"
 msgid "server mode"
 msgstr "服务器模式"
 
-msgid ""
-"Setting this flag forces dnsmasq to send all queries to all available servers. "
-"The reply from the server which answers first will be returned to the original requester."
-msgstr ""
-"启用该选项后，dnsmasq将会同时向所有可用服务器发送DNS请求，"
-"回复最快的DNS服务器所返回的结果将会被转发给客户端。"
-
-msgid "skiplink1 Skip to navigation"
-msgstr "skiplink1 跳转到导航"
-
-msgid "skiplink2 Skip to content"
-msgstr "skiplink2 跳到内容"
-
 msgid "stateful-only"
 msgstr "有状态的"
 
@@ -3835,6 +3823,9 @@ msgstr "关联"
 
 msgid "time units (TUs / 1.024 ms) [1000-65535]"
 msgstr "时间单位 (TUs / 1.024ms) [1000-65535]"
+
+msgid "try"
+msgstr "尝试"
 
 msgid "unknown"
 msgstr "未知"
@@ -3851,14 +3842,20 @@ msgstr "未指定或创建:"
 msgid "untagged"
 msgstr "不关联"
 
-msgid "Use all servers"
-msgstr "同时使用所有服务器"
-
 msgid "yes"
 msgstr "是"
 
 msgid "« Back"
 msgstr "« 后退"
+
+#~ msgid "Disable HW-Beacon timer"
+#~ msgstr "停用HW-Beacon计时器"
+
+#~ msgid "skiplink1 Skip to navigation"
+#~ msgstr "skiplink1 跳转到导航"
+
+#~ msgid "skiplink2 Skip to content"
+#~ msgstr "skiplink2 跳到内容"
 
 #~ msgid "Leasetime"
 #~ msgstr "租用时间"
@@ -3868,12 +3865,6 @@ msgstr "« 后退"
 
 #~ msgid "navigation Navigation"
 #~ msgstr "导航"
-
-#~ msgid "skiplink1 Skip to navigation"
-#~ msgstr "skiplink1 跳转到导航"
-
-#~ msgid "skiplink2 Skip to content"
-#~ msgstr "skiplink2 跳到内容"
 
 #~ msgid "AuthGroup"
 #~ msgstr "认证组"
@@ -3892,9 +3883,6 @@ msgstr "« 后退"
 
 #~ msgid "Compression"
 #~ msgstr "压缩"
-
-#~ msgid "Disable HW-Beacon timer"
-#~ msgstr "停用HW-Beacon计时器"
 
 #~ msgid "Do not send probe responses"
 #~ msgstr "不回送探测响应"
