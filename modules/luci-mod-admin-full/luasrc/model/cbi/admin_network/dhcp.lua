@@ -127,7 +127,7 @@ s:taboption("advanced", Flag, "strictorder",
 	translate("<abbr title=\"Domain Name System\">DNS</abbr> servers will be queried in the " ..
 		"order of the resolvfile")).optional = true
 
-o = s:taboption("advanced", Flag, "cachesize",
+o = s:taboption("advanced", Value, "cachesize",
 	translate("Cache size"),
 	translate("Specify the size of the cache in entries (defaults to 150)."))
 o.datatype = uinteger
