@@ -13,6 +13,9 @@ msgstr ""
 "X-Generator: Poedit 2.0\n"
 "Language-Team: \n"
 
+msgid "%s 802.11%s Wireless Controller (%s)"
+msgstr "%s 802.11%s 无线控制器 (%s)"
+
 msgid "%s is untagged in multiple VLANs!"
 msgstr "%s 在多个 VLAN 中未标记"
 
@@ -539,11 +542,14 @@ msgstr "桥接号"
 msgid "Bring up on boot"
 msgstr "开机自动运行"
 
+msgid "Broadcom"
+msgstr "博通"
+
 msgid "Broadcom 802.11%s Wireless Controller"
-msgstr "Broadcom 802.11%s 无线网卡"
+msgstr "博通 802.11%s 无线网卡"
 
 msgid "Broadcom BCM%04x 802.11 Wireless Controller"
-msgstr "Broadcom BCM%04x 802.11 无线网卡"
+msgstr "博通 BCM%04x 802.11 无线网卡"
 
 msgid "Buffered"
 msgstr "已缓冲"
@@ -1257,6 +1263,9 @@ msgstr "生成配置"
 
 msgid "Generate archive"
 msgstr "生成备份"
+
+msgid "Generic"
+msgstr "通用"
 
 msgid "Generic 802.11%s Wireless Controller"
 msgstr "通用 802.11%s 无线网卡"
