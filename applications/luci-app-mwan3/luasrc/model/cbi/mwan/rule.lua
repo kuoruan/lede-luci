@@ -47,7 +47,7 @@ mwan_rule = m5:section(TypedSection, "rule", translate("Traffic Rules"),
 	mwan_rule.addremove = true
 	mwan_rule.anonymous = false
 	mwan_rule.dynamic = false
-	mwan_rule.sectionhead = "Rule"
+	mwan_rule.sectionhead = translate("Rule")
 	mwan_rule.sortable = true
 	mwan_rule.template = "cbi/tblsection"
 	mwan_rule.extedit = dsp.build_url("admin", "network", "mwan", "configuration", "rule", "%s")
@@ -85,7 +85,7 @@ dest_port = mwan_rule:option(DummyValue, "dest_port", translate("Destination por
 proto = mwan_rule:option(DummyValue, "proto", translate("Protocol"))
 	proto.rawhtml = true
 	function proto.cfgvalue(self, s)
-		return self.map:get(s, "proto") or "all"
+		return self.map:get(s, "proto") or translate("All")
 	end
 
 sticky = mwan_rule:option(DummyValue, "sticky", translate("Sticky"))
@@ -93,10 +93,10 @@ sticky = mwan_rule:option(DummyValue, "sticky", translate("Sticky"))
 	function sticky.cfgvalue(self, s)
 		if self.map:get(s, "sticky") == "1" then
 			stickied = 1
-			return "Yes"
+			return translate("Yes")
 		else
 			stickied = nil
-			return "No"
+			return translate("No")
 		end
 	end
 
@@ -133,7 +133,7 @@ errors = mwan_rule:option(DummyValue, "errors", translate("Errors"))
 		if not string.find(error_protocol_list, " " .. s .. " ") then
 			return ""
 		else
-			return "<span title=\"No protocol specified\"><img src=\"/luci-static/resources/cbi/reset.gif\" alt=\"error\"></img></span>"
+			return "<span title=\"" .. translate("No protocol specified") .. "\"><img src=\"/luci-static/resources/cbi/reset.gif\" alt=\"error\"></img></span>"
 		end
 	end
 
