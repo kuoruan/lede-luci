@@ -73,7 +73,7 @@ proto = mwan_rule:option(Value, "proto", translate("Protocol"),
 	translate("View the contents of /etc/protocols for protocol descriptions"))
 	proto.default = "all"
 	proto.rmempty = false
-	proto:value("all")
+	proto:value("all", translate("All"))
 	proto:value("ip")
 	proto:value("tcp")
 	proto:value("udp")
