@@ -88,7 +88,7 @@ msgid ""
 "<abbr title=\"Domain Name System\">DNS</abbr> servers will be queried in the "
 "order of the resolvfile"
 msgstr ""
-"按照 resolvfile 里的顺序查询 <abbr title=\"Domain Name System\">DNS</abbr> 服"
+"按照 resolv 文件里的顺序查询 <abbr title=\"Domain Name System\">DNS</abbr> 服"
 "务器"
 
 msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
@@ -3623,7 +3623,7 @@ msgid "WPA-PSK"
 msgstr ""
 
 msgid "WPA-PSK/WPA2-PSK Mixed Mode"
-msgstr "WPA-PSK/WPA2-PSK混合模式"
+msgstr "WPA-PSK/WPA2-PSK 混合模式"
 
 msgid "WPA2-EAP"
 msgstr ""
