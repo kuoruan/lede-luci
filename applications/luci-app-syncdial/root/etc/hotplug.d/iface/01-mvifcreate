@@ -1,5 +1,4 @@
 #!/bin/sh
-[ "$ACTION" = "ifdown" ] && pppconnectcheck &
 
 if [ ."$(uci -q get syncdial.general.enabled)" = ."1" ] && \
 	[ ."$(uci -q get syncdial.general.old_frame)" = ."1" ] && \

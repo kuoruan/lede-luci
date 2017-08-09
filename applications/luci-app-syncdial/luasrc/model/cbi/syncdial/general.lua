@@ -27,18 +27,6 @@ o = s:option(Value, "wannum", translate("Number of Virtual WAN Interface"))
 o.datatype = "range(0, 20)"
 o.rmempty  = false
 
-o = s:option(Flag, "dialchk", translate("Enable Interface Offline Check"))
-o.rmempty = false
-
-o = s:option(Value, "dialnum", translate("Minimum Number of Online Interfaces"),
-	translate("Redial when the number of online interfaces is less than this value."))
-o.datatype = "range(0, 21)"
-o.rmempty  = false
-
-o = s:option(Value, "dialwait", translate("Redial Waiting Time"),
-	translate("When interfaces all offline, the waiting time(second) before next redial. Minimum: 5 seconds"))
-o.datatype = "min(5)"
-
 o = s:option(Flag, "old_frame", translate("Use Old Macvlan Frame to Create Interfaces"))
 o.rmempty = false
 

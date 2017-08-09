@@ -7,6 +7,7 @@
 
 # 检测IP列表
 chk_ip_list="$(grep 'nameserver' /tmp/resolv.conf.auto | cut -d' ' -f2 | sort | uniq | xargs)" chk_ip_list="${chk_ip_list} 180.76.76.76 223.5.5.5 223.6.6.6 114.114.114.114 114.114.115.115"
+fw_str="wan wan6"
 
 # 添加 MWAN 负载均衡相关配置
 # $1:接口名称
@@ -71,7 +72,7 @@ pppoe_if_add() {
 		set network.${1}.password=${4}
 		set network.${1}.metric=${5}
 		# gen firewall
-		add_list firewall.@zone[1].network=${1}
+		fw_str="${fw_str} ${1}"
 	EOF
 }
 
@@ -110,7 +111,6 @@ check_remove_interface() {
 	if [ "${ifcfg::4}" = "vwan" ]; then
 		uci -q batch <<-EOF >/dev/null
 			del network.${ifcfg}
-			del_list firewall.@zone[1].network=${ifcfg}
 		EOF
 		mwan_cfg_del "${ifcfg}"
 	fi
@@ -124,6 +124,7 @@ general_config_remove() {
 		uci set network.wan.proto=pppoe
 	fi
 	mwan_cfg_del "wan"
+	uci set firewall.@zone[1].network="wan wan6"
 }
 
 
@@ -149,6 +150,8 @@ for i in $(seq 1 $wannum); do
 	pppoe_if_add "vwan$i" "macvlan$i" "$pppoe_user" "$pppoe_password" $(expr 40 + $i)
 	mwan_cfg_add "vwan$i"
 done
+
+uci set firewall.@zone[1].network="$fw_str"
 
 apply_cfg
 
