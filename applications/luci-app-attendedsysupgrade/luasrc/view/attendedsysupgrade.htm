@@ -1,12 +1,17 @@
 <%+header%>
 <h2 name="content"><%:Attended Sysupgrade%></h2>
-<div  class="container">
-	<div style="display: none" id="update_info" class="alert-message info">
-	</div>
-	<div style="display: none" id="update_error" class="alert-message danger">
-	</div>
+<div class="container">
+	<div style="display: none" id="update_info" class="alert-message info"></div>
+	<div style="display: none" id="update_error" class="alert-message danger"></div>
 </div>
 <input class="cbi-button" value="search for updates" onclick="update_request()" type="button" id="update_button">
+<div style="display: none" id="packages" class="alert-message success"></div>
+<div class="cbi-value" id="keep_container" style="display: none">
+	<label class="cbi-value-title" for="keep">keep settings:</label>
+	<div class="cbi-value-field">
+		<input type="checkbox" name="keep" id="keep" checked="checked" />
+	</div>
+</div>
 
 <script type="text/javascript">
 
@@ -22,7 +27,6 @@ function server_request(request_dict, path, callback) {
 	request_dict.distro = data.release.distribution;
 	request_dict.target = data.release.target.split("\/")[0];
 	request_dict.subtarget = data.release.target.split("\/")[1];
-	request_dict.packages = data.packagelist;
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.open("POST", url, true);
 	xmlhttp.setRequestHeader("Content-type", "application/json");
@@ -37,8 +41,11 @@ function server_request(request_dict, path, callback) {
 
 // requests ubus via rpcd
 function ubus_request(command, argument, params, callback) {
-	// perform login if ubus_rpc_session is empty
-	var request_data = '{ "jsonrpc": "2.0", "id": ' + ubus_counter + ', "method": "call", "params": [ "'+ data["ubus_rpc_session"] +'", "' + command + '", "' + argument + '", ' + params + ' ] }'
+	request_data = {};
+	request_data.jsonrpc = "2.0";
+	request_data.id = ubus_counter;
+	request_data.method = "call";
+	request_data.params = [ data.ubus_rpc_session, command, argument, params ]
 	ubus_counter++
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.open("POST", ubus_url, true);
@@ -53,7 +60,7 @@ function ubus_request(command, argument, params, callback) {
 			ubus_request_callback(xmlhttp, callback)
 		}
 	});
-	xmlhttp.send(request_data);
+	xmlhttp.send(JSON.stringify(request_data));
 }
 
 // handle ubus_requests, set variables or perform functions
@@ -84,10 +91,11 @@ function ubus_request_callback_uci(response_object, callback) {
 // initial setup, get system information
 function setup() {
 	data["ubus_rpc_session"] = "<%=luci.dispatcher.context.authsession%>"
-	ubus_request("packagelist", "list", '{  }', "packagelist")
-	ubus_request("system", "board", '{  }', "release")
-	ubus_request("system", "board", '{  }', "board_name")
-	ubus_request("uci", "get", '{"config": "attendedsysupgrade", "section": "@settings[0]", "option": "update_server"}', "update_server")
+	ubus_request("packagelist", "list", {}, "packagelist");
+	ubus_request("system", "board", {}, "release");
+	ubus_request("system", "board", {}, "board_name");
+	ubus_request("system", "board", {}, "model");
+	ubus_request("uci", "get", { "config": "attendedsysupgrade", "section": "updateserver", "option": "url" }, "update_server")
 }
 
 // shows notification if update is available
@@ -107,6 +115,7 @@ function update_request() {
 	console.log("update_request")
 	request_dict = {}
 	request_dict.version = data.release.version;
+	request_dict.packages = data.packagelist;
 	server_request(request_dict, "update-request", update_request_callback)
 }
 
@@ -144,7 +153,7 @@ function update_request_callback(response_object) {
 }
 
 function back_online() {
-	ubus_request("session", "login", '{  }', back_online_callback)
+	ubus_request("session", "login", {}, back_online_callback)
 }
 
 function back_online_callback(response_object) {
@@ -161,11 +170,16 @@ function back_online_callback(response_object) {
 function update_request_200(response_content) {
 	info_output = ""
 	if(response_content.version != undefined) {
-		info_output += "new update available. from " + data.release.version + " to " + response_content.version
+		info_output += "<h3>new update available</h3>"
+		info_output += data.release.version + " to " + response_content.version
 		latest_version = response_content.version;
 	}
-	if(response_content.packages != undefined) {
-		info_output += "package updates available"
+	if(response_content.updates != undefined) {
+		info_output += "<h3>package updates available</h3>"
+		for (update in response_content.updates) {
+			info_output += "<b>" + update + "</b>: " + response_content.updates[update][1] + " to " + response_content.updates[update][0] + "</br>"
+		}
+		data.packages = response_content.packages
 	}
 	update_info(info_output)
 	document.getElementById("update_button").value = "request image";
@@ -178,6 +192,8 @@ function image_request() {
 	request_dict = {}
 	request_dict.version = latest_version;
 	request_dict.board = data.board_name
+	request_dict.packages = data.packages;
+	request_dict.model = data.model
 	server_request(request_dict, "image-request", image_request_handler)
 }
 
@@ -211,8 +227,9 @@ function image_request_handler(response) {
 		// ready to download
 		response_content = JSON.parse(response.responseText)
 		update_info("image created")
-		document.getElementById("update_button").value = "download and flash"
+		document.getElementById("update_button").value = "sysupgrade"
 		document.getElementById("update_button").onclick = function() {download_image(response_content.url); }
+		document.getElementById("keep_container").style.display = "block";
 	}
 }
 
@@ -230,7 +247,8 @@ function upload_image(blob) {
 	upload_request.addEventListener('load', function(event) {
 		// this checksum should be parsed
 		document.getElementById("update_info").innerHTML = "flashing... please wait" // show fancy indicator http://www.ajaxload.info/
-		ubus_request("attendedsysupgrade", "sysupgrade", '{  }', 'done');
+
+		ubus_request("attendedsysupgrade", "sysupgrade", { "keep_settings": document.getElementById("keep").checked }, 'done');
   	});
 
   	upload_request.addEventListener('error', function(event) {
