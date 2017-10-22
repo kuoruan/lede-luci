@@ -91,6 +91,10 @@ s:taboption("advanced", Flag, "enable_tivo", translate("Enable TIVO:"),
 	translate("Set this to enable support for streaming .jpg and .mp3 files to a TiVo supporting HMO."))
 o.rmempty = true
 
+s:taboption("advanced", Flag, "wide_links", translate("Allow wide links"),
+	translate("Set this to allow serving content outside the media root (via symlinks)."))
+o.rmempty = true
+
 o = s:taboption("advanced", Flag, "strict_dlna", translate("Strict to DLNA standard:"),
 	translate("Set this to strictly adhere to DLNA standards. This will allow server-side downscaling of very large JPEG images, which may hurt JPEG serving performance on (at least) Sony DLNA products."))
 o.rmempty = true
@@ -126,7 +130,7 @@ o:value("P", translate("Pictures"))
 
 
 s:taboption("general", DynamicList, "media_dir", translate("Media directories:"),
-	translate("Set this to the directory you want scanned. If you want to restrict the directory to a specific content type, you can prepend the type ('A' for audio, 'V' for video, 'P' for images), followed by a comma, to the directory (eg. media_dir=A,/mnt/media/Music). Multiple directories can be specified."))
+	translate("Set this to the directory you want scanned. If you want to restrict the directory to a specific content type, you can prepend the type ('A' for audio, 'V' for video, 'P' for images), followed by a comma, to the directory (eg. A,/mnt/media/Music). Multiple directories can be specified."))
 
 
 o = s:taboption("general", DynamicList, "album_art_names", translate("Album art names:"),
