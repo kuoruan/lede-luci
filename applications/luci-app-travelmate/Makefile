@@ -1,4 +1,4 @@
-# Copyright 2017 Dirk Brenken (dev@brenken.org)
+# Copyright 2017-2018 Dirk Brenken (dev@brenken.org)
 # This is free software, licensed under the Apache License, Version 2.0
 #
 

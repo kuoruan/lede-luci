@@ -3,8 +3,8 @@
 
 local fs = require("nixio.fs")
 local util = require("luci.util")
-local uci = require("uci")
-local adbinput = uci.get("adblock", "blacklist", "adb_src" or "/etc/adblock/adblock.blacklist")
+local uci = require("luci.model.uci").cursor()
+local adbinput = uci:get("adblock", "blacklist", "adb_src") or "/etc/adblock/adblock.blacklist"
 
 if not nixio.fs.access(adbinput) then
 	m = SimpleForm("error", nil,

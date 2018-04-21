@@ -169,8 +169,13 @@ function ipmask6(val)
 end
 
 function ip6hostid(val)
-	if val and val:match("^[a-fA-F0-9:]+$") and (#val > 2) then
-		return (ip6addr("2001:db8:0:0" .. val) or ip6addr("2001:db8:0:0:" .. val))
+	if val == "eui64" or val == "random" then
+		return true
+	else
+		local addr = ip.IPv6(val)
+		if addr and addr:prefix() == 128 and addr:lower("::1:0:0:0:0") then
+			return true
+		end
 	end
 
 	return false
@@ -191,32 +196,16 @@ function portrange(val)
 end
 
 function macaddr(val)
-	if val and val:match(
-		"^[a-fA-F0-9]+:[a-fA-F0-9]+:[a-fA-F0-9]+:" ..
-		 "[a-fA-F0-9]+:[a-fA-F0-9]+:[a-fA-F0-9]+$"
-	) then
-		local parts = util.split( val, ":" )
-
-		for i = 1,6 do
-			parts[i] = tonumber( parts[i], 16 )
-			if parts[i] < 0 or parts[i] > 255 then
-				return false
-			end
-		end
-
-		return true
-	end
-
-	return false
+	return ip.checkmac(val) and true or false
 end
 
-function hostname(val)
+function hostname(val, strict)
 	if val and (#val < 254) and (
 	   val:match("^[a-zA-Z_]+$") or
 	   (val:match("^[a-zA-Z0-9_][a-zA-Z0-9_%-%.]*[a-zA-Z0-9]$") and
 	    val:match("[^0-9%.]"))
 	) then
-		return true
+		return (not strict or not val:match("^_"))
 	end
 	return false
 end

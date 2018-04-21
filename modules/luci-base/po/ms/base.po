@@ -13,6 +13,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.1.1\n"
 
+msgid "%.1f dB"
+msgstr ""
+
 msgid "%s is untagged in multiple VLANs!"
 msgstr ""
 
@@ -129,6 +132,9 @@ msgstr ""
 msgid "<abbr title=\"Media Access Control\">MAC</abbr>-Address"
 msgstr "MAC-Alamat"
 
+msgid "<abbr title=\"The DHCP Unique Identifier\">DUID</abbr>"
+msgstr ""
+
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Dynamic Host Configuration "
 "Protocol\">DHCP</abbr> leases"
@@ -204,9 +210,6 @@ msgstr ""
 msgid "Access Point"
 msgstr "Pusat akses"
 
-msgid "Action"
-msgstr "Aksi"
-
 msgid "Actions"
 msgstr "Aksi"
 
@@ -277,6 +280,9 @@ msgstr "Membenarkan pengesahan kata laluan SSH"
 
 msgid "Allow all except listed"
 msgstr "Izinkan semua kecualian yang disenaraikan"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "Izinkan senarai saja"
@@ -543,9 +549,6 @@ msgid ""
 "preserved in any sysupgrade."
 msgstr ""
 
-msgid "Buttons"
-msgstr "Butang"
-
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
 
@@ -576,7 +579,7 @@ msgstr "Saluran"
 msgid "Check"
 msgstr ""
 
-msgid "Check fileystems before mount"
+msgid "Check filesystems before mount"
 msgstr ""
 
 msgid "Check this option to delete the existing networks from this radio."
@@ -631,6 +634,13 @@ msgid "Command"
 msgstr "Perintah"
 
 msgid "Common Configuration"
+msgstr ""
+
+msgid ""
+"Complicates key reinstallation attacks on the client side by disabling "
+"retransmission of EAPOL-Key frames that are used to install keys. This "
+"workaround might cause interoperability issues and reduced robustness of key "
+"negotiation especially in environments with heavy traffic load."
 msgstr ""
 
 msgid "Configuration"
@@ -699,6 +709,11 @@ msgid ""
 msgstr ""
 
 msgid "Custom feeds"
+msgstr ""
+
+msgid ""
+"Custom files (certificates, scripts) may remain on the system. To prevent "
+"this, perform a factory-reset first."
 msgstr ""
 
 msgid ""
@@ -911,6 +926,9 @@ msgstr "Turun dan memasang pakej"
 msgid "Download backup"
 msgstr ""
 
+msgid "Downstream SNR offset"
+msgstr ""
+
 msgid "Dropbear Instance"
 msgstr ""
 
@@ -1086,6 +1104,15 @@ msgstr ""
 msgid "Extra SSH command options"
 msgstr ""
 
+msgid "FT over DS"
+msgstr ""
+
+msgid "FT over the Air"
+msgstr ""
+
+msgid "FT protocol"
+msgstr ""
+
 msgid "File"
 msgstr ""
 
@@ -1187,6 +1214,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr ""
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr ""
 
@@ -1231,6 +1261,9 @@ msgstr ""
 msgid "Generate Config"
 msgstr ""
 
+msgid "Generate PMK locally"
+msgstr ""
+
 msgid "Generate archive"
 msgstr ""
 
@@ -1266,9 +1299,6 @@ msgstr ""
 
 msgid "HT mode (802.11n)"
 msgstr ""
-
-msgid "Handler"
-msgstr "Kawalan"
 
 msgid "Hang Up"
 msgstr "Menutup"
@@ -1855,10 +1885,6 @@ msgstr ""
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr ""
 
-#, fuzzy
-msgid "Maximum hold time"
-msgstr "Memegang masa maksimum"
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1876,12 +1902,11 @@ msgstr "Memori"
 msgid "Memory usage (%)"
 msgstr "Penggunaan Memori (%)"
 
+msgid "Mesh Id"
+msgstr ""
+
 msgid "Metric"
 msgstr "Metrik"
-
-#, fuzzy
-msgid "Minimum hold time"
-msgstr "Memegang masa minimum"
 
 msgid "Mirror monitor port"
 msgstr ""
@@ -2086,6 +2111,9 @@ msgid "Notice"
 msgstr ""
 
 msgid "Nslookup"
+msgstr ""
+
+msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
 msgstr ""
 
 msgid "OK"
@@ -2325,9 +2353,6 @@ msgstr ""
 
 msgid "Path to Private Key"
 msgstr "Path ke Kunci Swasta"
-
-msgid "Path to executable which handles the button event"
-msgstr "Path ke eksekusi yang mengendalikan acara butang"
 
 msgid "Path to inner CA-Certificate"
 msgstr ""
@@ -2847,6 +2872,9 @@ msgstr "Saiz"
 msgid "Size (.ipk)"
 msgstr ""
 
+msgid "Size of DNS query cache"
+msgstr ""
+
 msgid "Skip"
 msgstr "Skip"
 
@@ -2888,10 +2916,6 @@ msgstr "Sumber"
 
 msgid "Source routing"
 msgstr ""
-
-#, fuzzy
-msgid "Specifies the button state to handle"
-msgstr "Menentukan state butang untuk melaku"
 
 msgid "Specifies the directory the device is attached to"
 msgstr ""
@@ -2990,6 +3014,9 @@ msgstr ""
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3222,7 +3249,7 @@ msgstr ""
 
 msgid ""
 "This is the local endpoint address assigned by the tunnel broker, it usually "
-"ends with <code>:2</code>"
+"ends with <code>...:2/64</code>"
 msgstr ""
 
 msgid ""
@@ -3252,9 +3279,6 @@ msgid ""
 msgstr ""
 "Senarai ini memberikan gambaran lebih pada proses sistem yang sedang "
 "berjalan dan statusnya."
-
-msgid "This page allows the configuration of custom button actions"
-msgstr "Laman ini membolehkan konfigurasi butang tindakan peribadi"
 
 msgid "This page gives an overview over currently active network connections."
 msgstr ""
@@ -3439,9 +3463,9 @@ msgstr ""
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
@@ -3557,6 +3581,11 @@ msgstr ""
 msgid "Warning: There are unsaved changes that will get lost on reboot!"
 msgstr ""
 
+msgid ""
+"When using a PSK, the PMK can be generated locally without inter AP "
+"communications"
+msgstr ""
+
 msgid "Whether to create an IPv6 default route over the tunnel"
 msgstr ""
 
@@ -3600,13 +3629,6 @@ msgid "Wireless restarted"
 msgstr ""
 
 msgid "Wireless shut down"
-msgstr ""
-
-msgid ""
-"Complicates key reinstallation attacks on the client side by disabling "
-"retransmission of EAPOL-Key frames that are used to install keys. This "
-"workaround might cause interoperability issues and reduced robustness of key "
-"negotiation especially in environments with heavy traffic load."
 msgstr ""
 
 msgid "Write received DNS requests to syslog"
@@ -3735,6 +3757,9 @@ msgstr ""
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr ""
 
@@ -3779,6 +3804,33 @@ msgstr ""
 
 msgid "« Back"
 msgstr "« Kembali"
+
+#~ msgid "Action"
+#~ msgstr "Aksi"
+
+#~ msgid "Buttons"
+#~ msgstr "Butang"
+
+#~ msgid "Handler"
+#~ msgstr "Kawalan"
+
+#, fuzzy
+#~ msgid "Maximum hold time"
+#~ msgstr "Memegang masa maksimum"
+
+#, fuzzy
+#~ msgid "Minimum hold time"
+#~ msgstr "Memegang masa minimum"
+
+#~ msgid "Path to executable which handles the button event"
+#~ msgstr "Path ke eksekusi yang mengendalikan acara butang"
+
+#, fuzzy
+#~ msgid "Specifies the button state to handle"
+#~ msgstr "Menentukan state butang untuk melaku"
+
+#~ msgid "This page allows the configuration of custom button actions"
+#~ msgstr "Laman ini membolehkan konfigurasi butang tindakan peribadi"
 
 #~ msgid "Leasetime"
 #~ msgstr "Masa penyewaan"

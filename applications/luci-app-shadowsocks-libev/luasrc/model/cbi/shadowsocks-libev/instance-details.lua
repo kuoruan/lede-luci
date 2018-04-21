@@ -34,8 +34,6 @@ if stype == "ss_server" then
 	o.datatype = "ipaddr"
 	o.placeholder = "0.0.0.0"
 	ss.values_ipaddr(o)
-	o = s:taboption("general", Value, "manager_address", translate("Manager address"))
-	o.datatype = "hostport"
 else
 	ss.options_client(s, "general")
 	if stype == "ss_tunnel" then
@@ -43,10 +41,6 @@ else
 			translate("Tunnel address"),
 			translate("The address ss-tunnel will forward traffic to"))
 		o.datatype = "hostport"
-	elseif stype == "ss_redir" then
-		o = s:taboption("advanced", Flag, "disable_sni",
-			translate("Disable SNI"),
-			translate("Disable parsing HTTP/HTTPS payload to find then resolve hostname at remote server"))
 	end
 end
 

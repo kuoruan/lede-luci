@@ -24,10 +24,7 @@ msgstr ""
 msgid "Acceptable values: 1-1000. Defaults to 1 if not set"
 msgstr ""
 
-msgid "Advanced"
-msgstr ""
-
-msgid "All"
+msgid "Acceptable values: 1-256. Defaults to 1 if not set"
 msgstr ""
 
 msgid "Check IP rules"
@@ -39,28 +36,13 @@ msgstr ""
 msgid "Collecting data..."
 msgstr ""
 
-msgid "Configuration"
-msgstr ""
-
-msgid "Currently Configured Interfaces"
-msgstr ""
-
-msgid "Currently Configured Members"
-msgstr ""
-
-msgid "Currently Configured Policies"
-msgstr ""
-
 msgid "Destination address"
 msgstr ""
 
 msgid "Destination port"
 msgstr ""
 
-msgid "Detailed Status"
-msgstr ""
-
-msgid "Diagnostic Results"
+msgid "Detail"
 msgstr ""
 
 msgid "Diagnostics"
@@ -79,10 +61,7 @@ msgstr ""
 msgid "Enter value in hex, starting with <code>0x</code>"
 msgstr ""
 
-msgid "Error collecting troubleshooting information"
-msgstr ""
-
-msgid "Errors"
+msgid "Execute"
 msgstr ""
 
 msgid "Expect interface state on up event"
@@ -103,16 +82,13 @@ msgstr ""
 msgid "Globals"
 msgstr ""
 
-msgid "Globals mwan3 options"
-msgstr ""
-
-msgid "Hotplug Script"
-msgstr ""
-
 msgid "Hotplug ifdown"
 msgstr ""
 
 msgid "Hotplug ifup"
+msgstr ""
+
+msgid "INFO: MWAN not running"
 msgstr ""
 
 msgid "IPset"
@@ -128,9 +104,6 @@ msgid "Initial state"
 msgstr ""
 
 msgid "Interface"
-msgstr ""
-
-msgid "Interface Status"
 msgstr ""
 
 msgid "Interface down"
@@ -154,9 +127,6 @@ msgstr ""
 msgid "Keep ping failure interval during failure state"
 msgstr ""
 
-msgid "Last 50 MWAN systemlog entries. Newest entries sorted at the top :"
-msgstr ""
-
 msgid "Last resort"
 msgstr ""
 
@@ -169,55 +139,55 @@ msgstr ""
 msgid "Local source interface"
 msgstr ""
 
-msgid "MWAN Config"
+msgid "MWAN - Globals"
 msgstr ""
 
-msgid "MWAN Detailed Status"
+msgid "MWAN - Interfaces"
 msgstr ""
 
-msgid "MWAN Interface Configuration"
+msgid "MWAN - Members"
+msgstr ""
+
+msgid "MWAN - Notification"
+msgstr ""
+
+msgid "MWAN - Policies"
+msgstr ""
+
+msgid "MWAN - Rules"
 msgstr ""
 
 msgid "MWAN Interface Configuration - %s"
 msgstr ""
 
-msgid "MWAN Interface Diagnostics"
-msgstr ""
-
-msgid "MWAN Interface Live Status"
-msgstr ""
-
-msgid "MWAN Interface Systemlog"
-msgstr ""
-
-msgid "MWAN Member Configuration"
+msgid "MWAN Interfaces"
 msgstr ""
 
 msgid "MWAN Member Configuration - %s"
 msgstr ""
 
-msgid "MWAN Policy Configuration"
-msgstr ""
-
 msgid "MWAN Policy Configuration - %s"
-msgstr ""
-
-msgid "MWAN Rule Configuration"
 msgstr ""
 
 msgid "MWAN Rule Configuration - %s"
 msgstr ""
 
-msgid "MWAN Service Control"
+msgid "MWAN Status - Detail"
+msgstr ""
+
+msgid "MWAN Status - Diagnostics"
+msgstr ""
+
+msgid "MWAN Status - Troubleshooting"
 msgstr ""
 
 msgid ""
-"MWAN supports up to 250 physical and/or logical interfaces<br />MWAN "
+"MWAN supports up to 252 physical and/or logical interfaces<br />MWAN "
 "requires that all interfaces have a unique metric configured in /etc/config/"
 "network<br />Names must match the interface name found in /etc/config/"
-"network (see advanced tab)<br />Names may contain characters A-Z, a-z, 0-9, "
-"_ and no spaces<br />Interfaces may not share the same name as configured "
-"members, policies or rules"
+"network<br />Names may contain characters A-Z, a-z, 0-9, _ and no spaces<br /"
+">Interfaces may not share the same name as configured members, policies or "
+"rules"
 msgstr ""
 
 msgid ""
@@ -251,40 +221,19 @@ msgid ""
 "youtube.com/youtube\")"
 msgstr ""
 
-msgid "Network Config"
-msgstr ""
-
 msgid "No"
 msgstr ""
 
 msgid "No MWAN interfaces found"
 msgstr ""
 
-msgid "No MWAN systemlog history found"
-msgstr ""
-
-msgid "No detailed status information available"
-msgstr ""
-
-msgid "No diagnostic results returned"
-msgstr ""
-
-msgid "No protocol specified"
+msgid "Notification"
 msgstr ""
 
 msgid "Offline"
 msgstr ""
 
 msgid "Online"
-msgstr ""
-
-msgid "Online (tracking active)"
-msgstr ""
-
-msgid "Online (tracking off)"
-msgstr ""
-
-msgid "Overview"
 msgstr ""
 
 msgid "Ping count"
@@ -317,11 +266,11 @@ msgstr ""
 msgid ""
 "Policies are profiles grouping one or more members controlling how MWAN "
 "distributes traffic<br />Member interfaces with lower metrics are used "
-"first. Interfaces with the same metric load-balance<br />Load-balanced "
-"member interfaces distribute more traffic out those with higher weights<br /"
-">Names may contain characters A-Z, a-z, 0-9, _ and no spaces. Names must be "
-"15 characters or less<br />Policies may not share the same name as "
-"configured interfaces, members or rules"
+"first<br />Member interfaces with the same metric will be load-balanced<br /"
+">Load-balanced member interfaces distribute more traffic out those with "
+"higher weights<br />Names may contain characters A-Z, a-z, 0-9, _ and no "
+"spaces<br />Names must be 15 characters or less<br />Policies may not share "
+"the same name as configured interfaces, members or rules"
 msgstr ""
 
 msgid "Policy"
@@ -336,9 +285,6 @@ msgstr ""
 msgid "Recovery interval"
 msgstr ""
 
-msgid "Restart MWAN"
-msgstr ""
-
 msgid "Rule"
 msgstr ""
 
@@ -346,14 +292,15 @@ msgid "Rules"
 msgstr ""
 
 msgid ""
-"Rules specify which traffic will use a particular MWAN policy based on IP "
-"address, port or protocol<br />Rules are matched from top to bottom. Rules "
-"below a matching rule are ignored. Traffic not matching any rule is routed "
-"using the main routing table<br />Traffic destined for known (other than "
-"default) networks is handled by the main routing table. Traffic matching a "
-"rule, but all WAN interfaces for that policy are down will be blackholed<br /"
-">Names may contain characters A-Z, a-z, 0-9, _ and no spaces<br />Rules may "
-"not share the same name as configured interfaces, members or policies"
+"Rules specify which traffic will use a particular MWAN policy<br />Rules are "
+"based on IP address, port or protocol<br />Rules are matched from top to "
+"bottom<br />Rules below a matching rule are ignored<br />Traffic not "
+"matching any rule is routed using the main routing table<br />Traffic "
+"destined for known (other than default) networks is handled by the main "
+"routing table<br />Traffic matching a rule, but all WAN interfaces for that "
+"policy are down will be blackholed<br />Names may contain characters A-Z, a-"
+"z, 0-9, _ and no spaces<br />Rules may not share the same name as configured "
+"interfaces, members or policies"
 msgstr ""
 
 msgid "Seconds. Acceptable values: 1-1000000. Defaults to 600 if not set"
@@ -365,22 +312,19 @@ msgstr ""
 msgid "Source port"
 msgstr ""
 
-msgid "Start MWAN"
-msgstr ""
-
 msgid "Sticky"
 msgstr ""
 
 msgid "Sticky timeout"
 msgstr ""
 
-msgid "Stop MWAN"
-msgstr ""
-
 msgid "Supports CIDR notation (eg \"192.168.100.0/24\") without quotes"
 msgstr ""
 
-msgid "There are currently %d of 250 supported interfaces configured"
+msgid "Task"
+msgstr ""
+
+msgid "There are currently %d of %d supported interfaces configured"
 msgstr ""
 
 msgid ""
@@ -401,21 +345,13 @@ msgid ""
 "will<br />be executed with each netifd hotplug interface event<br />on "
 "interfaces for which mwan3 is enabled.<br /><br />There are three main "
 "environment variables that are passed to this script.<br /><br />$ACTION "
-"Either \"ifup\" or \"ifdown\"<br />$INTERFACE Name of the interface which "
-"went up or down (e.g. \"wan\" or \"wwan\")<br />$DEVICE Physical device name "
-"which interface went up or down (e.g. \"eth0\" or \"wwan0\")<br /><br />"
-msgstr ""
-
-msgid "This section allows you to modify the contents of /etc/config/mwan3"
-msgstr ""
-
-msgid "This section allows you to modify the contents of /etc/config/network"
-msgstr ""
-
-msgid "This section allows you to modify the contents of /etc/config/wireless"
-msgstr ""
-
-msgid "Tracking IP"
+"<br />* \"ifup\" Is called by netifd and mwan3track <br />* \"ifdown\" Is "
+"called by netifd and mwan3track <br />* \"connected\" Is only called by "
+"mwan3track if tracking was successful <br />* \"disconnected\" Is only "
+"called by mwan3track if tracking has failed <br />$INTERFACE Name of the "
+"interface which went up or down (e.g. \"wan\" or \"wwan\")<br />$DEVICE "
+"Physical device name which interface went up or down (e.g. \"eth0\" or "
+"\"wwan0\")<br /><br />"
 msgstr ""
 
 msgid "Tracking hostname or IP address"
@@ -427,9 +363,6 @@ msgstr ""
 msgid "Tracking reliability"
 msgstr ""
 
-msgid "Traffic Rules"
-msgstr ""
-
 msgid ""
 "Traffic from the same source IP address that previously matched this rule "
 "within the sticky timeout period will use the same WAN interface"
@@ -438,87 +371,40 @@ msgstr ""
 msgid "Troubleshooting"
 msgstr ""
 
-msgid "Troubleshooting Data"
-msgstr ""
-
 msgid ""
 "Use the IP address of this interface as source IP address for traffic "
 "initiated by the router itself"
 msgstr ""
 
-msgid "View the contents of /etc/protocols for protocol descriptions"
+msgid "View the content of /etc/protocols for protocol description"
 msgstr ""
 
-msgid "WARNING: %d interfaces are configured exceeding the maximum of 250!"
+msgid "WARNING: %d interfaces are configured exceeding the maximum of %d!"
 msgstr ""
 
-msgid ""
-"WARNING: Some policies have names exceeding the maximum of 15 characters!"
+msgid "WARNING: Interface %s are not found in /etc/config/network"
 msgstr ""
 
-msgid ""
-"WARNING: some interfaces are configured incorrectly or not at all in /etc/"
-"config/network!"
+msgid "WARNING: Interface %s has a duplicate metric %s configured"
 msgstr ""
 
 msgid ""
-"WARNING: some interfaces have a higher reliability requirement than there "
-"are tracking IP addresses!"
+"WARNING: Interface %s has a higher reliability requirement than tracking "
+"hosts (%d)"
+msgstr ""
+
+msgid "WARNING: Interface %s has no default route in the main routing table"
+msgstr ""
+
+msgid "WARNING: Policy %s has exceeding the maximum name of 15 characters"
 msgstr ""
 
 msgid ""
-"WARNING: some interfaces have duplicate metrics configured in /etc/config/"
-"network!"
+"WARNING: Rule %s have a port configured with no or improper protocol "
+"specified!"
 msgstr ""
 
-msgid ""
-"WARNING: some interfaces have no default route in the main routing table!"
-msgstr ""
-
-msgid ""
-"WARNING: some interfaces have no metric configured in /etc/config/network!"
-msgstr ""
-
-msgid ""
-"WARNING: some rules have a port configured with no or improper protocol "
-"specified! Please configure a specific protocol!"
-msgstr ""
-
-msgid ""
-"WARNING: this and other interfaces have duplicate metrics configured in /etc/"
-"config/network!"
-msgstr ""
-
-msgid ""
-"WARNING: this interface has a higher reliability requirement than there are "
-"tracking IP addresses!"
-msgstr ""
-
-msgid "WARNING: this interface has no default route in the main routing table!"
-msgstr ""
-
-msgid ""
-"WARNING: this interface has no metric configured in /etc/config/network!"
-msgstr ""
-
-msgid ""
-"WARNING: this interface is configured incorrectly or not at all in /etc/"
-"config/network!"
-msgstr ""
-
-msgid ""
-"WARNING: this policy's name is %d characters exceeding the maximum of 15!"
-msgstr ""
-
-msgid ""
-"WARNING: this rule is incorrectly configured with no or improper protocol "
-"specified! Please configure a specific protocol!"
-msgstr ""
-
-msgid "Waiting for MWAN to %s..."
-msgstr ""
-
-msgid "Waiting for diagnostic results..."
+msgid "Waiting for command to complete..."
 msgstr ""
 
 msgid "Weight"
@@ -526,9 +412,6 @@ msgstr ""
 
 msgid ""
 "When all policy members are offline use this behavior for matched traffic"
-msgstr ""
-
-msgid "Wireless Config"
 msgstr ""
 
 msgid "Yes"
@@ -550,15 +433,6 @@ msgid "ifup"
 msgstr ""
 
 msgid "never"
-msgstr ""
-
-msgid "restart"
-msgstr ""
-
-msgid "start"
-msgstr ""
-
-msgid "stop"
 msgstr ""
 
 msgid "unreachable (reject)"

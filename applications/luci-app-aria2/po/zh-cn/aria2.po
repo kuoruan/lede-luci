@@ -1,5 +1,15 @@
+#
+# Yangfl <mmyangfl@gmail.com>, 2017.
+#
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8\n"
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Last-Translator: Yangfl <mmyangfl@gmail.com>\n"
+"Language-Team:  <debian-l10n-chinese@lists.debian.org>\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"PO-Revision-Date: 2017-10-28 16:10+0800\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 msgid "<abbr title=\"Local Peer Discovery\">LPD</abbr> enabled"
 msgstr "启用 <abbr title=\"Local Peer Discovery\">LPD</abbr>"
@@ -17,7 +27,7 @@ msgid "Append HEADERs to HTTP request header."
 msgstr "追加的 HTTP 请求头。"
 
 msgid "Aria2"
-msgstr ""
+msgstr "Aria2"
 
 msgid ""
 "Aria2 is a lightweight multi-protocol &amp; multi-source, cross platform "
@@ -36,6 +46,11 @@ msgstr "BT 选项"
 msgid "BitTorrent listen port"
 msgstr "BT 监听端口"
 
+msgid ""
+"Aria2 is a multi-protocol &amp; multi-source download utility, here you can "
+"configure the settings."
+msgstr "Aria2 是一个支持多协议多线程的下载器, 您可以在这里对其进行配置。"
+
 msgid "CA certificate"
 msgstr "CA 证书"
 
@@ -52,6 +67,14 @@ msgstr ""
 "如果速度小于或等于这个速度（byte/s），关闭下载下载连接。0 表示不限制下载速"
 "度。"
 
+=======
+msgid "BitTorrent Settings"
+msgstr "BitTorrent 设置"
+
+msgid "BitTorrent listen port"
+msgstr "BitTorrent 监听端口"
+
+>>>>>>> efcca756787d53757e1ce8568ddf8ec5dda10af9
 msgid "Collecting data..."
 msgstr "正在收集数据..."
 
@@ -148,6 +171,12 @@ msgstr "文件不存在。"
 msgid "Files"
 msgstr "文件"
 
+msgid "Falloc"
+msgstr "快速 alloc（Falloc）"
+
+msgid "Files and Locations"
+msgstr "文件和目录"
+
 msgid "Follow torrent"
 msgstr "自动添加下载的种子"
 
@@ -156,6 +185,9 @@ msgstr "获取更多信息，请访问：%s"
 
 msgid "Force save"
 msgstr "强制保存"
+
+msgid "General Settings"
+msgstr ""
 
 msgid "Generate Randomly"
 msgstr "随机生成"
@@ -201,6 +233,9 @@ msgstr "已安装的 WEB 界面："
 
 msgid "Json-RPC URL"
 msgstr "Json-RPC URL"
+
+msgid "List of additional Bt tracker"
+msgstr "附加 Bt tracker 列表"
 
 msgid "Keep in memory"
 msgstr "保存在内存中"
@@ -287,6 +322,15 @@ msgstr "暂停"
 msgid "Pause download after added."
 msgstr "在下载任务添加后暂停。"
 
+msgid "Off"
+msgstr "关闭"
+
+msgid "Open WebUI-Aria2"
+msgstr "打开 WebUI-Aria2"
+
+msgid "Open YAAW"
+msgstr "打开 YAAW"
+
 msgid "Pause downloads created as a result of metadata download."
 msgstr "暂停下载内容为元数据的下载（磁力链接和 Matalink）。"
 
@@ -317,6 +361,21 @@ msgstr "RPC 认证方式"
 msgid "RPC certificate"
 msgstr "RPC 证书"
 
+msgid "Prealloc"
+msgstr "预分配"
+
+msgid "Preallocation"
+msgstr "磁盘预分配"
+
+msgid "Prefix of peer ID"
+msgstr "Peer ID 前缀"
+
+msgid "RPC Token"
+msgstr "RPC 令牌"
+
+msgid "RPC authentication method"
+msgstr "RPC 认证方式"
+
 msgid "RPC password"
 msgstr "RPC 密码"
 
@@ -344,6 +403,9 @@ msgstr "RPC 用户名"
 
 msgid "Refresh every 10 seconds."
 msgstr "每 10 秒刷新。"
+
+msgid "RPC username"
+msgstr "RPC 用户名"
 
 msgid "Remove unselected file"
 msgstr "删除未选择的文件"
@@ -616,6 +678,9 @@ msgstr "使用文件中的私钥。私钥必须解密并且为 PEM 格式，不�
 msgid "User agent"
 msgstr "User Agent"
 
+msgid "User agent value"
+msgstr "用户代理（UA）"
+
 msgid "Username & Password"
 msgstr "用户名与密码"
 
@@ -628,3 +693,12 @@ msgstr "警告"
 
 msgid "You can append K or M."
 msgstr "你可以追加 K 或者 M。"
+
+msgid "in bytes, You can append K or M."
+msgstr "单位 B, 您可以在数字后跟上 K 或 M。"
+
+msgid "in bytes/sec, You can append K or M."
+msgstr "单位 B/s, 您可以在数字后跟上 K 或 M。"
+
+#~ msgid "General settings"
+#~ msgstr "基本设置"

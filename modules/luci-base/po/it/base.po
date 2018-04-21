@@ -13,6 +13,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.6.10\n"
 
+msgid "%.1f dB"
+msgstr ""
+
 msgid "%s is untagged in multiple VLANs!"
 msgstr ""
 
@@ -135,6 +138,9 @@ msgstr "<abbr title=\"Diodo ad Emissione di Luce\">LED</abbr> Nome"
 msgid "<abbr title=\"Media Access Control\">MAC</abbr>-Address"
 msgstr "Indirizzo <abbr title=\"Controllo Accesso Supporto\">MAC</abbr>"
 
+msgid "<abbr title=\"The DHCP Unique Identifier\">DUID</abbr>"
+msgstr ""
+
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Dynamic Host Configuration "
 "Protocol\">DHCP</abbr> leases"
@@ -219,9 +225,6 @@ msgstr "Accesso Concentratore"
 msgid "Access Point"
 msgstr "Punto di Accesso"
 
-msgid "Action"
-msgstr "Azione"
-
 msgid "Actions"
 msgstr "Azioni"
 
@@ -299,6 +302,9 @@ msgstr ""
 
 msgid "Allow all except listed"
 msgstr "Consenti tutti tranne quelli nell'elenco"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "Consenti solo quelli nell'elenco"
@@ -571,9 +577,6 @@ msgid ""
 "preserved in any sysupgrade."
 msgstr ""
 
-msgid "Buttons"
-msgstr "Pulsanti"
-
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
 
@@ -604,7 +607,7 @@ msgstr "Canale"
 msgid "Check"
 msgstr "Verifica"
 
-msgid "Check fileystems before mount"
+msgid "Check filesystems before mount"
 msgstr "Controlla i filesystem prima di montare"
 
 msgid "Check this option to delete the existing networks from this radio."
@@ -670,6 +673,13 @@ msgstr "Comando"
 
 msgid "Common Configuration"
 msgstr "Configurazioni Comuni"
+
+msgid ""
+"Complicates key reinstallation attacks on the client side by disabling "
+"retransmission of EAPOL-Key frames that are used to install keys. This "
+"workaround might cause interoperability issues and reduced robustness of key "
+"negotiation especially in environments with heavy traffic load."
+msgstr ""
 
 msgid "Configuration"
 msgstr "Configurazione"
@@ -737,6 +747,11 @@ msgid ""
 msgstr ""
 
 msgid "Custom feeds"
+msgstr ""
+
+msgid ""
+"Custom files (certificates, scripts) may remain on the system. To prevent "
+"this, perform a factory-reset first."
 msgstr ""
 
 msgid ""
@@ -958,6 +973,9 @@ msgstr "Scarica e installa pacchetto"
 msgid "Download backup"
 msgstr "Download backup"
 
+msgid "Downstream SNR offset"
+msgstr ""
+
 msgid "Dropbear Instance"
 msgstr "Instanza di Dropbear"
 
@@ -1139,6 +1157,15 @@ msgstr ""
 msgid "Extra SSH command options"
 msgstr ""
 
+msgid "FT over DS"
+msgstr ""
+
+msgid "FT over the Air"
+msgstr ""
+
+msgid "FT protocol"
+msgstr ""
+
 msgid "File"
 msgstr "File"
 
@@ -1240,6 +1267,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr "Inoltra il traffico broadcast"
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr "Modalità di Inoltro"
 
@@ -1284,6 +1314,9 @@ msgstr "Opzioni generali per opkg"
 msgid "Generate Config"
 msgstr "Genera Configurazione"
 
+msgid "Generate PMK locally"
+msgstr ""
+
 msgid "Generate archive"
 msgstr "Genera Archivio"
 
@@ -1321,9 +1354,6 @@ msgstr ""
 
 msgid "HT mode (802.11n)"
 msgstr ""
-
-msgid "Handler"
-msgstr "Gestore"
 
 msgid "Hang Up"
 msgstr "Hangup"
@@ -1926,9 +1956,6 @@ msgstr ""
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr ""
 
-msgid "Maximum hold time"
-msgstr "Tempo massimo di attesa"
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1946,11 +1973,11 @@ msgstr "Memoria"
 msgid "Memory usage (%)"
 msgstr "Uso Memoria (%)"
 
+msgid "Mesh Id"
+msgstr ""
+
 msgid "Metric"
 msgstr "Metrica"
-
-msgid "Minimum hold time"
-msgstr "Velocità minima"
 
 msgid "Mirror monitor port"
 msgstr ""
@@ -2155,6 +2182,9 @@ msgid "Notice"
 msgstr "Notifica"
 
 msgid "Nslookup"
+msgstr ""
+
+msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
 msgstr ""
 
 msgid "OK"
@@ -2396,9 +2426,6 @@ msgstr ""
 
 msgid "Path to Private Key"
 msgstr "Percorso alla chiave privata"
-
-msgid "Path to executable which handles the button event"
-msgstr ""
 
 msgid "Path to inner CA-Certificate"
 msgstr ""
@@ -2922,6 +2949,9 @@ msgstr "Dimensione"
 msgid "Size (.ipk)"
 msgstr ""
 
+msgid "Size of DNS query cache"
+msgstr ""
+
 msgid "Skip"
 msgstr "Salta"
 
@@ -2967,9 +2997,6 @@ msgstr "Origine"
 
 msgid "Source routing"
 msgstr ""
-
-msgid "Specifies the button state to handle"
-msgstr "Specifica lo stato del pulsante da gestire"
 
 msgid "Specifies the directory the device is attached to"
 msgstr "Specifica la cartella a cui è collegato il dispositivo in"
@@ -3076,6 +3103,9 @@ msgstr "Switch %q (%s)"
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3316,7 +3346,7 @@ msgstr ""
 
 msgid ""
 "This is the local endpoint address assigned by the tunnel broker, it usually "
-"ends with <code>:2</code>"
+"ends with <code>...:2/64</code>"
 msgstr ""
 
 msgid ""
@@ -3348,9 +3378,6 @@ msgid ""
 msgstr ""
 "Questa lista da un riassunto dei processi correntemente attivi e del loro "
 "stato."
-
-msgid "This page allows the configuration of custom button actions"
-msgstr ""
 
 msgid "This page gives an overview over currently active network connections."
 msgstr "Questa pagina ti da una riassunto delle connessioni al momento attive."
@@ -3538,9 +3565,9 @@ msgstr "Utilizzare tabella di instradamento"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 "Utilizzare il pulsante <em>Aggiungi</em> per aggiungere una nuova voce di "
@@ -3664,6 +3691,11 @@ msgstr "Avviso"
 msgid "Warning: There are unsaved changes that will get lost on reboot!"
 msgstr ""
 
+msgid ""
+"When using a PSK, the PMK can be generated locally without inter AP "
+"communications"
+msgstr ""
+
 msgid "Whether to create an IPv6 default route over the tunnel"
 msgstr ""
 
@@ -3708,13 +3740,6 @@ msgstr "Wireless riavviato"
 
 msgid "Wireless shut down"
 msgstr "Wireless spento"
-
-msgid ""
-"Complicates key reinstallation attacks on the client side by disabling "
-"retransmission of EAPOL-Key frames that are used to install keys. This "
-"workaround might cause interoperability issues and reduced robustness of key "
-"negotiation especially in environments with heavy traffic load."
-msgstr ""
 
 msgid "Write received DNS requests to syslog"
 msgstr "Scrittura delle richiesta DNS ricevute nel syslog"
@@ -3851,6 +3876,9 @@ msgstr "apri"
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr ""
 
@@ -3895,6 +3923,24 @@ msgstr "Sì"
 
 msgid "« Back"
 msgstr "« Indietro"
+
+#~ msgid "Action"
+#~ msgstr "Azione"
+
+#~ msgid "Buttons"
+#~ msgstr "Pulsanti"
+
+#~ msgid "Handler"
+#~ msgstr "Gestore"
+
+#~ msgid "Maximum hold time"
+#~ msgstr "Tempo massimo di attesa"
+
+#~ msgid "Minimum hold time"
+#~ msgstr "Velocità minima"
+
+#~ msgid "Specifies the button state to handle"
+#~ msgstr "Specifica lo stato del pulsante da gestire"
 
 #~ msgid "Leasetime"
 #~ msgstr "Tempo di contratto"

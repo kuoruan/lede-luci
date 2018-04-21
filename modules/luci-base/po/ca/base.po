@@ -13,6 +13,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.6\n"
 
+msgid "%.1f dB"
+msgstr ""
+
 msgid "%s is untagged in multiple VLANs!"
 msgstr ""
 
@@ -132,6 +135,9 @@ msgstr "Nom <abbr title=\"Light Emitting Diode\">LED</abbr>"
 msgid "<abbr title=\"Media Access Control\">MAC</abbr>-Address"
 msgstr "Adreça <abbr title=\"Media Access Control\">MAC</abbr>"
 
+msgid "<abbr title=\"The DHCP Unique Identifier\">DUID</abbr>"
+msgstr ""
+
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Dynamic Host Configuration "
 "Protocol\">DHCP</abbr> leases"
@@ -216,9 +222,6 @@ msgstr "Concentrador d'accés"
 msgid "Access Point"
 msgstr "Punt d'accés"
 
-msgid "Action"
-msgstr "Acció"
-
 msgid "Actions"
 msgstr "Accions"
 
@@ -292,6 +295,9 @@ msgstr ""
 
 msgid "Allow all except listed"
 msgstr "Permet-les totes menys les llistades"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "Permet només les llistades"
@@ -566,9 +572,6 @@ msgstr ""
 "Repositoris específics de la distribució/compilació. Aquest fitxer NO es "
 "preservarà durant les actualitzacions del microprogramari del sistema."
 
-msgid "Buttons"
-msgstr "Botons"
-
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
 
@@ -599,7 +602,7 @@ msgstr "Canal"
 msgid "Check"
 msgstr "Comprovació"
 
-msgid "Check fileystems before mount"
+msgid "Check filesystems before mount"
 msgstr ""
 
 msgid "Check this option to delete the existing networks from this radio."
@@ -664,6 +667,13 @@ msgstr "Ordre"
 
 msgid "Common Configuration"
 msgstr "Configuració comuna"
+
+msgid ""
+"Complicates key reinstallation attacks on the client side by disabling "
+"retransmission of EAPOL-Key frames that are used to install keys. This "
+"workaround might cause interoperability issues and reduced robustness of key "
+"negotiation especially in environments with heavy traffic load."
+msgstr ""
 
 msgid "Configuration"
 msgstr "Configuració"
@@ -731,6 +741,11 @@ msgid ""
 msgstr ""
 
 msgid "Custom feeds"
+msgstr ""
+
+msgid ""
+"Custom files (certificates, scripts) may remain on the system. To prevent "
+"this, perform a factory-reset first."
 msgstr ""
 
 msgid ""
@@ -948,6 +963,9 @@ msgstr "Descarrega i instal·la el paquet"
 msgid "Download backup"
 msgstr "Descarrega còpia de seguretat"
 
+msgid "Downstream SNR offset"
+msgstr ""
+
 msgid "Dropbear Instance"
 msgstr "Instància de Dropbear"
 
@@ -1125,6 +1143,15 @@ msgstr "Protocol del servidor de registre del sistema extern"
 msgid "Extra SSH command options"
 msgstr ""
 
+msgid "FT over DS"
+msgstr ""
+
+msgid "FT over the Air"
+msgstr ""
+
+msgid "FT protocol"
+msgstr ""
+
 msgid "File"
 msgstr "Fitxer"
 
@@ -1226,6 +1253,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr "Reenvia el trànsit difós"
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr "Mode de reenviament"
 
@@ -1270,6 +1300,9 @@ msgstr "Opcions generals d'opkg"
 msgid "Generate Config"
 msgstr ""
 
+msgid "Generate PMK locally"
+msgstr ""
+
 msgid "Generate archive"
 msgstr "Genera l'arxiu"
 
@@ -1306,9 +1339,6 @@ msgid "HE.net username"
 msgstr ""
 
 msgid "HT mode (802.11n)"
-msgstr ""
-
-msgid "Handler"
 msgstr ""
 
 msgid "Hang Up"
@@ -1901,9 +1931,6 @@ msgstr ""
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr ""
 
-msgid "Maximum hold time"
-msgstr ""
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1921,11 +1948,11 @@ msgstr "Memòria"
 msgid "Memory usage (%)"
 msgstr "Ús de Memòria (%)"
 
+msgid "Mesh Id"
+msgstr ""
+
 msgid "Metric"
 msgstr "Mètrica"
-
-msgid "Minimum hold time"
-msgstr ""
 
 msgid "Mirror monitor port"
 msgstr ""
@@ -2131,6 +2158,9 @@ msgstr "Avís"
 
 msgid "Nslookup"
 msgstr "Nslookup"
+
+msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
+msgstr ""
 
 msgid "OK"
 msgstr "D'acord"
@@ -2370,9 +2400,6 @@ msgstr ""
 
 msgid "Path to Private Key"
 msgstr "Ruta a la clau privada"
-
-msgid "Path to executable which handles the button event"
-msgstr ""
 
 msgid "Path to inner CA-Certificate"
 msgstr ""
@@ -2894,6 +2921,9 @@ msgstr "Mida"
 msgid "Size (.ipk)"
 msgstr "Mida (.ipk)"
 
+msgid "Size of DNS query cache"
+msgstr ""
+
 msgid "Skip"
 msgstr "Salta"
 
@@ -2934,9 +2964,6 @@ msgid "Source"
 msgstr "Origen"
 
 msgid "Source routing"
-msgstr ""
-
-msgid "Specifies the button state to handle"
 msgstr ""
 
 msgid "Specifies the directory the device is attached to"
@@ -3036,6 +3063,9 @@ msgstr "Commutador %q (%s)"
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3286,7 +3316,7 @@ msgstr ""
 
 msgid ""
 "This is the local endpoint address assigned by the tunnel broker, it usually "
-"ends with <code>:2</code>"
+"ends with <code>...:2/64</code>"
 msgstr ""
 
 msgid ""
@@ -3318,9 +3348,6 @@ msgid ""
 msgstr ""
 "Aquesta llista mostra una vista general sobre els processos corrent al "
 "sistema actualment i el seu estat."
-
-msgid "This page allows the configuration of custom button actions"
-msgstr ""
 
 msgid "This page gives an overview over currently active network connections."
 msgstr ""
@@ -3510,9 +3537,9 @@ msgstr ""
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
@@ -3628,6 +3655,11 @@ msgstr "Advertència"
 msgid "Warning: There are unsaved changes that will get lost on reboot!"
 msgstr ""
 
+msgid ""
+"When using a PSK, the PMK can be generated locally without inter AP "
+"communications"
+msgstr ""
+
 msgid "Whether to create an IPv6 default route over the tunnel"
 msgstr ""
 
@@ -3672,13 +3704,6 @@ msgstr "Sense fils reinciat"
 
 msgid "Wireless shut down"
 msgstr "Sense fils aturat"
-
-msgid ""
-"Complicates key reinstallation attacks on the client side by disabling "
-"retransmission of EAPOL-Key frames that are used to install keys. This "
-"workaround might cause interoperability issues and reduced robustness of key "
-"negotiation especially in environments with heavy traffic load."
-msgstr ""
 
 msgid "Write received DNS requests to syslog"
 msgstr "Escriure les peticions DNS rebudes al registre del sistema"
@@ -3814,6 +3839,9 @@ msgstr "obert"
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr ""
 
@@ -3858,6 +3886,12 @@ msgstr "sí"
 
 msgid "« Back"
 msgstr "« Enrere"
+
+#~ msgid "Action"
+#~ msgstr "Acció"
+
+#~ msgid "Buttons"
+#~ msgstr "Botons"
 
 #~ msgid "Leasetime"
 #~ msgstr "Duració d'arrendament"

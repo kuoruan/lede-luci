@@ -11,6 +11,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.6\n"
 
+msgid "%.1f dB"
+msgstr ""
+
 msgid "%s is untagged in multiple VLANs!"
 msgstr ""
 
@@ -127,6 +130,9 @@ msgstr "שם <abbr title=\"Light Emitting Diode\">LED</abbr>"
 msgid "<abbr title=\"Media Access Control\">MAC</abbr>-Address"
 msgstr "כתובת-<abbr title=\"Media Access Control\">MAC</abbr>"
 
+msgid "<abbr title=\"The DHCP Unique Identifier\">DUID</abbr>"
+msgstr ""
+
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Dynamic Host Configuration "
 "Protocol\">DHCP</abbr> leases"
@@ -207,9 +213,6 @@ msgstr "מרכז גישות"
 msgid "Access Point"
 msgstr "נקודת גישה"
 
-msgid "Action"
-msgstr "פעולה"
-
 msgid "Actions"
 msgstr "פעולות"
 
@@ -286,6 +289,9 @@ msgstr ""
 #, fuzzy
 msgid "Allow all except listed"
 msgstr "אפשר הכל חוץ מהרשומים"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "אפשר רשומים בלבד"
@@ -559,9 +565,6 @@ msgid ""
 "preserved in any sysupgrade."
 msgstr ""
 
-msgid "Buttons"
-msgstr "כפתורים"
-
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
 
@@ -592,7 +595,7 @@ msgstr "ערוץ"
 msgid "Check"
 msgstr "לבדוק"
 
-msgid "Check fileystems before mount"
+msgid "Check filesystems before mount"
 msgstr ""
 
 msgid "Check this option to delete the existing networks from this radio."
@@ -647,6 +650,13 @@ msgstr "פקודה"
 
 msgid "Common Configuration"
 msgstr "הגדרות נפוצות"
+
+msgid ""
+"Complicates key reinstallation attacks on the client side by disabling "
+"retransmission of EAPOL-Key frames that are used to install keys. This "
+"workaround might cause interoperability issues and reduced robustness of key "
+"negotiation especially in environments with heavy traffic load."
+msgstr ""
 
 msgid "Configuration"
 msgstr "הגדרות"
@@ -714,6 +724,11 @@ msgid ""
 msgstr ""
 
 msgid "Custom feeds"
+msgstr ""
+
+msgid ""
+"Custom files (certificates, scripts) may remain on the system. To prevent "
+"this, perform a factory-reset first."
 msgstr ""
 
 msgid ""
@@ -925,6 +940,9 @@ msgstr "הורד והתקן חבילות"
 msgid "Download backup"
 msgstr "הורד גיבוי"
 
+msgid "Downstream SNR offset"
+msgstr ""
+
 msgid "Dropbear Instance"
 msgstr ""
 
@@ -1101,6 +1119,15 @@ msgstr ""
 msgid "Extra SSH command options"
 msgstr ""
 
+msgid "FT over DS"
+msgstr ""
+
+msgid "FT over the Air"
+msgstr ""
+
+msgid "FT protocol"
+msgstr ""
+
 msgid "File"
 msgstr ""
 
@@ -1202,6 +1229,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr ""
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr ""
 
@@ -1246,6 +1276,9 @@ msgstr ""
 msgid "Generate Config"
 msgstr ""
 
+msgid "Generate PMK locally"
+msgstr ""
+
 msgid "Generate archive"
 msgstr ""
 
@@ -1280,9 +1313,6 @@ msgid "HE.net username"
 msgstr ""
 
 msgid "HT mode (802.11n)"
-msgstr ""
-
-msgid "Handler"
 msgstr ""
 
 msgid "Hang Up"
@@ -1859,9 +1889,6 @@ msgstr ""
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr ""
 
-msgid "Maximum hold time"
-msgstr ""
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -1879,10 +1906,10 @@ msgstr ""
 msgid "Memory usage (%)"
 msgstr ""
 
-msgid "Metric"
+msgid "Mesh Id"
 msgstr ""
 
-msgid "Minimum hold time"
+msgid "Metric"
 msgstr ""
 
 msgid "Mirror monitor port"
@@ -2086,6 +2113,9 @@ msgid "Notice"
 msgstr ""
 
 msgid "Nslookup"
+msgstr ""
+
+msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
 msgstr ""
 
 msgid "OK"
@@ -2320,9 +2350,6 @@ msgstr ""
 
 msgid "Path to Private Key"
 msgstr "נתיב למפתח הפרטי"
-
-msgid "Path to executable which handles the button event"
-msgstr ""
 
 msgid "Path to inner CA-Certificate"
 msgstr ""
@@ -2843,6 +2870,9 @@ msgstr ""
 msgid "Size (.ipk)"
 msgstr ""
 
+msgid "Size of DNS query cache"
+msgstr ""
+
 msgid "Skip"
 msgstr ""
 
@@ -2885,9 +2915,6 @@ msgid "Source"
 msgstr "מקור"
 
 msgid "Source routing"
-msgstr ""
-
-msgid "Specifies the button state to handle"
 msgstr ""
 
 msgid "Specifies the directory the device is attached to"
@@ -2990,6 +3017,9 @@ msgstr ""
 
 msgid ""
 "Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch Port Mask"
 msgstr ""
 
 msgid "Switch VLAN"
@@ -3209,7 +3239,7 @@ msgstr ""
 
 msgid ""
 "This is the local endpoint address assigned by the tunnel broker, it usually "
-"ends with <code>:2</code>"
+"ends with <code>...:2/64</code>"
 msgstr ""
 
 msgid ""
@@ -3235,9 +3265,6 @@ msgid ""
 "This list gives an overview over currently running system processes and "
 "their status."
 msgstr "רשימה זו מציגה סקירה של תהליכי המערכת הרצים כרגע ואת מצבם."
-
-msgid "This page allows the configuration of custom button actions"
-msgstr "דף זה מאפשר להגדיר פעולות מיוחדות עבור הלחצנים."
 
 msgid "This page gives an overview over currently active network connections."
 msgstr "דף זה מציג סקירה של חיבורי הרשת הפעילים כרגע."
@@ -3421,9 +3448,9 @@ msgstr "השתמש בטבלת ניתוב"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 
@@ -3537,6 +3564,11 @@ msgstr "אזהרה"
 msgid "Warning: There are unsaved changes that will get lost on reboot!"
 msgstr ""
 
+msgid ""
+"When using a PSK, the PMK can be generated locally without inter AP "
+"communications"
+msgstr ""
+
 msgid "Whether to create an IPv6 default route over the tunnel"
 msgstr ""
 
@@ -3580,13 +3612,6 @@ msgid "Wireless restarted"
 msgstr ""
 
 msgid "Wireless shut down"
-msgstr ""
-
-msgid ""
-"Complicates key reinstallation attacks on the client side by disabling "
-"retransmission of EAPOL-Key frames that are used to install keys. This "
-"workaround might cause interoperability issues and reduced robustness of key "
-"negotiation especially in environments with heavy traffic load."
 msgstr ""
 
 msgid "Write received DNS requests to syslog"
@@ -3715,6 +3740,9 @@ msgstr ""
 msgid "overlay"
 msgstr ""
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr ""
 
@@ -3759,6 +3787,15 @@ msgstr "כן"
 
 msgid "« Back"
 msgstr "<< אחורה"
+
+#~ msgid "Action"
+#~ msgstr "פעולה"
+
+#~ msgid "Buttons"
+#~ msgstr "כפתורים"
+
+#~ msgid "This page allows the configuration of custom button actions"
+#~ msgstr "דף זה מאפשר להגדיר פעולות מיוחדות עבור הלחצנים."
 
 #~ msgid "AR Support"
 #~ msgstr "תמיכת AR"

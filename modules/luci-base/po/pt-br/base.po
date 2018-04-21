@@ -13,6 +13,9 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "Language-Team: \n"
 
+msgid "%.1f dB"
+msgstr ""
+
 msgid "%s is untagged in multiple VLANs!"
 msgstr "%s está sem etiqueta em múltiplas VLANs!"
 
@@ -143,6 +146,9 @@ msgstr "Nome do <abbr title=\"Diodo Emissor de Luz\">LED</abbr>"
 msgid "<abbr title=\"Media Access Control\">MAC</abbr>-Address"
 msgstr "Endereço <abbr title=\"Controle de Acesso ao Meio\">MAC</abbr>"
 
+msgid "<abbr title=\"The DHCP Unique Identifier\">DUID</abbr>"
+msgstr ""
+
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Dynamic Host Configuration "
 "Protocol\">DHCP</abbr> leases"
@@ -235,9 +241,6 @@ msgstr "Concentrador de Acesso"
 msgid "Access Point"
 msgstr "Ponto de Acceso (AP)"
 
-msgid "Action"
-msgstr "Ação"
-
 msgid "Actions"
 msgstr "Ações"
 
@@ -315,6 +318,9 @@ msgstr ""
 
 msgid "Allow all except listed"
 msgstr "Permitir todos, exceto os listados"
+
+msgid "Allow legacy 802.11b rates"
+msgstr ""
 
 msgid "Allow listed only"
 msgstr "Permitir somente os listados"
@@ -603,9 +609,6 @@ msgstr ""
 "Fonte de pacotes específico da compilação/distribuição. Esta NÃO será "
 "preservada em qualquer atualização do sistema."
 
-msgid "Buttons"
-msgstr "Botões"
-
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
 "Certificado da CA; se em branco, será salvo depois da primeira conexão."
@@ -637,7 +640,7 @@ msgstr "Canal"
 msgid "Check"
 msgstr "Verificar"
 
-msgid "Check fileystems before mount"
+msgid "Check filesystems before mount"
 msgstr ""
 "Execute a verificação do sistema de arquivos antes da montagem do dispositivo"
 
@@ -705,6 +708,13 @@ msgstr "Comando"
 
 msgid "Common Configuration"
 msgstr "Configuração Comum"
+
+msgid ""
+"Complicates key reinstallation attacks on the client side by disabling "
+"retransmission of EAPOL-Key frames that are used to install keys. This "
+"workaround might cause interoperability issues and reduced robustness of key "
+"negotiation especially in environments with heavy traffic load."
+msgstr ""
 
 msgid "Configuration"
 msgstr "Configuração"
@@ -775,6 +785,11 @@ msgstr ""
 
 msgid "Custom feeds"
 msgstr "Fontes de pacotes customizadas"
+
+msgid ""
+"Custom files (certificates, scripts) may remain on the system. To prevent "
+"this, perform a factory-reset first."
+msgstr ""
 
 msgid ""
 "Customizes the behaviour of the device <abbr title=\"Light Emitting Diode"
@@ -1000,6 +1015,9 @@ msgstr "Baixe e instale o pacote"
 msgid "Download backup"
 msgstr "Baixar a cópia de segurança"
 
+msgid "Downstream SNR offset"
+msgstr ""
+
 msgid "Dropbear Instance"
 msgstr "Dropbear"
 
@@ -1187,6 +1205,15 @@ msgstr "Protocolo do servidor externo de registro do sistema (syslog)"
 msgid "Extra SSH command options"
 msgstr "Opções adicionais do comando SSH"
 
+msgid "FT over DS"
+msgstr ""
+
+msgid "FT over the Air"
+msgstr ""
+
+msgid "FT protocol"
+msgstr ""
+
 msgid "File"
 msgstr "Arquivo"
 
@@ -1293,6 +1320,9 @@ msgstr ""
 msgid "Forward broadcast traffic"
 msgstr "Encaminhar tráfego broadcast"
 
+msgid "Forward mesh peer traffic"
+msgstr ""
+
 msgid "Forwarding mode"
 msgstr "Modo de encaminhamento"
 
@@ -1339,6 +1369,9 @@ msgstr "Opções gerais para o opkg"
 msgid "Generate Config"
 msgstr "Gerar Configuração"
 
+msgid "Generate PMK locally"
+msgstr ""
+
 msgid "Generate archive"
 msgstr "Gerar arquivo"
 
@@ -1376,10 +1409,6 @@ msgid "HT mode (802.11n)"
 msgstr ""
 "Modo <abbr title=\"High Throughput/Alta Taxa de Transferência\">HT</abbr>  "
 "(802.11n)"
-
-# Não sei que contexto isto está sendo usado
-msgid "Handler"
-msgstr "Responsável"
 
 msgid "Hang Up"
 msgstr "Suspender"
@@ -2023,10 +2052,6 @@ msgstr "Tamanho máximo permitido dos pacotes UDP EDNS.0"
 msgid "Maximum amount of seconds to wait for the modem to become ready"
 msgstr "Tempo máximo, em segundos, para esperar que o modem fique pronto"
 
-# Desconheço o uso
-msgid "Maximum hold time"
-msgstr "Tempo máximo de espera"
-
 msgid ""
 "Maximum length of the name is 15 characters including the automatic protocol/"
 "bridge prefix (br-, 6in4-, pppoe- etc.)"
@@ -2046,11 +2071,11 @@ msgstr "Memória"
 msgid "Memory usage (%)"
 msgstr "Uso da memória (%)"
 
+msgid "Mesh Id"
+msgstr ""
+
 msgid "Metric"
 msgstr "Métrica"
-
-msgid "Minimum hold time"
-msgstr "Tempo mínimo de espera"
 
 msgid "Mirror monitor port"
 msgstr "Porta de monitoramento do espelho"
@@ -2258,6 +2283,9 @@ msgstr "Aviso"
 
 msgid "Nslookup"
 msgstr "Nslookup"
+
+msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
+msgstr ""
 
 msgid "OK"
 msgstr "OK"
@@ -2511,9 +2539,6 @@ msgstr "Caminho para o Certificado do Cliente"
 
 msgid "Path to Private Key"
 msgstr "Caminho para a Chave Privada"
-
-msgid "Path to executable which handles the button event"
-msgstr "Caminho para o executável que trata o evento do botão"
 
 msgid "Path to inner CA-Certificate"
 msgstr "Caminho para os certificados CA interno"
@@ -3067,6 +3092,9 @@ msgstr "Tamanho"
 msgid "Size (.ipk)"
 msgstr "Tamanho (.ipk)"
 
+msgid "Size of DNS query cache"
+msgstr ""
+
 msgid "Skip"
 msgstr "Pular"
 
@@ -3111,9 +3139,6 @@ msgstr "Origem"
 
 msgid "Source routing"
 msgstr "Roteamento pela origem"
-
-msgid "Specifies the button state to handle"
-msgstr "Especifica o estado do botão para ser tratado"
 
 msgid "Specifies the directory the device is attached to"
 msgstr "Especifica o diretório que o dispositivo está conectado"
@@ -3227,6 +3252,9 @@ msgid ""
 msgstr ""
 "O Switch %q tem uma topologia desconhecida - as configurações de VLAN podem "
 "não ser precisas."
+
+msgid "Switch Port Mask"
+msgstr ""
 
 msgid "Switch VLAN"
 msgstr "Switch VLAN"
@@ -3502,10 +3530,10 @@ msgstr ""
 
 msgid ""
 "This is the local endpoint address assigned by the tunnel broker, it usually "
-"ends with <code>:2</code>"
+"ends with <code>...:2/64</code>"
 msgstr ""
 "Este é o endereço da ponta local designado pelo agente de túnel. normalmente "
-"ele termina com <code>:2</code>"
+"ele termina com <code>...:2/64</code>"
 
 msgid ""
 "This is the only <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</"
@@ -3537,10 +3565,6 @@ msgid ""
 "their status."
 msgstr ""
 "Esta lista fornece uma visão geral sobre os processos em execução no sistema."
-
-msgid "This page allows the configuration of custom button actions"
-msgstr ""
-"Esta página permite a configuração de ações personalizadas para os botões"
 
 msgid "This page gives an overview over currently active network connections."
 msgstr "Esta página fornece informações sobre as conexões de rede ativas."
@@ -3732,9 +3756,9 @@ msgstr "Use a tabela de roteamento"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies to the fixed "
-"address to use and the <em>Hostname</em> is assigned as symbolic name to the "
-"requesting host. The optional <em>Lease time</em> can be used to set non-"
+"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
+"the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
 msgstr ""
 "Use o botão <em>Adicionar</em> para adicionar uma nova entrada de "
@@ -3859,6 +3883,11 @@ msgstr "Atenção"
 msgid "Warning: There are unsaved changes that will get lost on reboot!"
 msgstr "Atenção: Existem mudanças não salvas que serão perdidas ao reiniciar!"
 
+msgid ""
+"When using a PSK, the PMK can be generated locally without inter AP "
+"communications"
+msgstr ""
+
 msgid "Whether to create an IPv6 default route over the tunnel"
 msgstr "Se deve criar uma rota padrão IPv6 sobre o túnel"
 
@@ -3903,13 +3932,6 @@ msgstr "A rede sem fio reiniciou"
 
 msgid "Wireless shut down"
 msgstr "Rede sem fio desligada"
-
-msgid ""
-"Complicates key reinstallation attacks on the client side by disabling "
-"retransmission of EAPOL-Key frames that are used to install keys. This "
-"workaround might cause interoperability issues and reduced robustness of key "
-"negotiation especially in environments with heavy traffic load."
-msgstr ""
 
 msgid "Write received DNS requests to syslog"
 msgstr "Escreva as requisições DNS para o servidor de registro (syslog)"
@@ -4051,6 +4073,9 @@ msgstr "aberto"
 msgid "overlay"
 msgstr "sobreposição"
 
+msgid "random"
+msgstr ""
+
 msgid "relay mode"
 msgstr "modo retransmissor"
 
@@ -4095,6 +4120,33 @@ msgstr "sim"
 
 msgid "« Back"
 msgstr "« Voltar"
+
+#~ msgid "Action"
+#~ msgstr "Ação"
+
+#~ msgid "Buttons"
+#~ msgstr "Botões"
+
+# Não sei que contexto isto está sendo usado
+#~ msgid "Handler"
+#~ msgstr "Responsável"
+
+# Desconheço o uso
+#~ msgid "Maximum hold time"
+#~ msgstr "Tempo máximo de espera"
+
+#~ msgid "Minimum hold time"
+#~ msgstr "Tempo mínimo de espera"
+
+#~ msgid "Path to executable which handles the button event"
+#~ msgstr "Caminho para o executável que trata o evento do botão"
+
+#~ msgid "Specifies the button state to handle"
+#~ msgstr "Especifica o estado do botão para ser tratado"
+
+#~ msgid "This page allows the configuration of custom button actions"
+#~ msgstr ""
+#~ "Esta página permite a configuração de ações personalizadas para os botões"
 
 #~ msgid "Leasetime"
 #~ msgstr "Tempo de atribuição do DHCP"
