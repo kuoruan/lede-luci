@@ -140,12 +140,6 @@ bn = s:taboption("advanced", DynamicList, "bogusnxdomain", translate("Bogus NX D
 bn.optional = true
 bn.placeholder = "67.215.65.132"
 
-fl = s:taboption("advanced", Value, "fil_iplist",
-	translate("IP list for DNS Filter"),
-	translate("Dnsmasq will only forward the reply from servers in this list if the replied ip is in the list. Or it will forward the reply from other servers."))
-fl:depends("allservers", "1")
-fl.optional = true
-
 s:taboption("general", Flag, "logqueries",
 	translate("Log queries"),
 	translate("Write received DNS requests to syslog")).optional = true

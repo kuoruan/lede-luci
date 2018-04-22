@@ -3,11 +3,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Last-Translator: Hsing-Wang Liao <kuoruan@gmail.com>\n"
 
-msgid "%s 802.11%s Wireless Controller (%s)"
-msgstr "%s 802.11%s 无线控制器 (%s)"
-
 msgid "%.1f dB"
 msgstr ""
+
+msgid "%s 802.11%s Wireless Controller (%s)"
+msgstr "%s 802.11%s 无线控制器 (%s)"
 
 msgid "%s is untagged in multiple VLANs!"
 msgstr "%s 在多个 VLAN 中均未标记！"
@@ -918,13 +918,6 @@ msgstr ""
 "了一个集成的 <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</abbr> "
 "服务器和 <abbr title=\"Domain Name System\">DNS</abbr> 转发器"
 
-msgid ""
-"Dnsmasq will only forward the reply from servers in this list if the replied "
-"ip is in the list. Or it will forward the reply from other servers."
-msgstr ""
-"当回复的结果在该列表内时，使用来自在列表内的 DNS 服务器返回的结果，否则使用列"
-"表外 DNS 服务器所返回的结果。"
-
 msgid "Do not cache negative replies, e.g. for not existing domains"
 msgstr "不缓存无用的回应, 比如：不存在的域名"
 
@@ -1393,9 +1386,6 @@ msgstr "IP 地址"
 
 msgid "IP address"
 msgstr "IP 地址"
-
-msgid "IP list for DNS Filter"
-msgstr "DNS 过滤器 IP 列表"
 
 msgid "IPv4"
 msgstr "IPv4"
