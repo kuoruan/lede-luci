@@ -4,6 +4,3 @@
 [submodule "applications/luci-app-qos-gargoyle"]
 	path = applications/luci-app-qos-gargoyle
 	url = https://github.com/kuoruan/luci-app-qos-gargoyle.git
-[submodule "luci-app-aria2"]
-	path = applications/luci-app-aria2
-	url = https://github.com/kuoruan/luci-app-aria2.git
