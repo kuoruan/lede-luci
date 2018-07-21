@@ -25,6 +25,9 @@ msgstr "啓用UPnP從導"
 msgid "Advanced Settings"
 msgstr "進階設定"
 
+msgid "Advertise as IGDv1 device instead of IGDv2"
+msgstr ""
+
 msgid "Allow adding forwards only to requesting ip addresses"
 msgstr "只允許請求的IP位址新增從導機制"
 
@@ -64,6 +67,9 @@ msgstr "設備UUID獨立識別碼"
 msgid "Downlink"
 msgstr "下載"
 
+msgid "Enable IGDv1 mode"
+msgstr ""
+
 msgid "Enable NAT-PMP functionality"
 msgstr "啓用蘋果NAT-PMP傳輸埠對應通訊協定功能"
 
@@ -84,6 +90,9 @@ msgstr "外部埠號範圍"
 
 msgid "General Settings"
 msgstr "一般設定"
+
+msgid "Host"
+msgstr ""
 
 msgid "Internal addresses"
 msgstr "內部位址"
@@ -134,6 +143,9 @@ msgstr "UPnP租賃文件"
 
 msgid "Universal Plug & Play"
 msgstr "通用序列埠隨插隨用"
+
+msgid "Unknown"
+msgstr ""
 
 msgid "Uplink"
 msgstr "上傳"

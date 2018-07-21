@@ -7,6 +7,11 @@ msgstr ""
 msgid "-------"
 msgstr ""
 
+msgid ""
+"<b>Caution:</b> To prevent OOM exceptions on low memory devices with less "
+"than 64 MB free RAM, please only select a few of them!"
+msgstr ""
+
 msgid "Adblock"
 msgstr ""
 
@@ -25,7 +30,7 @@ msgstr ""
 msgid "Advanced"
 msgstr ""
 
-msgid "Available blocklist sources."
+msgid "Archive Categories"
 msgstr ""
 
 msgid "Backup Directory"
@@ -37,14 +42,12 @@ msgstr ""
 msgid "Blocklist Sources"
 msgstr ""
 
-msgid ""
-"Builds an additional 'Jail' list (/tmp/adb_list.jail) to block access to all "
-"domains except those listed in the whitelist file.<br />"
+msgid "Blocklist not found!"
 msgstr ""
 
 msgid ""
-"Caution: To prevent OOM exceptions on low memory devices with less than 64 "
-"MB free RAM, please do not select more than five blocklist sources!"
+"Builds an additional 'Jail' list (/tmp/adb_list.jail) to block access to all "
+"domains except those listed in the whitelist file.<br />"
 msgstr ""
 
 msgid ""
@@ -82,12 +85,6 @@ msgid "Download Utility"
 msgstr ""
 
 msgid "Download Utility (SSL Library)"
-msgstr ""
-
-msgid ""
-"During opkg package installation use the '--force-maintainer' option to "
-"overwrite the pre-existing config file or download a fresh default config "
-"from <a href=\"%s\" target=\"_blank\">here</a>"
 msgstr ""
 
 msgid "Edit Blacklist"
@@ -158,15 +155,7 @@ msgstr ""
 msgid "Input file not found, please check your configuration."
 msgstr ""
 
-msgid "Invalid domain specified!"
-msgstr ""
-
 msgid "Last Run"
-msgstr ""
-
-msgid ""
-"List URLs and Shallalist category selections are configurable in the "
-"'Advanced' section.<br />"
 msgstr ""
 
 msgid ""
@@ -186,6 +175,9 @@ msgid "Loading"
 msgstr ""
 
 msgid "Max. Download Queue"
+msgstr ""
+
+msgid "Name"
 msgstr ""
 
 msgid "No"
@@ -211,9 +203,6 @@ msgstr ""
 
 msgid ""
 "Please note: this needs additional 'msmtp' package installation and setup."
-msgstr ""
-
-msgid "Please update your adblock config file to use this package.<br />"
 msgstr ""
 
 msgid "Query"
@@ -269,7 +258,7 @@ msgstr ""
 msgid "Target directory for the generated blocklist 'adb_list.overall'."
 msgstr ""
 
-msgid "The file size is too large for online editing in LuCI (&gt; 512 KB)."
+msgid "The file size is too large for online editing in LuCI (&ge; 100 KB)."
 msgstr ""
 
 msgid ""
@@ -295,9 +284,6 @@ msgstr ""
 msgid ""
 "This form shows the syslog output, pre-filtered for adblock related messages "
 "only."
-msgstr ""
-
-msgid "This section contains no values yet"
 msgstr ""
 
 msgid ""

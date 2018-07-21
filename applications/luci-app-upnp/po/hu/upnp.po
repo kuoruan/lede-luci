@@ -27,6 +27,9 @@ msgstr "Aktív UPnP átirányítások"
 msgid "Advanced Settings"
 msgstr "Haladó beállítások"
 
+msgid "Advertise as IGDv1 device instead of IGDv2"
+msgstr ""
+
 msgid "Allow adding forwards only to requesting ip addresses"
 msgstr ""
 "Kizárólag a kérést küldő IP címre történő továbbítás hozzáadásának "
@@ -68,6 +71,9 @@ msgstr "Eszköz UUID"
 msgid "Downlink"
 msgstr "Letöltés"
 
+msgid "Enable IGDv1 mode"
+msgstr ""
+
 msgid "Enable NAT-PMP functionality"
 msgstr "NAT-PMP funkció engedélyezése"
 
@@ -88,6 +94,9 @@ msgstr "Külső portok"
 
 msgid "General Settings"
 msgstr "Általános beállítások"
+
+msgid "Host"
+msgstr ""
 
 msgid "Internal addresses"
 msgstr "Belső címek"
@@ -140,6 +149,9 @@ msgstr "UPnP bérlet fájl"
 
 msgid "Universal Plug & Play"
 msgstr "Univerzális Plug and Play"
+
+msgid "Unknown"
+msgstr ""
 
 msgid "Uplink"
 msgstr "Feltöltés"

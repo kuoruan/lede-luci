@@ -1,17 +1,17 @@
--- Copyright 2015 Paul Oranje <por@xs4all.nl>
--- Licensed to the public under GPLv2
+-- Copyright 2018 Florian Eckert <fe@dev.tdt.de>
+-- Licensed to the public under the Apache License 2.0.
 
 local netmod = luci.model.network
 local interface = luci.model.network.interface
 
-local proto = netmod:register_protocol("aiccu")
+local proto = netmod:register_protocol("3g")
 
 function proto.get_i18n(self)
-	return luci.i18n.translate("AICCU (SIXXS)")
+	return luci.i18n.translate("UMTS/GPRS/EV-DO")
 end
 
 function proto.ifname(self)
-	return "aiccu-" .. self.sid
+	return "3g-" .. self.sid
 end
 
 function proto.get_interface(self)
@@ -19,11 +19,11 @@ function proto.get_interface(self)
 end
 
 function proto.is_installed(self)
-	return nixio.fs.access("/lib/netifd/proto/aiccu.sh")
+	return nixio.fs.access("/lib/netifd/proto/3g.sh")
 end
 
 function proto.opkg_package(self)
-	return "aiccu"
+	return "comgt"
 end
 
 function proto.is_floating(self)
@@ -46,4 +46,4 @@ function proto.contains_interface(self, ifname)
 	end
 end
 
-netmod:register_pattern_virtual("^aiccu%-%w")
+netmod:register_pattern_virtual("^3g%-%w")

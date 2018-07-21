@@ -46,6 +46,9 @@ msgstr ""
 msgid "Accept input"
 msgstr ""
 
+msgid "Accept output"
+msgstr ""
+
 msgid "Action"
 msgstr "Aktion"
 
@@ -104,6 +107,9 @@ msgstr ""
 msgid "Discard input"
 msgstr ""
 
+msgid "Discard output"
+msgstr ""
+
 msgid "Do not rewrite"
 msgstr "Nicht umschreiben"
 
@@ -111,6 +117,9 @@ msgid "Do not track forward"
 msgstr ""
 
 msgid "Do not track input"
+msgstr ""
+
+msgid "Do not track output"
 msgstr ""
 
 msgid "Drop invalid packets"
@@ -127,6 +136,9 @@ msgstr "Schutz vor SYN-flood-Attacken"
 
 msgid "Enable logging on this zone"
 msgstr "Protokollierung innerhalb der Zone aktivieren"
+
+msgid "Experimental feature. Not fully compatible with QoS/SQM."
+msgstr ""
 
 msgid "External IP address"
 msgstr "Externe IP-Adresse"
@@ -176,8 +188,20 @@ msgstr "Von %s in %s mit Quell-%s"
 msgid "From %s in %s with source %s and %s"
 msgstr "Von %s in %s mit Quell-%s und %s"
 
+msgid "From %s on <var>this device</var>"
+msgstr ""
+
+msgid "From %s on <var>this device</var> with source %s"
+msgstr ""
+
+msgid "From %s on <var>this device</var> with source %s and %s"
+msgstr ""
+
 msgid "General Settings"
 msgstr "Allgemein"
+
+msgid "Hardware flow offloading"
+msgstr ""
 
 msgid "IP"
 msgstr ""
@@ -301,6 +325,9 @@ msgstr "Anderes..."
 msgid "Output"
 msgstr "Ausgang"
 
+msgid "Output zone"
+msgstr ""
+
 msgid "Passes additional arguments to iptables. Use with care!"
 msgstr ""
 "Gibt zusätzliche Kommandozeilenargumente an iptables weiter. Mit Vorsicht "
@@ -334,6 +361,12 @@ msgstr ""
 msgid "Refuse input"
 msgstr ""
 
+msgid "Refuse output"
+msgstr ""
+
+msgid "Requires hardware NAT support. Implemented at least for mt7621"
+msgstr ""
+
 msgid "Restart Firewall"
 msgstr ""
 
@@ -362,6 +395,9 @@ msgstr "Schreibe um auf Quell-%s"
 msgid "Rewrite to source %s, %s"
 msgstr "Schreibe um auf Quell-%s, %s"
 
+msgid "Routing/NAT Offloading"
+msgstr ""
+
 msgid "Rule is disabled"
 msgstr ""
 
@@ -375,6 +411,12 @@ msgid "SNAT port"
 msgstr "SNAT-Port"
 
 msgid "Saturday"
+msgstr ""
+
+msgid "Software based offloading for routing/NAT"
+msgstr ""
+
+msgid "Software flow offloading"
 msgstr ""
 
 msgid "Source IP address"
@@ -510,6 +552,15 @@ msgstr ""
 "WAN-Ports auf dem Router zu öffnen."
 
 msgid "Tuesday"
+msgstr ""
+
+msgid "Unnamed SNAT"
+msgstr ""
+
+msgid "Unnamed forward"
+msgstr ""
+
+msgid "Unnamed rule"
 msgstr ""
 
 msgid "Via %s"

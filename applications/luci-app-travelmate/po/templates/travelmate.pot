@@ -1,12 +1,6 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-msgid "Actions"
-msgstr ""
-
-msgid "Add Interface"
-msgstr ""
-
 msgid "Add Uplink"
 msgstr ""
 
@@ -56,7 +50,7 @@ msgstr ""
 msgid "Connection Limit"
 msgstr ""
 
-msgid "Create Uplink Interface"
+msgid "Create Uplink interface"
 msgstr ""
 
 msgid ""
@@ -70,6 +64,9 @@ msgid "Delete this Uplink"
 msgstr ""
 
 msgid "Device"
+msgstr ""
+
+msgid "Down"
 msgstr ""
 
 msgid "EAP-Method"
@@ -281,6 +278,9 @@ msgid ""
 "messages only."
 msgstr ""
 
+msgid "This step has only to be done once."
+msgstr ""
+
 msgid "Travelmate"
 msgstr ""
 
@@ -299,6 +299,9 @@ msgstr ""
 msgid "Unknown"
 msgstr ""
 
+msgid "Up"
+msgstr ""
+
 msgid "Uplink / Trigger interface"
 msgstr ""
 
@@ -306,9 +309,6 @@ msgid "Uplink BSSID"
 msgstr ""
 
 msgid "Uplink SSID"
-msgstr ""
-
-msgid "Uplink interface"
 msgstr ""
 
 msgid "View AP QR-Codes"
@@ -341,8 +341,7 @@ msgstr ""
 msgid "Wireless Stations"
 msgstr ""
 
-msgid ""
-"add it to the wan zone of the firewall. This step has only to be done once."
+msgid "add it to the wan zone of the firewall.<br />"
 msgstr ""
 
 msgid "hidden"

@@ -27,6 +27,9 @@ msgstr ""
 msgid "Advanced Settings"
 msgstr ""
 
+msgid "Advertise as IGDv1 device instead of IGDv2"
+msgstr ""
+
 msgid "Allow adding forwards only to requesting ip addresses"
 msgstr ""
 
@@ -66,6 +69,9 @@ msgstr ""
 msgid "Downlink"
 msgstr "Downlink"
 
+msgid "Enable IGDv1 mode"
+msgstr ""
+
 msgid "Enable NAT-PMP functionality"
 msgstr ""
 
@@ -85,6 +91,9 @@ msgid "External ports"
 msgstr ""
 
 msgid "General Settings"
+msgstr ""
+
+msgid "Host"
 msgstr ""
 
 msgid "Internal addresses"
@@ -136,6 +145,9 @@ msgstr ""
 
 msgid "Universal Plug & Play"
 msgstr "Universal Plug & Play"
+
+msgid "Unknown"
+msgstr ""
 
 msgid "Uplink"
 msgstr "Uplink"

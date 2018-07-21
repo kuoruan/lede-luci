@@ -43,6 +43,7 @@ XHR = function()
 	{
 		this.reinit();
 
+		var ts   = Date.now();
 		var xhr  = this._xmlHttp;
 		var code = this._encode(data);
 
@@ -54,10 +55,10 @@ XHR = function()
 			else
 				url += '?' + code;
 
+		xhr.open('GET', url, true);
+
 		if (!isNaN(timeout))
 			xhr.timeout = timeout;
-
-		xhr.open('GET', url, true);
 
 		xhr.onreadystatechange = function()
 		{
@@ -65,14 +66,14 @@ XHR = function()
 				var json = null;
 				if (xhr.getResponseHeader("Content-Type") == "application/json") {
 					try {
-						json = eval('(' + xhr.responseText + ')');
+						json = JSON.parse(xhr.responseText);
 					}
 					catch(e) {
 						json = null;
 					}
 				}
 
-				callback(xhr, json);
+				callback(xhr, json, Date.now() - ts);
 			}
 		}
 
@@ -83,19 +84,21 @@ XHR = function()
 	{
 		this.reinit();
 
+		var ts   = Date.now();
 		var xhr  = this._xmlHttp;
 		var code = this._encode(data);
 
 		xhr.onreadystatechange = function()
 		{
 			if (xhr.readyState == 4)
-				callback(xhr);
+				callback(xhr, null, Date.now() - ts);
 		}
+
+		xhr.open('POST', url, true);
 
 		if (!isNaN(timeout))
 			xhr.timeout = timeout;
 
-		xhr.open('POST', url, true);
 		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 		xhr.send(code);
 	}
@@ -187,7 +190,7 @@ XHR.poll = function(interval, url, data, callback, post)
 			for (var i = 0, e = XHR._q[0]; i < XHR._q.length; e = XHR._q[++i])
 			{
 				if (!(XHR._t % e.interval) && !e.xhr.busy())
-					e.xhr[post ? 'post' : 'get'](e.url, e.data, e.callback, e.interval * 1000 - 5);
+					e.xhr[post ? 'post' : 'get'](e.url, e.data, e.callback, e.interval * 1000 * 5 - 5);
 			}
 
 			XHR._t++;
@@ -203,7 +206,6 @@ XHR.poll = function(interval, url, data, callback, post)
 	};
 
 	XHR._q.push(e);
-	XHR.run();
 
 	return e;
 }
@@ -259,3 +261,5 @@ XHR.running = function()
 {
 	return !!(XHR._r && XHR._i);
 }
+
+document.addEventListener('DOMContentLoaded', XHR.run);

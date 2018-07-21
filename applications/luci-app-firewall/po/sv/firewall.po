@@ -42,6 +42,9 @@ msgstr ""
 msgid "Accept input"
 msgstr ""
 
+msgid "Accept output"
+msgstr ""
+
 msgid "Action"
 msgstr "Åtgärd"
 
@@ -96,6 +99,9 @@ msgstr ""
 msgid "Discard input"
 msgstr ""
 
+msgid "Discard output"
+msgstr ""
+
 msgid "Do not rewrite"
 msgstr "Skriv inte om igen"
 
@@ -103,6 +109,9 @@ msgid "Do not track forward"
 msgstr ""
 
 msgid "Do not track input"
+msgstr ""
+
+msgid "Do not track output"
 msgstr ""
 
 msgid "Drop invalid packets"
@@ -119,6 +128,9 @@ msgstr ""
 
 msgid "Enable logging on this zone"
 msgstr "Aktivera loggning i den här zonen"
+
+msgid "Experimental feature. Not fully compatible with QoS/SQM."
+msgstr ""
 
 msgid "External IP address"
 msgstr "Extern IP-adress"
@@ -168,8 +180,20 @@ msgstr "Från %s i %s med källa %s"
 msgid "From %s in %s with source %s and %s"
 msgstr "Från %s i %s med källa %s och %s"
 
+msgid "From %s on <var>this device</var>"
+msgstr ""
+
+msgid "From %s on <var>this device</var> with source %s"
+msgstr ""
+
+msgid "From %s on <var>this device</var> with source %s and %s"
+msgstr ""
+
 msgid "General Settings"
 msgstr "Generella inställningar"
+
+msgid "Hardware flow offloading"
+msgstr ""
 
 msgid "IP"
 msgstr ""
@@ -296,6 +320,9 @@ msgstr "Andra..."
 msgid "Output"
 msgstr "Utmatning"
 
+msgid "Output zone"
+msgstr ""
+
 msgid "Passes additional arguments to iptables. Use with care!"
 msgstr ""
 
@@ -321,6 +348,12 @@ msgid "Refuse forward"
 msgstr ""
 
 msgid "Refuse input"
+msgstr ""
+
+msgid "Refuse output"
+msgstr ""
+
+msgid "Requires hardware NAT support. Implemented at least for mt7621"
 msgstr ""
 
 msgid "Restart Firewall"
@@ -349,6 +382,9 @@ msgstr "Skriv om igen till källan %s"
 msgid "Rewrite to source %s, %s"
 msgstr ""
 
+msgid "Routing/NAT Offloading"
+msgstr ""
+
 msgid "Rule is disabled"
 msgstr ""
 
@@ -363,6 +399,12 @@ msgstr "SNAT-port"
 
 msgid "Saturday"
 msgstr "Lördag"
+
+msgid "Software based offloading for routing/NAT"
+msgstr ""
+
+msgid "Software flow offloading"
+msgstr ""
 
 msgid "Source IP address"
 msgstr "IP-adress för källa"
@@ -470,6 +512,15 @@ msgstr ""
 
 msgid "Tuesday"
 msgstr "Tisdag"
+
+msgid "Unnamed SNAT"
+msgstr ""
+
+msgid "Unnamed forward"
+msgstr ""
+
+msgid "Unnamed rule"
+msgstr ""
 
 msgid "Via %s"
 msgstr "Via %s"

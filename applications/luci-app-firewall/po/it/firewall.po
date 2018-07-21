@@ -46,6 +46,9 @@ msgstr ""
 msgid "Accept input"
 msgstr ""
 
+msgid "Accept output"
+msgstr ""
+
 msgid "Action"
 msgstr "Azione"
 
@@ -104,6 +107,9 @@ msgstr ""
 msgid "Discard input"
 msgstr ""
 
+msgid "Discard output"
+msgstr ""
+
 msgid "Do not rewrite"
 msgstr "Non riscrivere"
 
@@ -111,6 +117,9 @@ msgid "Do not track forward"
 msgstr ""
 
 msgid "Do not track input"
+msgstr ""
+
+msgid "Do not track output"
 msgstr ""
 
 msgid "Drop invalid packets"
@@ -127,6 +136,9 @@ msgstr "Attiva protezione SYN-flood"
 
 msgid "Enable logging on this zone"
 msgstr "Attiva registro su questa zona"
+
+msgid "Experimental feature. Not fully compatible with QoS/SQM."
+msgstr ""
 
 msgid "External IP address"
 msgstr "Indirizzo IP Esterno"
@@ -176,8 +188,20 @@ msgstr "Da %s a %s con sorgente %s"
 msgid "From %s in %s with source %s and %s"
 msgstr "Da %s a %s con sorgente %s e %s"
 
+msgid "From %s on <var>this device</var>"
+msgstr ""
+
+msgid "From %s on <var>this device</var> with source %s"
+msgstr ""
+
+msgid "From %s on <var>this device</var> with source %s and %s"
+msgstr ""
+
 msgid "General Settings"
 msgstr "Opzioni Generali"
+
+msgid "Hardware flow offloading"
+msgstr ""
 
 msgid "IP"
 msgstr ""
@@ -305,6 +329,9 @@ msgstr "Altri..."
 msgid "Output"
 msgstr ""
 
+msgid "Output zone"
+msgstr ""
+
 msgid "Passes additional arguments to iptables. Use with care!"
 msgstr "Passa comandi addizionali a iptables. Usare con cura!"
 
@@ -332,6 +359,12 @@ msgid "Refuse forward"
 msgstr ""
 
 msgid "Refuse input"
+msgstr ""
+
+msgid "Refuse output"
+msgstr ""
+
+msgid "Requires hardware NAT support. Implemented at least for mt7621"
 msgstr ""
 
 msgid "Restart Firewall"
@@ -362,6 +395,9 @@ msgstr "Riscrivi alla sorgente %s"
 msgid "Rewrite to source %s, %s"
 msgstr "Riscrivi alla sorgente %s, %s"
 
+msgid "Routing/NAT Offloading"
+msgstr ""
+
 msgid "Rule is disabled"
 msgstr ""
 
@@ -376,6 +412,12 @@ msgstr "Porta SNAT"
 
 msgid "Saturday"
 msgstr "Sabato"
+
+msgid "Software based offloading for routing/NAT"
+msgstr ""
+
+msgid "Software flow offloading"
+msgstr ""
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # Generated from applications/luci-fw/luasrc/model/cbi/luci_fw/rrule.lua      #
@@ -530,6 +572,15 @@ msgstr ""
 
 msgid "Tuesday"
 msgstr "Martedì"
+
+msgid "Unnamed SNAT"
+msgstr ""
+
+msgid "Unnamed forward"
+msgstr ""
+
+msgid "Unnamed rule"
+msgstr ""
 
 msgid "Via %s"
 msgstr ""

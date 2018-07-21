@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 17:57+0200\n"
-"PO-Revision-Date: 2018-01-09 08:01+0100\n"
+"PO-Revision-Date: 2018-07-15 12:25+0200\n"
 "Last-Translator: JoeSemler <josef.semler@gmail.com>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -48,6 +48,9 @@ msgstr "-- anhand Label selektieren --"
 
 msgid "-- match by uuid --"
 msgstr "-- UUID vergleichen --"
+
+msgid "-- please select --"
+msgstr "-- Bitte auswählen --"
 
 msgid "1 Minute Load:"
 msgstr "Systemlast (1 Minute):"
@@ -135,6 +138,8 @@ msgstr "MAC-Adresse"
 
 msgid "<abbr title=\"The DHCP Unique Identifier\">DUID</abbr>"
 msgstr ""
+"<abbr title=\"Eindeutiger DHCP Bezeichner (DHCP Unique Identifier)\">DUID</"
+"abbr>"
 
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Dynamic Host Configuration "
@@ -153,9 +158,6 @@ msgstr ""
 msgid "<abbr title=\"maximal\">Max.</abbr> concurrent queries"
 msgstr "<abbr title=\"maximal\">Max.</abbr> Anzahl gleichzeitiger Abfragen"
 
-msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
-msgstr "<abbr title='Paarweise: %s / Gruppe: %s'>%s - %s</abbr>"
-
 msgid ""
 "<br/>Note: you need to manually restart the cron service if the crontab file "
 "was empty before editing."
@@ -172,9 +174,6 @@ msgstr ""
 msgid "ADSL"
 msgstr ""
 
-msgid "AICCU (SIXXS)"
-msgstr ""
-
 msgid "ANSI T1.413"
 msgstr ""
 
@@ -185,7 +184,7 @@ msgid "ARP retry threshold"
 msgstr "Grenzwert für ARP-Auflösungsversuche"
 
 msgid "ATM (Asynchronous Transfer Mode)"
-msgstr ""
+msgstr "ATM (Asynchroner Transfer-Modus)"
 
 msgid "ATM Bridges"
 msgstr "ATM Brücken"
@@ -211,9 +210,6 @@ msgstr "ATM Geräteindex"
 msgid "ATU-C System Vendor ID"
 msgstr ""
 
-msgid "AYIYA"
-msgstr ""
-
 msgid "Access Concentrator"
 msgstr "Access Concentrator"
 
@@ -222,9 +218,6 @@ msgstr "Access Point"
 
 msgid "Actions"
 msgstr "Aktionen"
-
-msgid "Activate this network"
-msgstr "Dieses Netzwerk aktivieren"
 
 msgid "Active <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Routes"
 msgstr "Aktive IPv4-Routen"
@@ -277,6 +270,18 @@ msgstr "Vollständige Sendeleistung (ACTATP)"
 msgid "Alert"
 msgstr "Alarm"
 
+msgid "Alias Interface"
+msgstr ""
+
+msgid "Alias interface"
+msgstr "Alias-Schnittstelle"
+
+msgid "Alias of \"%s\""
+msgstr ""
+
+msgid "All Servers"
+msgstr ""
+
 msgid ""
 "Allocate IP addresses sequentially, starting from the lowest available "
 "address"
@@ -289,6 +294,9 @@ msgstr "IPs sequenziell vergeben"
 
 msgid "Allow <abbr title=\"Secure Shell\">SSH</abbr> password authentication"
 msgstr "Erlaube Anmeldung per Passwort"
+
+msgid "Allow AP mode to disconnect STAs based on low ACK condition"
+msgstr ""
 
 msgid "Allow all except listed"
 msgstr "Alle außer gelistete erlauben"
@@ -322,15 +330,13 @@ msgstr ""
 msgid "Allowed IPs"
 msgstr "Erlaubte IP-Adressen"
 
-msgid ""
-"Also see <a href=\"https://www.sixxs.net/faq/connectivity/?faq=comparison"
-"\">Tunneling Comparison</a> on SIXXS"
-msgstr ""
-"Siehe auch <a href=\"https://www.sixxs.net/faq/connectivity/?faq=comparison"
-"\">Tunneling Comparison</a> bei SIXXS."
-
 msgid "Always announce default router"
 msgstr "Immer Defaultrouter ankündigen"
+
+msgid ""
+"Always use 40MHz channels even if the secondary channel overlaps. Using this "
+"option does not comply with IEEE 802.11n-2009!"
+msgstr ""
 
 msgid "Annex"
 msgstr ""
@@ -409,11 +415,16 @@ msgstr "Antennenkonfiguration"
 msgid "Any zone"
 msgstr "Beliebige Zone"
 
-msgid "Apply"
-msgstr "Anwenden"
+msgid "Apply request failed with status <code>%h</code>"
+msgstr ""
+"Anforderung zur Anwendung der Änderungen mit Status <code>%h</code> "
+"fehlgeschlagen"
 
-msgid "Applying changes"
-msgstr "Änderungen werden angewandt"
+msgid "Apply unchecked"
+msgstr "Ungeprüft anwenden"
+
+msgid "Architecture"
+msgstr "Architektur"
 
 msgid ""
 "Assign a part of given length of every public IPv6-prefix to this interface"
@@ -432,6 +443,9 @@ msgstr ""
 
 msgid "Associated Stations"
 msgstr "Assoziierte Clients"
+
+msgid "Associations"
+msgstr "Assoziierungen"
 
 msgid "Auth Group"
 msgstr "Berechtigungsgruppe"
@@ -508,11 +522,11 @@ msgstr "Zurück zur Übersicht"
 msgid "Back to scan results"
 msgstr "Zurück zu den Scan-Ergebnissen"
 
+msgid "Backup"
+msgstr "Sichern"
+
 msgid "Backup / Flash Firmware"
 msgstr "Backup / Firmware Update"
-
-msgid "Backup / Restore"
-msgstr "Sichern / Wiederherstellen"
 
 msgid "Backup file list"
 msgstr "Liste zu sichernder Dateien"
@@ -523,8 +537,8 @@ msgstr "Ungültige Adresse angegeben!"
 msgid "Band"
 msgstr "Frequenztyp"
 
-msgid "Behind NAT"
-msgstr "NAT"
+msgid "Beacon Interval"
+msgstr ""
 
 msgid ""
 "Below is the determined list of files to backup. It consists of changed "
@@ -589,6 +603,9 @@ msgstr ""
 msgid "CPU usage (%)"
 msgstr "CPU-Nutzung (%)"
 
+msgid "Call failed"
+msgstr "Anruf fehlgeschlagen"
+
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -604,11 +621,21 @@ msgstr "Änderungen"
 msgid "Changes applied."
 msgstr "Änderungen angewendet."
 
+msgid "Changes have been reverted."
+msgstr "Änderungen wurden verworfen"
+
 msgid "Changes the administrator password for accessing the device"
 msgstr "Ändert das Administratorpasswort für den Zugriff auf dieses Gerät"
 
 msgid "Channel"
 msgstr "Kanal"
+
+msgid ""
+"Channel %d is not available in the %s regulatory domain and has been auto-"
+"adjusted to %d."
+msgstr ""
+"Kanal %d ist in der Regulierungszone \"%s\" nicht verfügbar und wurde "
+"automatisch auf %d gesetzt."
 
 msgid "Check"
 msgstr "Prüfen"
@@ -649,13 +676,10 @@ msgstr "Cisco UDP-Kapselung"
 
 msgid ""
 "Click \"Generate archive\" to download a tar archive of the current "
-"configuration files. To reset the firmware to its initial state, click "
-"\"Perform reset\" (only possible with squashfs images)."
+"configuration files."
 msgstr ""
 "Zum Herunterladen der aktuellen Konfigurationsdateien als gepacktes Archiv "
-"\"Sicherung erstellen\" drücken. \"Konfiguration zurücksetzen\" stellt den "
-"Auslieferungszustand des Systems wieder her (nur möglich bei squashfs-"
-"Images)."
+"\"Sicherung erstellen\" drücken."
 
 msgid "Client"
 msgstr "Client"
@@ -696,11 +720,17 @@ msgstr ""
 msgid "Configuration"
 msgstr "Konfiguration"
 
-msgid "Configuration applied."
-msgstr "Konfiguration angewendet."
+msgid "Configuration failed"
+msgstr "Konfiguration fehlgeschlagen"
 
 msgid "Configuration files will be kept."
 msgstr "Konfigurationsdateien sichern"
+
+msgid "Configuration has been applied."
+msgstr "Die Konfiguration wurde angewendet."
+
+msgid "Configuration has been rolled back!"
+msgstr "Die Konfiguration wurde zurückgerollt!"
 
 msgid "Confirmation"
 msgstr "Bestätigung"
@@ -714,11 +744,21 @@ msgstr "Verbunden"
 msgid "Connection Limit"
 msgstr "Verbindungslimit"
 
-msgid "Connection to server fails when TLS cannot be used"
-msgstr "TLS zwingend vorraussetzen und abbrechen wenn TLS fehlschlägt."
+msgid "Connection attempt failed"
+msgstr "Verbindungsversuch fehlgeschlagen"
 
 msgid "Connections"
 msgstr "Verbindungen"
+
+msgid ""
+"Could not regain access to the device after applying the configuration "
+"changes. You might need to reconnect if you modified network related "
+"settings such as the IP address or wireless security credentials."
+msgstr ""
+"Das Gerät konnte nach Anwendung der Konfigurationsänderungen nicht mehr "
+"erreicht werden. Unter Umständen müssen Sie sich neu verbinden wenn "
+"netzwerkbezogene Einstellungen wie die IP-Adresse oder W-LAN Passwörter "
+"geändert wurden."
 
 msgid "Country"
 msgstr "Land"
@@ -767,14 +807,14 @@ msgid ""
 "Custom files (certificates, scripts) may remain on the system. To prevent "
 "this, perform a factory-reset first."
 msgstr ""
+"Eigene Dateien wir Zertifikate oder Scripte können unter Umständen auf dem "
+"System verbleiben. Um dies zu vermeiden, sollte zuerst auf "
+"Werkseinstellungen zurückgesetzt werden."
 
 msgid ""
 "Customizes the behaviour of the device <abbr title=\"Light Emitting Diode"
 "\">LED</abbr>s if possible."
 msgstr "Passt das Verhalten der Geräte-LEDs an - wenn dies möglich ist."
-
-msgid "DHCP Leases"
-msgstr "DHCP-Leases"
 
 msgid "DHCP Server"
 msgstr "DHCP-Server"
@@ -787,9 +827,6 @@ msgstr "DHCP Client"
 
 msgid "DHCP-Options"
 msgstr "DHCP-Optionen"
-
-msgid "DHCPv6 Leases"
-msgstr "DHCPv6-Leases"
 
 msgid "DHCPv6 client"
 msgstr "DHCPv6 Client"
@@ -830,6 +867,9 @@ msgstr ""
 msgid "DSL line mode"
 msgstr "DSL Leitungsmodus"
 
+msgid "DTIM Interval"
+msgstr ""
+
 msgid "DUID"
 msgstr "DUID"
 
@@ -847,9 +887,6 @@ msgstr "Default Gateway"
 
 msgid "Default is stateless + stateful"
 msgstr "Der Standardwert ist zustandslos und zustandsorientiert"
-
-msgid "Default route"
-msgstr "Default Route"
 
 msgid "Default state"
 msgstr "Ausgangszustand"
@@ -871,6 +908,9 @@ msgstr "Löschen"
 msgid "Delete this network"
 msgstr "Dieses Netzwerk löschen"
 
+msgid "Delivery Traffic Indication Message Interval"
+msgstr ""
+
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -889,8 +929,11 @@ msgstr "Gerätekonfiguration"
 msgid "Device is rebooting..."
 msgstr "Das Gerät startet neu..."
 
-msgid "Device unreachable"
+msgid "Device unreachable!"
 msgstr "Das Gerät ist nicht erreichbar"
+
+msgid "Device unreachable! Still waiting for device..."
+msgstr "Gerät nicht erreichbar! Wartet immer noch..."
 
 msgid "Diagnostics"
 msgstr "Diagnosen"
@@ -917,14 +960,26 @@ msgstr "DNS-Verarbeitung deaktivieren"
 msgid "Disable Encryption"
 msgstr "Verschlüsselung deaktivieren"
 
+msgid "Disable this network"
+msgstr "Dieses Netzwerk deaktivieren"
+
 msgid "Disabled"
 msgstr "Deaktiviert"
 
 msgid "Disabled (default)"
 msgstr "Deaktiviert (Standard)"
 
+msgid "Disassociate On Low Acknowledgement"
+msgstr ""
+
 msgid "Discard upstream RFC1918 responses"
 msgstr "Eingehende RFC1918-Antworten verwerfen"
+
+msgid "Disconnection attempt failed"
+msgstr "Verbindungstrennung fehlgeschlagen"
+
+msgid "Dismiss"
+msgstr "Schließen"
 
 msgid "Displaying only packages containing"
 msgstr "Nur Pakete mit folgendem Inhalt anzeigen"
@@ -980,6 +1035,9 @@ msgid ""
 "<abbr title=\"Domain Name System\">DNS</abbr>-Name"
 msgstr "Anfragen ohne Domainnamen nicht weiterleiten"
 
+msgid "Down"
+msgstr "runter"
+
 msgid "Download and install package"
 msgstr "Paket herunterladen und installieren"
 
@@ -987,7 +1045,7 @@ msgid "Download backup"
 msgstr "Backup herunterladen"
 
 msgid "Downstream SNR offset"
-msgstr ""
+msgstr "Downstream SNR-Offset"
 
 msgid "Dropbear Instance"
 msgstr "Dropbear Instanz"
@@ -1043,6 +1101,13 @@ msgstr "Notfall"
 msgid "Enable"
 msgstr "Aktivieren"
 
+msgid ""
+"Enable <abbr title=\"Internet Group Management Protocol\">IGMP</abbr> "
+"snooping"
+msgstr ""
+"<abbr title=\"Internet Group Management Protocol\">IGMP</abbr>-Erkennung "
+"aktivieren"
+
 msgid "Enable <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgstr "<abbr title=\"Spanning Tree Protocol\">STP</abbr> aktivieren"
 
@@ -1092,6 +1157,9 @@ msgstr "Das DF-Bit (Nicht fragmentieren) auf gekapselten Paketen setzen."
 msgid "Enable this mount"
 msgstr "Diesen Mountpunkt aktivieren"
 
+msgid "Enable this network"
+msgstr "Dieses Netzwerk aktivieren"
+
 msgid "Enable this swap"
 msgstr "Diesen Auslagerungsspeicher aktivieren"
 
@@ -1100,6 +1168,9 @@ msgstr "Aktivieren/Deaktivieren"
 
 msgid "Enabled"
 msgstr "Aktiviert"
+
+msgid "Enables IGMP snooping on this bridge"
+msgstr "Aktiviert die automatische IGMP-Erkennung auf dieser Netzwerkbrücke"
 
 msgid ""
 "Enables fast roaming among access points that belong to the same Mobility "
@@ -1122,6 +1193,12 @@ msgstr "Entfernter Server"
 
 msgid "Endpoint Port"
 msgstr "Entfernter Port"
+
+msgid "Enter custom value"
+msgstr "Eigenen Wert angeben"
+
+msgid "Enter custom values"
+msgstr "Eigene Werte angeben"
 
 msgid "Erasing..."
 msgstr "Lösche..."
@@ -1176,13 +1253,18 @@ msgid "Extra SSH command options"
 msgstr "Zusätzliche SSH-Kommando-Optionen"
 
 msgid "FT over DS"
-msgstr ""
+msgstr "FT-über-DS"
 
 msgid "FT over the Air"
-msgstr ""
+msgstr "FT-drahtlos"
 
 msgid "FT protocol"
+msgstr "FT Protokoll"
+
+msgid "Failed to confirm apply within %ds, waiting for rollback…"
 msgstr ""
+"Konnte nicht innerhalb von %d Sekunden bestätigen, warte auf Zurückrollen "
+"der Änderungen..."
 
 msgid "File"
 msgstr "Datei"
@@ -1201,6 +1283,9 @@ msgstr "Private Anfragen filtern"
 
 msgid "Filter useless"
 msgstr "Windowsanfragen filtern"
+
+msgid "Finalizing failed"
+msgstr "Finalisierung fehlgeschlagen"
 
 msgid ""
 "Find all currently attached filesystems and swap and replace configuration "
@@ -1258,6 +1343,9 @@ msgstr "Firmware wird installiert..."
 msgid "Force"
 msgstr "Start erzwingen"
 
+msgid "Force 40MHz mode"
+msgstr ""
+
 msgid "Force CCMP (AES)"
 msgstr "CCMP (AES) erzwingen"
 
@@ -1310,10 +1398,10 @@ msgstr "Freier Platz"
 
 msgid ""
 "Further information about WireGuard interfaces and peers at <a href=\"http://"
-"wireguard.io\">wireguard.io</a>."
+"wireguard.com\">wireguard.com</a>."
 msgstr ""
 "Weitere Informationen zu WireGuard-Schnittstellen und Peers unter <a href="
-"\"http://wireguard.io\">wireguard.io</a>."
+"\"http://wireguard.com\">wireguard.com</a>."
 
 msgid "GHz"
 msgstr "GHz"
@@ -1323,6 +1411,9 @@ msgstr "Nur GPRS"
 
 msgid "Gateway"
 msgstr "Gateway"
+
+msgid "Gateway address is invalid"
+msgstr "Gateway-Adresse ist ungültig"
 
 msgid "Gateway ports"
 msgstr "Gateway-Ports"
@@ -1386,9 +1477,6 @@ msgstr "Auflegen"
 msgid "Header Error Code Errors (HEC)"
 msgstr "Anzahl Header-Error-Code-Fehler (HEC)"
 
-msgid "Heartbeat"
-msgstr ""
-
 msgid ""
 "Here you can configure the basic aspects of your device like its hostname or "
 "the timezone."
@@ -1401,9 +1489,6 @@ msgid ""
 "authentication."
 msgstr ""
 "Hier können öffentliche SSH-Schlüssel reinkopiert werden (einer pro Zeile)."
-
-msgid "Hermes 802.11b Wireless Controller"
-msgstr "Hermes 802.11b W-LAN Adapter"
 
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "ESSID verstecken"
@@ -1419,6 +1504,9 @@ msgstr "Host Verfallsdatum"
 
 msgid "Host-<abbr title=\"Internet Protocol Address\">IP</abbr> or Network"
 msgstr "Host-<abbr title=\"Internet Protocol Address\">IP</abbr> oder Netzwerk"
+
+msgid "Host-Uniq tag content"
+msgstr "\"Host-Uniq\"-Bezeichner"
 
 msgid "Hostname"
 msgstr "Hostname"
@@ -1441,14 +1529,20 @@ msgstr "IP-Adressen"
 msgid "IP address"
 msgstr "IP-Adresse"
 
+msgid "IP address in invalid"
+msgstr "IP-Adresse ist ungültig"
+
+msgid "IP address is missing"
+msgstr "IP-Adresse fehlt"
+
 msgid "IPv4"
 msgstr "IPv4"
 
 msgid "IPv4 Firewall"
 msgstr "IPv4 Firewall"
 
-msgid "IPv4 WAN Status"
-msgstr "IPv4 WAN Status"
+msgid "IPv4 Upstream"
+msgstr ""
 
 msgid "IPv4 address"
 msgstr "IPv4 Adresse"
@@ -1498,14 +1592,11 @@ msgstr "IPv6 Einstellungen"
 msgid "IPv6 ULA-Prefix"
 msgstr "IPv6 ULA-Präfix"
 
-msgid "IPv6 WAN Status"
-msgstr "IPv6 WAN Status"
+msgid "IPv6 Upstream"
+msgstr ""
 
 msgid "IPv6 address"
 msgstr "IPv6 Adresse"
-
-msgid "IPv6 address delegated to the local tunnel endpoint (optional)"
-msgstr "Zum lokalen Tunnelendpunkt delegierte IPv6-Adresse (optional)"
 
 msgid "IPv6 assignment hint"
 msgstr "IPv6 Zuweisungshinweis"
@@ -1618,6 +1709,9 @@ msgstr "Eingehend:"
 msgid "Info"
 msgstr "Info"
 
+msgid "Initialization failure"
+msgstr "Initialisierung fehlgeschlagen"
+
 msgid "Initscript"
 msgstr "Startscript"
 
@@ -1657,20 +1751,11 @@ msgstr "Schnittstellenübersicht"
 msgid "Interface is reconnecting..."
 msgstr "Schnittstelle verbindet neu..."
 
-msgid "Interface is shutting down..."
-msgstr "Schnittstelle fährt herunter..."
-
 msgid "Interface name"
 msgstr "Schnittstellenname"
 
 msgid "Interface not present or not connected yet."
 msgstr "Schnittstelle existiert nicht oder ist nicht verbunden."
-
-msgid "Interface reconnected"
-msgstr "Schnittstelle neu verbunden"
-
-msgid "Interface shut down"
-msgstr "Schnittstelle heruntergefahren"
 
 msgid "Interfaces"
 msgstr "Schnittstellen"
@@ -1879,6 +1964,9 @@ msgstr "Durchschnittslast"
 msgid "Loading"
 msgstr "Lade"
 
+msgid "Local IP address is invalid"
+msgstr "Lokale IP-Adresse ist ungültig"
+
 msgid "Local IP address to assign"
 msgstr "Lokale IP-Adresse"
 
@@ -1951,6 +2039,9 @@ msgstr "Signalverlustsekunden (LOSS)"
 msgid "Lowest leased address as offset from the network address."
 msgstr "Kleinste vergebene Adresse (Netzwerkadresse + x)"
 
+msgid "MAC"
+msgstr ""
+
 msgid "MAC-Address"
 msgstr "MAC-Adresse"
 
@@ -1965,6 +2056,9 @@ msgstr "MAC-Adressliste"
 
 msgid "MAP / LW4over6"
 msgstr ""
+
+msgid "MAP rule is invalid"
+msgstr "MAP-Regel ist ungültig"
 
 msgid "MB/s"
 msgstr "MB/s"
@@ -2048,6 +2142,9 @@ msgstr "Modell"
 msgid "Modem device"
 msgstr "Modemgerät"
 
+msgid "Modem information query failed"
+msgstr "Modem-Informationsabfrage fehlgeschlagen"
+
 msgid "Modem init timeout"
 msgstr "Wartezeit für Modeminitialisierung"
 
@@ -2121,9 +2218,6 @@ msgstr ""
 msgid "NTP server candidates"
 msgstr "NTP Server Kandidaten"
 
-msgid "NTP sync time-out"
-msgstr "NTP Synchronisierungstimeout"
-
 msgid "Name"
 msgstr "Name"
 
@@ -2148,6 +2242,9 @@ msgstr "Netzwerk-Werkzeuge"
 msgid "Network boot image"
 msgstr "Netzwerk-Boot-Image"
 
+msgid "Network device is not present"
+msgstr "Netzwerkgerät ist nicht vorhanden"
+
 msgid "Network without interfaces."
 msgstr "Netzwerk ohne Schnittstellen."
 
@@ -2169,6 +2266,9 @@ msgstr "Keine Dateien gefunden"
 msgid "No information available"
 msgstr "Keine Informationen verfügbar"
 
+msgid "No matching prefix delegation"
+msgstr "Kein passendes delegiertes Prefix"
+
 msgid "No negative cache"
 msgstr "Kein Negativ-Cache"
 
@@ -2187,6 +2287,9 @@ msgstr "Kein Passwort gesetzt!"
 
 msgid "No rules in this chain"
 msgstr "Keine Regeln in dieser Kette"
+
+msgid "No scan results available yet..."
+msgstr ""
 
 msgid "No zone assigned"
 msgstr "Keine Zone zugewiesen"
@@ -2235,6 +2338,8 @@ msgstr "DNS-Auflösung"
 
 msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
 msgstr ""
+"Anzahl der zwischengespeicherten DNS-Einträge. Maximum sind 10000 Einträge, "
+"\"0\" deaktiviert die Zwischenspeicherung."
 
 msgid "OK"
 msgstr "OK"
@@ -2247,6 +2352,9 @@ msgstr "Chiffriertes Gruppenpasswort"
 
 msgid "Obfuscated Password"
 msgstr "Chiffriertes Passwort"
+
+msgid "Obtain IPv6-Address"
+msgstr "IPv6-Adresse beziehen"
 
 msgid "Off-State Delay"
 msgstr "Verzögerung für Ausschalt-Zustand"
@@ -2299,14 +2407,6 @@ msgstr "Option entfernt"
 msgid "Optional"
 msgstr "Optional"
 
-msgid "Optional, specify to override default server (tic.sixxs.net)"
-msgstr ""
-"Optional, angeben um den Standardserver (tic.sixxs.net) zu überschreiben"
-
-msgid "Optional, use when the SIXXS account has more than one tunnel"
-msgstr ""
-"Optional, angeben wenn das SIXSS Konto mehr als einen Tunnel beinhaltet"
-
 msgid ""
 "Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
 "starting with <code>0x</code>."
@@ -2334,6 +2434,9 @@ msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
 msgstr "Optional. Routen für erlaubte IP-Adressen erzeugen."
+
+msgid "Optional. Description of peer."
+msgstr "Optionale Beschreibung des entfernten VPN-Partners."
 
 msgid ""
 "Optional. Host of peer. Names are resolved prior to bringing up the "
@@ -2421,6 +2524,9 @@ msgstr "PID"
 msgid "PIN"
 msgstr "PIN"
 
+msgid "PIN code rejected"
+msgstr "PIN-Code abgelehnt"
+
 msgid "PMK R1 Push"
 msgstr ""
 
@@ -2449,7 +2555,7 @@ msgid "PSID-bits length"
 msgstr "PSID-Bitlänge"
 
 msgid "PTM/EFM (Packet Transfer Mode)"
-msgstr ""
+msgstr "PTM/EFM (Paket-Transfer-Modus)"
 
 msgid "Package libiwinfo required!"
 msgstr "Benötige das libiwinfo Paket!"
@@ -2482,7 +2588,7 @@ msgid "Password successfully changed!"
 msgstr "Passwort erfolgreich geändert!"
 
 msgid "Password2"
-msgstr ""
+msgstr "Passwort Bestätigung"
 
 msgid "Path to CA-Certificate"
 msgstr "Pfad zum CA-Zertifikat"
@@ -2507,6 +2613,9 @@ msgstr "Spitze:"
 
 msgid "Peer IP address to assign"
 msgstr "Entfernte IP-Adresse"
+
+msgid "Peer address is missing"
+msgstr "Entfernte IP-Adresse fehlt"
 
 msgid "Peers"
 msgstr "Verbindungspartner"
@@ -2578,9 +2687,6 @@ msgstr "Verhindert das Binden an diese Schnittstellen"
 msgid "Prevents client-to-client communication"
 msgstr "Unterbindet Client-Client-Verkehr"
 
-msgid "Prism2/2.5/3 802.11b Wireless Controller"
-msgstr "Prism2/2.5/3 802.11b W-LAN Adapter"
-
 msgid "Private Key"
 msgstr "Privater Schlüssel"
 
@@ -2631,6 +2737,11 @@ msgstr ""
 msgid "Quality"
 msgstr "Qualität"
 
+msgid ""
+"Query all available upstream <abbr title=\"Domain Name System\">DNS</abbr> "
+"servers"
+msgstr ""
+
 msgid "R0 Key Lifetime"
 msgstr "R0-Schlüsselgültigkeit"
 
@@ -2638,7 +2749,7 @@ msgid "R1 Key Holder"
 msgstr "R1-Schlüsselinhaber"
 
 msgid "RFC3947 NAT-T mode"
-msgstr ""
+msgstr "RFC3947 \"NAT-T\"-Modus"
 
 msgid "RTS/CTS Threshold"
 msgstr "RTS/CTS-Schwelle"
@@ -2649,9 +2760,6 @@ msgstr "RX"
 
 msgid "RX Rate"
 msgstr "RX-Rate"
-
-msgid "RaLink 802.11%s Wireless Controller"
-msgstr "RaLink 802.11%s W-LAN Adapter"
 
 msgid "Radius-Accounting-Port"
 msgstr "Radius-Accounting-Port"
@@ -2671,22 +2779,26 @@ msgstr "Radius-Authentication-Secret"
 msgid "Radius-Authentication-Server"
 msgstr "Radius-Authentication-Server"
 
+msgid "Raw hex-encoded bytes. Leave empty unless your ISP require this"
+msgstr ""
+"Hexadezimal-kodierte Zeichensequenz. Nur angeben wenn der Internetanbieter "
+"einen bestimmten Wert erwartet."
+
 msgid ""
 "Read <code>/etc/ethers</code> to configure the <abbr title=\"Dynamic Host "
 "Configuration Protocol\">DHCP</abbr>-Server"
 msgstr "Lese Informationen aus /etc/ethers um den DHCP-Server zu konfigurieren"
 
 msgid ""
-"Really delete this interface? The deletion cannot be undone!\\nYou might "
-"lose access to this device if you are connected via this interface."
+"Really delete this interface? The deletion cannot be undone! You might lose "
+"access to this device if you are connected via this interface"
 msgstr ""
-"Diese Schnittstelle wirklich löschen? Der Schritt kann nicht rückgängig "
-"gemacht werden!\n"
-"Der Zugriff auf das Gerät könnte verlorengehen wenn Sie über diese "
-"Schnittstelle verbunden sind."
+"Diese Schnittstelle wirklich löschen? Das Löschen kann nicht rückgängig "
+"gemacht werden! Der Kontakt zum Gerät könnte verloren gehen wenn die "
+"Verbidung über diese Schnittstelle erfolgt."
 
 msgid ""
-"Really delete this wireless network? The deletion cannot be undone!\\nYou "
+"Really delete this wireless network? The deletion cannot be undone! You "
 "might lose access to this device if you are connected via this network."
 msgstr ""
 "Dieses Drahtlosnetzwerk wirklich löschen? Der Schritt kann nicht rückgängig "
@@ -2696,23 +2808,6 @@ msgstr ""
 
 msgid "Really reset all changes?"
 msgstr "Sollen wirklich alle Änderungen verworfen werden?"
-
-#, fuzzy
-msgid ""
-"Really shut down network?\\nYou might lose access to this device if you are "
-"connected via this interface."
-msgstr ""
-"Das Netzwerk wirklich herunterfahren?\n"
-"Der Zugriff auf das Gerät könnte verlorengehen wenn Sie über diese "
-"Schnittstelle verbunden sind."
-
-msgid ""
-"Really shutdown interface \"%s\" ?\\nYou might lose access to this device if "
-"you are connected via this interface."
-msgstr ""
-"Die Schnitstelle \"%s\" wirklich herunterfahren?\n"
-"Der Zugriff auf das Gerät könnte verlorengehen wenn Sie über diese "
-"Schnittstelle verbunden sind."
 
 msgid "Really switch protocol?"
 msgstr "Protokoll wirklich wechseln?"
@@ -2759,9 +2854,6 @@ msgstr "Empfohlen. IP-Adresse der WireGuard-Schnittstelle."
 msgid "Reconnect this interface"
 msgstr "Diese Schnittstelle neu verbinden"
 
-msgid "Reconnecting interface"
-msgstr "Verbinde Schnittstelle neu"
-
 msgid "References"
 msgstr "Verweise"
 
@@ -2800,9 +2892,6 @@ msgstr "IPv6-Adresse anfordern"
 
 msgid "Request IPv6-prefix of length"
 msgstr "IPv6-Präfix dieser Länge anfordern"
-
-msgid "Require TLS"
-msgstr "TLS erfordern"
 
 msgid "Required"
 msgstr "Benötigt"
@@ -2862,6 +2951,12 @@ msgstr "Neustarten"
 msgid "Restart Firewall"
 msgstr "Firewall neu starten"
 
+msgid "Restart radio interface"
+msgstr "W-LAN-Gerät neu starten"
+
+msgid "Restore"
+msgstr "Wiederherstellen"
+
 msgid "Restore backup"
 msgstr "Sicherung wiederherstellen"
 
@@ -2870,6 +2965,15 @@ msgstr "Passwort zeigen/verstecken"
 
 msgid "Revert"
 msgstr "Verwerfen"
+
+msgid "Revert changes"
+msgstr "Änderungen verwerfen"
+
+msgid "Revert request failed with status <code>%h</code>"
+msgstr "Anforderung zum Verwerfen mit Status <code>%h</code> fehlgeschlagen"
+
+msgid "Reverting configuration…"
+msgstr "Verwerfe Konfigurationsänderungen..."
 
 msgid "Root"
 msgstr "Root"
@@ -2885,9 +2989,6 @@ msgstr "Erlaubte IP-Addressen routen"
 
 msgid "Route type"
 msgstr "Routen-Typ"
-
-msgid "Routed IPv6 prefix for downstream interfaces"
-msgstr "Geroutetes IPv6-Präfix für nachgelagerte Schnittstellen"
 
 msgid "Router Advertisement-Service"
 msgstr "Router-Advertisement-Dienst"
@@ -2912,14 +3013,6 @@ msgid "Run filesystem check"
 msgstr "Dateisystemprüfung durchführen"
 
 msgid "SHA256"
-msgstr ""
-
-msgid ""
-"SIXXS supports TIC only, for static tunnels using IP protocol 41 (RFC4213) "
-"use 6in4 instead"
-msgstr ""
-
-msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
 msgid "SNR"
@@ -2949,11 +3042,11 @@ msgstr "Speichern"
 msgid "Save & Apply"
 msgstr "Speichern & Anwenden"
 
-msgid "Save &#38; Apply"
-msgstr "Speichern &#38; Anwenden"
-
 msgid "Scan"
 msgstr "Scan"
+
+msgid "Scan request failed"
+msgstr ""
 
 msgid "Scheduled Tasks"
 msgstr "Geplante Aufgaben"
@@ -2980,19 +3073,6 @@ msgstr "Clients isolieren"
 msgid "Server Settings"
 msgstr "Servereinstellungen"
 
-msgid "Server password"
-msgstr "Server Passwort"
-
-msgid ""
-"Server password, enter the specific password of the tunnel when the username "
-"contains the tunnel ID"
-msgstr ""
-"Server Passwort bzw. das tunnelspezifische Passwort wenn der Benutzername "
-"eine Tunnel-ID beinhaltet."
-
-msgid "Server username"
-msgstr "Server Benutzername"
-
 msgid "Service Name"
 msgstr "Service-Name"
 
@@ -3014,6 +3094,12 @@ msgstr ""
 msgid "Set up Time Synchronization"
 msgstr "Zeitsynchronisierung einrichten"
 
+msgid "Setting PLMN failed"
+msgstr "Setzen der PLMN fehlgeschlagen"
+
+msgid "Setting operation mode failed"
+msgstr "Setzen des Betriebsmodus fehlgeschlagen"
+
 msgid "Setup DHCP Server"
 msgstr "DHCP Server einrichten"
 
@@ -3023,14 +3109,14 @@ msgstr "schwerwiegende Fehlersekunden (SES)"
 msgid "Short GI"
 msgstr "kurzes Guardintervall"
 
+msgid "Short Preamble"
+msgstr ""
+
 msgid "Show current backup file list"
 msgstr "Zeige aktuelle Liste der gesicherten Dateien"
 
 msgid "Shutdown this interface"
 msgstr "Diese Schnittstelle herunterfahren"
-
-msgid "Shutdown this network"
-msgstr "Dieses Netzwerk herunterfahren"
 
 msgid "Signal"
 msgstr "Signal"
@@ -3048,7 +3134,7 @@ msgid "Size (.ipk)"
 msgstr "Größe (.ipk)"
 
 msgid "Size of DNS query cache"
-msgstr ""
+msgstr "Größe des DNS-Caches"
 
 msgid "Skip"
 msgstr "Überspringen"
@@ -3066,7 +3152,7 @@ msgid "Software"
 msgstr "Paketverwaltung"
 
 msgid "Software VLAN"
-msgstr ""
+msgstr "Software-VLAN"
 
 msgid "Some fields are invalid, cannot save values!"
 msgstr "Einige Felder sind ungültig, kann das Formular nicht speichern!"
@@ -3087,14 +3173,8 @@ msgstr ""
 "geflasht werden. Weitere Informationen sowie gerätespezifische "
 "Installationsanleitungen entnehmen Sie bitte dem Wiki."
 
-msgid "Sort"
-msgstr "Sortieren"
-
 msgid "Source"
 msgstr "Quelle"
-
-msgid "Source routing"
-msgstr "Quell-Routing"
 
 msgid "Specifies the directory the device is attached to"
 msgstr "Nennt das Verzeichnis, an welches das Gerät angebunden ist"
@@ -3141,6 +3221,12 @@ msgstr "Start"
 
 msgid "Start priority"
 msgstr "Startpriorität"
+
+msgid "Starting configuration apply…"
+msgstr "Starte Anwendung der Konfigurationsänderungen..."
+
+msgid "Starting wireless scan..."
+msgstr ""
 
 msgid "Startup"
 msgstr "Systemstart"
@@ -3190,7 +3276,7 @@ msgstr ""
 "Logeinträge für erfolgreiche Operationen dieser Protokolle unterdrücken"
 
 msgid "Swap"
-msgstr ""
+msgstr "Auslagerungsspeicher"
 
 msgid "Swap Entry"
 msgstr "Auslagerungsdatei"
@@ -3211,10 +3297,10 @@ msgstr ""
 "unpassend sein."
 
 msgid "Switch Port Mask"
-msgstr ""
+msgstr "Switch-Port-Maske"
 
 msgid "Switch VLAN"
-msgstr ""
+msgstr "Switch-VLAN"
 
 msgid "Switch protocol"
 msgstr "Wechsle Protokoll"
@@ -3311,10 +3397,31 @@ msgstr ""
 "Erlaubte Buchstaben sind: <code>A-Z</code>, <code>a-z</code>, <code>0-9</"
 "code> and <code>_</code>"
 
+msgid "The backup archive does not appear to be a valid gzip file."
+msgstr "Das Backup-Archiv scheint keine valide GZip-Datei zu sein."
+
 msgid "The configuration file could not be loaded due to the following error:"
 msgstr ""
 "Die Konfigurationsdatei konnte aufgrund der folgenden Fehler nicht geladen "
 "werden:"
+
+msgid ""
+"The device could not be reached within %d seconds after applying the pending "
+"changes, which caused the configuration to be rolled back for safety "
+"reasons. If you believe that the configuration changes are correct "
+"nonetheless, perform an unchecked configuration apply. Alternatively, you "
+"can dismiss this warning and edit changes before attempting to apply again, "
+"or revert all pending changes to keep the currently working configuration "
+"state."
+msgstr ""
+"Das Gerät konnte nach dem Anwenden der ausstehenden Änderungen innerhalb von "
+"%d Sekunden nicht mehr erreicht werden, daher wurde die Änderungen aus "
+"Sicherheitsgründen zurückgerollt. Wenn Sie der Meinung sind, dass die "
+"Änderungen trotzdem korrekt sind, wenden sie die Änderungen ungeprüft an. "
+"Alternativ können Sie diese Meldung schließen und die Konfiguration weiter "
+"bearbeiten bevor Sie das Anwenden neu versuchen oder alle austehenden "
+"Änderungen verwerfen um den aktuell funktionierenden Konfigurationsstand "
+"beizubehalten."
 
 msgid ""
 "The device file of the memory or partition (<abbr title=\"for example\">e.g."
@@ -3336,9 +3443,6 @@ msgstr ""
 "Dateigröße gelistet. Vergleichen Sie diese mit der Originaldatei um die "
 "Integrität sicherzustellen.<br /> Klicken Sie \"Fortfahren\" um die Flash-"
 "Prozedur zu starten."
-
-msgid "The following changes have been committed"
-msgstr "Die folgenden Änderungen wurden angewendet"
 
 msgid "The following changes have been reverted"
 msgstr "Die folgenden Änderungen wurden verworfen"
@@ -3414,13 +3518,6 @@ msgstr ""
 "Adresse beziehen müssen um auf das Gerät zugreifen zu können."
 
 msgid ""
-"The tunnel end-point is behind NAT, defaults to disabled and only applies to "
-"AYIYA"
-msgstr ""
-"Der lokale Tunnel-Endpunkt ist hinter einem NAT. Standard ist deaktiviert, "
-"nur auf AYIYA anwendbar."
-
-msgid ""
 "The uploaded image file does not contain a supported format. Make sure that "
 "you choose the generic image format for your platform."
 msgstr ""
@@ -3430,8 +3527,8 @@ msgstr ""
 msgid "There are no active leases."
 msgstr "Es gibt z.Z. keine aktiven Leases."
 
-msgid "There are no pending changes to apply!"
-msgstr "Es gibt keine ausstehenen Änderungen anzuwenden!"
+msgid "There are no changes to apply."
+msgstr "Es gibt keine ausstehenden Änderungen anzuwenden."
 
 msgid "There are no pending changes to revert!"
 msgstr "Es gibt keine ausstehenen Änderungen zurückzusetzen!"
@@ -3486,7 +3583,7 @@ msgid ""
 "This is the content of /etc/rc.local. Insert your own commands here (in "
 "front of 'exit 0') to execute them at the end of the boot process."
 msgstr ""
-"Dies ist der Inhalt von /etc.rc.local. Hier kann man eigene Befehle einfügen "
+"Dies ist der Inhalt von /etc/rc.local. Hier kann man eigene Befehle einfügen "
 "(vor 'exit 0'), die dann am Ende des Bootvorgangs ausgeführt werden."
 
 msgid ""
@@ -3544,10 +3641,13 @@ msgstr "Zeitzone"
 
 msgid ""
 "To restore configuration files, you can upload a previously generated backup "
-"archive here."
+"archive here. To reset the firmware to its initial state, click \"Perform "
+"reset\" (only possible with squashfs images)."
 msgstr ""
 "Zum Wiederherstellen der Konfiguration kann hier ein bereits vorhandenes "
-"Backup-Archiv hochgeladen werden."
+"Backup-Archiv hochgeladen werden. \"Konfiguration zurücksetzen\" stellt den "
+"Auslieferungszustand des Systems wieder her (nur möglich bei squashfs-"
+"Images)."
 
 msgid "Tone"
 msgstr "Ton"
@@ -3592,15 +3692,6 @@ msgstr "Tunnelschnittstelle"
 msgid "Tunnel Link"
 msgstr "Basisschnittstelle"
 
-msgid "Tunnel broker protocol"
-msgstr "Tunnel-Boker-Protokoll"
-
-msgid "Tunnel setup server"
-msgstr "Tunnel-Setup-Server"
-
-msgid "Tunnel type"
-msgstr "Tunneltyp"
-
 msgid "Tx-Power"
 msgstr "Sendestärke"
 
@@ -3625,8 +3716,26 @@ msgstr "USB Anschlüsse"
 msgid "UUID"
 msgstr "UUID"
 
+msgid "Unable to determine device name"
+msgstr "Gerätename konnte nicht bestimmt werden"
+
+msgid "Unable to determine external IP address"
+msgstr "Externe IP-Adresse konnte nicht bestimmt werden"
+
+msgid "Unable to determine upstream interface"
+msgstr "Externe Netzwerkschnittstelle konnte nicht bestimmt werden"
+
 msgid "Unable to dispatch"
 msgstr "Kann Anfrage nicht zustellen"
+
+msgid "Unable to obtain client ID"
+msgstr "Client-ID konnte nicht bezogen werden"
+
+msgid "Unable to resolve AFTR host name"
+msgstr "Der AFTR-Hostname konnte nicht aufgelöst werden"
+
+msgid "Unable to resolve peer host name"
+msgstr "Der Name des entfernten Hosts konnte nicht aufgelöst werden"
 
 msgid "Unavailable Seconds (UAS)"
 msgstr "Nicht verfügbare Sekunden (UAS)"
@@ -3637,6 +3746,9 @@ msgstr "Unbekannt"
 msgid "Unknown Error, password not changed!"
 msgstr "Unbekannter Fehler, Passwort nicht geändert!"
 
+msgid "Unknown error (%s)"
+msgstr "Protokollfehler: %s"
+
 msgid "Unmanaged"
 msgstr "Ignoriert"
 
@@ -3646,8 +3758,17 @@ msgstr "Aushängen"
 msgid "Unsaved Changes"
 msgstr "Ungespeicherte Änderungen"
 
+msgid "Unsupported MAP type"
+msgstr "Nicht unterstützter MAP-Typ"
+
+msgid "Unsupported modem"
+msgstr "Nicht unterstütztes Modem"
+
 msgid "Unsupported protocol type."
 msgstr "Nicht unterstützter Protokolltyp."
+
+msgid "Up"
+msgstr "Hoch"
 
 msgid "Update lists"
 msgstr "Listen aktualisieren"
@@ -3714,7 +3835,7 @@ msgstr "Benutze Routing-Tabelle"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"em> identifies the host, the <em>IPv4-Address</em> specifies the fixed "
 "address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
 "the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
@@ -3774,7 +3895,7 @@ msgid "VPN Server's certificate SHA1 hash"
 msgstr "SHA1-Hash des VPN-Server-Zertifikates"
 
 msgid "VPNC (CISCO 3000 (and others) VPN)"
-msgstr ""
+msgstr "VPNC (VPN für CISCO 3000 und Ähnliche)"
 
 msgid "Vendor"
 msgstr "Hersteller"
@@ -3782,17 +3903,14 @@ msgstr "Hersteller"
 msgid "Vendor Class to send when requesting DHCP"
 msgstr "Bei DHCP-Anfragen gesendete Vendor-Klasse"
 
-msgid "Verbose"
-msgstr "Umfangreiche Ausgaben"
-
-msgid "Verbose logging by aiccu daemon"
-msgstr "Aktiviert erweiterte Protokollierung durch den AICCU-Prozess"
-
 msgid "Verify"
 msgstr "Verifizieren"
 
 msgid "Version"
 msgstr "Version"
+
+msgid "Virtual dynamic interface"
+msgstr "Virtuelle dynamisches Schnittstelle"
 
 msgid "WDS"
 msgstr "WDS"
@@ -3819,17 +3937,14 @@ msgstr ""
 "WPA-Verschlüsselung benötigt wpa_supplicant (für Client-Modus) oder hostapd "
 "(für AP oder Ad-Hoc Modus)."
 
-msgid ""
-"Wait for NTP sync that many seconds, seting to 0 disables waiting (optional)"
-msgstr ""
-"Warte die angegebene Anzahl an Sekunden auf NTP-Synchronisierung, der Wert 0 "
-"deaktiviert das Warten (optional)"
-
 msgid "Waiting for changes to be applied..."
 msgstr "Änderungen werden angewandt..."
 
 msgid "Waiting for command to complete..."
 msgstr "Der Befehl wird ausgeführt..."
+
+msgid "Waiting for configuration to get applied… %ds"
+msgstr "Warte auf das Anwenden der Konfigurationsänderungen... %d Sekunden"
 
 msgid "Waiting for device..."
 msgstr "Warte auf Gerät..."
@@ -3848,13 +3963,6 @@ msgid ""
 msgstr ""
 "Wenn PSK in Verwendung ist, können PMK-Schlüssel lokal ohne Inter-Access-"
 "Point-Kommunikation erzeugt werden."
-
-msgid "Whether to create an IPv6 default route over the tunnel"
-msgstr ""
-"Gibt an, ob eine IPv6-Default-Route durch den Tunnel etabliert werden soll"
-
-msgid "Whether to route only packets from delegated prefixes"
-msgstr "Gibt an, ob nur Pakete von delegierten Präfixen geroutet werden sollen"
 
 msgid "Width"
 msgstr "Breite"
@@ -3877,8 +3985,11 @@ msgstr "Drahtlosübersicht"
 msgid "Wireless Security"
 msgstr "WLAN-Verschlüsselung"
 
-msgid "Wireless is disabled or not associated"
-msgstr "WLAN ist deaktiviert oder nicht assoziiert"
+msgid "Wireless is disabled"
+msgstr "W-LAN ist deaktiviert"
+
+msgid "Wireless is not associated"
+msgstr "W-LAN ist nicht assoziiert"
 
 msgid "Wireless is restarting..."
 msgstr "WLAN startet neu..."
@@ -3888,12 +3999,6 @@ msgstr "Das WLAN-Netzwerk ist deaktiviert"
 
 msgid "Wireless network is enabled"
 msgstr "Das WLAN-Netzwerk ist aktiviert"
-
-msgid "Wireless restarted"
-msgstr "WLAN neu gestartet"
-
-msgid "Wireless shut down"
-msgstr "WLAN heruntergefahren"
 
 msgid "Write received DNS requests to syslog"
 msgstr "Empfangene DNS-Anfragen in das Systemprotokoll schreiben"
@@ -3935,6 +4040,9 @@ msgstr "baseT"
 msgid "bridged"
 msgstr "bridged"
 
+msgid "create"
+msgstr "erzeugen"
+
 msgid "create:"
 msgstr "erstelle:"
 
@@ -3970,9 +4078,6 @@ msgstr "Voll-Duplex"
 msgid "half-duplex"
 msgstr "Halb-Duplex"
 
-msgid "help"
-msgstr "Hilfe"
-
 msgid "hidden"
 msgstr "versteckt"
 
@@ -3997,11 +4102,11 @@ msgstr "kbit/s"
 msgid "local <abbr title=\"Domain Name System\">DNS</abbr> file"
 msgstr "Lokale DNS-Datei"
 
-msgid "minimum 1280, maximum 1480"
-msgstr "Minimum 1280, Maximum 1480"
-
 msgid "minutes"
 msgstr "Minuten"
+
+msgid "mixed WPA/WPA2"
+msgstr ""
 
 msgid "no"
 msgstr "nein"
@@ -4024,11 +4129,14 @@ msgstr "ein"
 msgid "open"
 msgstr "offen"
 
+msgid "output"
+msgstr "ausgehend"
+
 msgid "overlay"
 msgstr "Overlay"
 
 msgid "random"
-msgstr ""
+msgstr "zufällig"
 
 msgid "relay mode"
 msgstr "Relay-Modus"
@@ -4075,107 +4183,92 @@ msgstr "ja"
 msgid "« Back"
 msgstr "« Zurück"
 
-#~ msgid "Action"
-#~ msgstr "Aktion"
+#~ msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
+#~ msgstr "<abbr title='Paarweise: %s / Gruppe: %s'>%s - %s</abbr>"
 
-#~ msgid "Buttons"
-#~ msgstr "Knöpfe"
+#~ msgid "Activate this network"
+#~ msgstr "Dieses Netzwerk aktivieren"
 
-#~ msgid "Handler"
-#~ msgstr "Handler"
+#~ msgid "Hermes 802.11b Wireless Controller"
+#~ msgstr "Hermes 802.11b W-LAN Adapter"
 
-#~ msgid "Maximum hold time"
-#~ msgstr "Maximalzeit zum Halten der Verbindung"
+#~ msgid "Interface is shutting down..."
+#~ msgstr "Schnittstelle fährt herunter..."
 
-#~ msgid "Minimum hold time"
-#~ msgstr "Minimalzeit zum Halten der Verbindung"
+#~ msgid "Interface reconnected"
+#~ msgstr "Schnittstelle neu verbunden"
 
-#~ msgid "Path to executable which handles the button event"
-#~ msgstr "Ausführbare Datei welche das Schalter-Ereignis verarbeitet"
+#~ msgid "Interface shut down"
+#~ msgstr "Schnittstelle heruntergefahren"
 
-#~ msgid "Specifies the button state to handle"
-#~ msgstr "Gibt den zu behandelnden Tastenstatus an"
+#~ msgid "Prism2/2.5/3 802.11b Wireless Controller"
+#~ msgstr "Prism2/2.5/3 802.11b W-LAN Adapter"
 
-#~ msgid "This page allows the configuration of custom button actions"
+#~ msgid "RaLink 802.11%s Wireless Controller"
+#~ msgstr "RaLink 802.11%s W-LAN Adapter"
+
+#~ msgid ""
+#~ "Really shut down network? You might lose access to this device if you are "
+#~ "connected via this interface"
 #~ msgstr ""
-#~ "Diese Seite ermöglicht die Konfiguration benutzerdefinierter "
-#~ "Tastenaktionen"
+#~ "Dieses Netzwerk wirklich herunterfahren? Der Kontakt zum Gerät könnte "
+#~ "verloren gehen wenn die Verbindung über dieses Netzwerk erfolgt."
 
-#~ msgid "Leasetime"
-#~ msgstr "Laufzeit"
-
-#~ msgid "Optional."
-#~ msgstr "Optional"
-
-#~ msgid "AuthGroup"
-#~ msgstr "Berechtigungsgruppe"
-
-#~ msgid "automatic"
-#~ msgstr "automatisch"
-
-#~ msgid "AR Support"
-#~ msgstr "AR-Unterstützung"
-
-#~ msgid "Atheros 802.11%s Wireless Controller"
-#~ msgstr "Atheros 802.11%s W-LAN Adapter"
-
-#~ msgid "Background Scan"
-#~ msgstr "Hintergrundscan"
-
-#~ msgid "Compression"
-#~ msgstr "Kompression"
-
-#~ msgid "Disable HW-Beacon timer"
-#~ msgstr "Deaktiviere Hardware-Beacon Zeitgeber"
-
-#~ msgid "Do not send probe responses"
-#~ msgstr "Scan-Anforderungen nicht beantworten"
-
-#~ msgid "Fast Frames"
-#~ msgstr "Schnelle Frames"
-
-#~ msgid "Maximum Rate"
-#~ msgstr "Höchstübertragungsrate"
-
-#~ msgid "Minimum Rate"
-#~ msgstr "Mindestübertragungsrate"
-
-#~ msgid "Multicast Rate"
-#~ msgstr "Multicastrate"
-
-#~ msgid "Outdoor Channels"
-#~ msgstr "Funkkanal für den Ausseneinsatz"
-
-#~ msgid "Regulatory Domain"
-#~ msgstr "Geltungsbereich (Regulatory Domain)"
-
-#~ msgid "Separate WDS"
-#~ msgstr "Separates WDS"
-
-#~ msgid "Static WDS"
-#~ msgstr "Statisches WDS"
-
-#~ msgid "Turbo Mode"
-#~ msgstr "Turbo Modus"
-
-#~ msgid "XR Support"
-#~ msgstr "XR-Unterstützung"
-
-#~ msgid "An additional network will be created if you leave this unchecked."
+#~ msgid ""
+#~ "Really shutdown interface \"%s\"? You might lose access to this device if "
+#~ "you are connected via this interface."
 #~ msgstr ""
-#~ "Erzeugt ein zusätzliches Netzwerk wenn diese Option nicht ausgewählt ist"
+#~ "Die Schnitstelle \"%s\" wirklich herunterfahren?\n"
+#~ "Der Zugriff auf das Gerät könnte verlorengehen wenn Sie über diese "
+#~ "Schnittstelle verbunden sind."
 
-#~ msgid "Join Network: Settings"
-#~ msgstr "Netzwerk beitreten: Einstellungen"
+#~ msgid "Reconnecting interface"
+#~ msgstr "Verbinde Schnittstelle neu"
 
-#~ msgid "CPU"
-#~ msgstr "Prozessor"
+#~ msgid "Shutdown this network"
+#~ msgstr "Dieses Netzwerk herunterfahren"
 
-#~ msgid "Port %d"
-#~ msgstr "Port %d"
+#~ msgid "Wireless is disabled or not associated"
+#~ msgstr "WLAN ist deaktiviert oder nicht assoziiert"
 
-#~ msgid "Port %d is untagged in multiple VLANs!"
-#~ msgstr "Port %d ist untagged in mehreren VLANs!"
+#~ msgid "Wireless restarted"
+#~ msgstr "WLAN neu gestartet"
 
-#~ msgid "VLAN Interface"
-#~ msgstr "VLAN Schnittstelle"
+#~ msgid "Wireless shut down"
+#~ msgstr "WLAN heruntergefahren"
+
+#~ msgid "DHCP Leases"
+#~ msgstr "DHCP-Leases"
+
+#~ msgid "DHCPv6 Leases"
+#~ msgstr "DHCPv6-Leases"
+
+#~ msgid ""
+#~ "Really delete this interface? The deletion cannot be undone! You might "
+#~ "lose access to this device if you are connected via this interface."
+#~ msgstr ""
+#~ "Diese Schnittstelle wirklich löschen? Der Schritt kann nicht rückgängig "
+#~ "gemacht werden!\n"
+#~ "Der Zugriff auf das Gerät könnte verlorengehen wenn Sie über diese "
+#~ "Schnittstelle verbunden sind."
+
+#, fuzzy
+#~ msgid ""
+#~ "Really shut down network? You might lose access to this device if you are "
+#~ "connected via this interface."
+#~ msgstr ""
+#~ "Das Netzwerk wirklich herunterfahren?\n"
+#~ "Der Zugriff auf das Gerät könnte verlorengehen wenn Sie über diese "
+#~ "Schnittstelle verbunden sind."
+
+#~ msgid "Sort"
+#~ msgstr "Sortieren"
+
+#~ msgid "help"
+#~ msgstr "Hilfe"
+
+#~ msgid "IPv4 WAN Status"
+#~ msgstr "IPv4 WAN Status"
+
+#~ msgid "IPv6 WAN Status"
+#~ msgstr "IPv6 WAN Status"

@@ -9,23 +9,14 @@ local dump     = util.ubus("network.interface", "dump", {})
 local json     = require("luci.jsonc")
 local adbinput = uci:get("adblock", "global", "adb_rtfile") or "/tmp/adb_runtime.json"
 
-if not uci:get("adblock", "extra") then
-	m = SimpleForm("", nil, translate("Please update your adblock config file to use this package.<br />")
-	.. translatef("During opkg package installation use the '--force-maintainer' option to overwrite the pre-existing config file or download a fresh default config from "
-	.. "<a href=\"%s\" target=\"_blank\">"
-	.. "here</a>", "https://raw.githubusercontent.com/openwrt/packages/master/net/adblock/files/adblock.conf"))
-	m.submit = false
-	m.reset = false
-	return m
-end
-
 m = Map("adblock", translate("Adblock"),
 	translate("Configuration of the adblock package to block ad/abuse domains by using DNS. ")
 	.. translatef("For further information "
 	.. "<a href=\"%s\" target=\"_blank\">"
 	.. "check the online documentation</a>", "https://github.com/openwrt/packages/blob/master/net/adblock/files/README.md"))
+m.apply_on_parse = true
 
-function m.on_after_commit(self)
+function m.on_apply(self)
 	luci.sys.call("/etc/init.d/adblock reload >/dev/null 2>&1")
 	luci.http.redirect(luci.dispatcher.build_url("admin", "services", "adblock"))
 end
@@ -174,9 +165,7 @@ end
 -- Blocklist table
 
 bl = m:section(TypedSection, "source", translate("Blocklist Sources"),
-	translate("Available blocklist sources. ")
-	.. translate("List URLs and Shallalist category selections are configurable in the 'Advanced' section.<br />")
-	.. translate("Caution: To prevent OOM exceptions on low memory devices with less than 64 MB free RAM, please do not select more than five blocklist sources!"))
+	translate("<b>Caution:</b> To prevent OOM exceptions on low memory devices with less than 64 MB free RAM, please only select a few of them!"))
 bl.template = "adblock/blocklist"
 
 name = bl:option(Flag, "enabled", translate("Enabled"))
@@ -191,7 +180,12 @@ function ssl.cfgvalue(self, section)
 		return translate("No")
 	end
 end
+
 des = bl:option(DummyValue, "adb_src_desc", translate("Description"))
+
+cat = bl:option(DynamicList, "adb_src_cat", translate("Archive Categories"))
+cat.datatype = "uciname"
+cat.optional = true
 
 -- Extra options
 

@@ -134,6 +134,10 @@ o = s:taboption("advanced", Value, "cachesize",
 o.datatype = uinteger
 o.placeholder = "150"
 
+s:taboption("advanced", Flag, "allservers",
+	translate("All Servers"),
+	translate("Query all available upstream <abbr title=\"Domain Name System\">DNS</abbr> servers")).optional = true
+
 bn = s:taboption("advanced", DynamicList, "bogusnxdomain", translate("Bogus NX Domain Override"),
 	translate("List of hosts that supply bogus NX domain results"))
 
@@ -280,7 +284,7 @@ s = m:section(TypedSection, "host", translate("Static Leases"),
 		"DHCP clients. They are also required for non-dynamic interface configurations where " ..
 		"only hosts with a corresponding lease are served.") .. "<br />" ..
 	translate("Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</em> " ..
-		"indentifies the host, the <em>IPv4-Address</em> specifies the fixed address to " ..
+		"identifies the host, the <em>IPv4-Address</em> specifies the fixed address to " ..
 		"use, and the <em>Hostname</em> is assigned as a symbolic name to the requesting host. " ..
 		"The optional <em>Lease time</em> can be used to set non-standard host-specific " ..
 		"lease time, e.g. 12h, 3d or infinite."))
@@ -306,6 +310,11 @@ end
 mac = s:option(Value, "mac", translate("<abbr title=\"Media Access Control\">MAC</abbr>-Address"))
 mac.datatype = "list(macaddr)"
 mac.rmempty  = true
+
+function mac.cfgvalue(self, section)
+	local val = Value.cfgvalue(self, section)
+	return ipc.checkmac(val) or val
+end
 
 ip = s:option(Value, "ip", translate("<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Address"))
 ip.datatype = "or(ip4addr,'ignore')"

@@ -28,6 +28,9 @@ msgstr "Redirecturi active UPnP"
 msgid "Advanced Settings"
 msgstr "Setari avansate"
 
+msgid "Advertise as IGDv1 device instead of IGDv2"
+msgstr ""
+
 msgid "Allow adding forwards only to requesting ip addresses"
 msgstr "Permite adaugarea forward-urilor doar catre adresele ip solicitante"
 
@@ -67,6 +70,9 @@ msgstr "UUID al dispozitivului"
 msgid "Downlink"
 msgstr "Downlink"
 
+msgid "Enable IGDv1 mode"
+msgstr ""
+
 msgid "Enable NAT-PMP functionality"
 msgstr "Activeaza functionalitatea NAT-PMP"
 
@@ -87,6 +93,9 @@ msgstr "Porturi externe"
 
 msgid "General Settings"
 msgstr "Setari generale"
+
+msgid "Host"
+msgstr ""
 
 msgid "Internal addresses"
 msgstr "Adrese interne"
@@ -138,6 +147,9 @@ msgstr "Fisierul de conexiuni UPnP"
 
 msgid "Universal Plug & Play"
 msgstr "Universal Plug & Play"
+
+msgid "Unknown"
+msgstr ""
 
 msgid "Uplink"
 msgstr "Uplink"

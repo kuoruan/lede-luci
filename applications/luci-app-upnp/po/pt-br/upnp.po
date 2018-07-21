@@ -29,6 +29,9 @@ msgstr "Redirecionamentos UPnP Ativos"
 msgid "Advanced Settings"
 msgstr "Configurações Avançadas"
 
+msgid "Advertise as IGDv1 device instead of IGDv2"
+msgstr ""
+
 msgid "Allow adding forwards only to requesting ip addresses"
 msgstr ""
 "Permite adicionar encaminhamento apenas para o endereço IP requisitante"
@@ -69,6 +72,9 @@ msgstr "UUID do Dispositivo"
 msgid "Downlink"
 msgstr "Velocidade de recebimento do enlace (downlink)"
 
+msgid "Enable IGDv1 mode"
+msgstr ""
+
 msgid "Enable NAT-PMP functionality"
 msgstr "Habilite a função NAT-PMP"
 
@@ -89,6 +95,9 @@ msgstr "Portas Externas"
 
 msgid "General Settings"
 msgstr "Configurações Gerais"
+
+msgid "Host"
+msgstr ""
 
 msgid "Internal addresses"
 msgstr "Endereços internos"
@@ -141,6 +150,9 @@ msgstr "Arquivo de concessão do UPnP"
 
 msgid "Universal Plug & Play"
 msgstr "Plug & Play Universal"
+
+msgid "Unknown"
+msgstr ""
 
 msgid "Uplink"
 msgstr "Velocidade de envio do enlace (uplink)"

@@ -17,6 +17,11 @@ msgstr ""
 msgid "-------"
 msgstr ""
 
+msgid ""
+"<b>Caution:</b> To prevent OOM exceptions on low memory devices with less "
+"than 64 MB free RAM, please only select a few of them!"
+msgstr ""
+
 msgid "Adblock"
 msgstr "Adblock"
 
@@ -35,8 +40,8 @@ msgstr "Tempo addizionale in secondi di attesa prima che adblock si avvii."
 msgid "Advanced"
 msgstr "Avanzato"
 
-msgid "Available blocklist sources."
-msgstr "Fonti lista di blocco disponibili."
+msgid "Archive Categories"
+msgstr ""
 
 msgid "Backup Directory"
 msgstr "Directory del Backup"
@@ -47,14 +52,12 @@ msgstr ""
 msgid "Blocklist Sources"
 msgstr "Fonti lista di Blocco"
 
-msgid ""
-"Builds an additional 'Jail' list (/tmp/adb_list.jail) to block access to all "
-"domains except those listed in the whitelist file.<br />"
+msgid "Blocklist not found!"
 msgstr ""
 
 msgid ""
-"Caution: To prevent OOM exceptions on low memory devices with less than 64 "
-"MB free RAM, please do not select more than five blocklist sources!"
+"Builds an additional 'Jail' list (/tmp/adb_list.jail) to block access to all "
+"domains except those listed in the whitelist file.<br />"
 msgstr ""
 
 msgid ""
@@ -98,12 +101,6 @@ msgid "Download Utility"
 msgstr ""
 
 msgid "Download Utility (SSL Library)"
-msgstr ""
-
-msgid ""
-"During opkg package installation use the '--force-maintainer' option to "
-"overwrite the pre-existing config file or download a fresh default config "
-"from <a href=\"%s\" target=\"_blank\">here</a>"
 msgstr ""
 
 msgid "Edit Blacklist"
@@ -175,18 +172,8 @@ msgstr ""
 msgid "Input file not found, please check your configuration."
 msgstr "File di input non trovato, per favore controlla la tua configurazione."
 
-msgid "Invalid domain specified!"
-msgstr "Dominio invalido specificato!"
-
 msgid "Last Run"
 msgstr "Ultimo Avvio"
-
-msgid ""
-"List URLs and Shallalist category selections are configurable in the "
-"'Advanced' section.<br />"
-msgstr ""
-"Le selezioni degli URL delle liste e categorie Shallalist sono configurabili "
-"nella sezione 'Avanzato'.<br />"
 
 msgid ""
 "List of available network interfaces. Usually the startup will be triggered "
@@ -207,6 +194,9 @@ msgid "Loading"
 msgstr "Caricando"
 
 msgid "Max. Download Queue"
+msgstr ""
+
+msgid "Name"
 msgstr ""
 
 msgid "No"
@@ -237,9 +227,6 @@ msgstr ""
 
 msgid ""
 "Please note: this needs additional 'msmtp' package installation and setup."
-msgstr ""
-
-msgid "Please update your adblock config file to use this package.<br />"
 msgstr ""
 
 msgid "Query"
@@ -296,10 +283,8 @@ msgstr ""
 msgid "Target directory for the generated blocklist 'adb_list.overall'."
 msgstr "Directory per la lista di blocco generata 'adb_list.overall'."
 
-msgid "The file size is too large for online editing in LuCI (&gt; 512 KB)."
+msgid "The file size is too large for online editing in LuCI (&ge; 100 KB)."
 msgstr ""
-"La grandezza del file è troppo grande per modificarla online in LuCI (&gt; "
-"512 KB)."
 
 msgid ""
 "This form allows you to modify the content of the adblock blacklist (%s)."
@@ -335,9 +320,6 @@ msgid ""
 msgstr ""
 "Questo form mostra l'output del registro, prefiltrato per messaggi relativi "
 "solo ad adblock."
-
-msgid "This section contains no values yet"
-msgstr ""
 
 msgid ""
 "To overwrite the default path use the 'DNS Directory' option in the extra "
@@ -391,6 +373,24 @@ msgstr "in pausa"
 
 msgid "running"
 msgstr ""
+
+#~ msgid "Invalid domain specified!"
+#~ msgstr "Dominio invalido specificato!"
+
+#~ msgid "Available blocklist sources."
+#~ msgstr "Fonti lista di blocco disponibili."
+
+#~ msgid ""
+#~ "List URLs and Shallalist category selections are configurable in the "
+#~ "'Advanced' section.<br />"
+#~ msgstr ""
+#~ "Le selezioni degli URL delle liste e categorie Shallalist sono "
+#~ "configurabili nella sezione 'Avanzato'.<br />"
+
+#~ msgid "The file size is too large for online editing in LuCI (&gt; 512 KB)."
+#~ msgstr ""
+#~ "La grandezza del file è troppo grande per modificarla online in LuCI "
+#~ "(&gt; 512 KB)."
 
 #~ msgid ""
 #~ "For SSL protected blocklist sources you need a suitable SSL library, e.g. "

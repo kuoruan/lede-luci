@@ -41,6 +41,9 @@ msgstr ""
 msgid "Accept input"
 msgstr ""
 
+msgid "Accept output"
+msgstr ""
+
 msgid "Action"
 msgstr "Handling"
 
@@ -98,6 +101,9 @@ msgstr ""
 msgid "Discard input"
 msgstr ""
 
+msgid "Discard output"
+msgstr ""
+
 msgid "Do not rewrite"
 msgstr "Ikke omskriv"
 
@@ -105,6 +111,9 @@ msgid "Do not track forward"
 msgstr ""
 
 msgid "Do not track input"
+msgstr ""
+
+msgid "Do not track output"
 msgstr ""
 
 msgid "Drop invalid packets"
@@ -121,6 +130,9 @@ msgstr "Aktiver SYN-flood beskyttelse"
 
 msgid "Enable logging on this zone"
 msgstr "Aktiver logging av denne sonen"
+
+msgid "Experimental feature. Not fully compatible with QoS/SQM."
+msgstr ""
 
 msgid "External IP address"
 msgstr "Ekstern IP adressse"
@@ -171,8 +183,20 @@ msgstr "Fra %s i %s med kilde %s"
 msgid "From %s in %s with source %s and %s"
 msgstr "Fra %s i %s med kilde %s og %s"
 
+msgid "From %s on <var>this device</var>"
+msgstr ""
+
+msgid "From %s on <var>this device</var> with source %s"
+msgstr ""
+
+msgid "From %s on <var>this device</var> with source %s and %s"
+msgstr ""
+
 msgid "General Settings"
 msgstr "Generelle Innstillinger"
+
+msgid "Hardware flow offloading"
+msgstr ""
 
 msgid "IP"
 msgstr ""
@@ -302,6 +326,9 @@ msgstr "Andre..."
 msgid "Output"
 msgstr "Utdata"
 
+msgid "Output zone"
+msgstr ""
+
 msgid "Passes additional arguments to iptables. Use with care!"
 msgstr "Sender flere argumenter til iptables. Bruk med forsiktighet!"
 
@@ -333,6 +360,12 @@ msgstr ""
 msgid "Refuse input"
 msgstr ""
 
+msgid "Refuse output"
+msgstr ""
+
+msgid "Requires hardware NAT support. Implemented at least for mt7621"
+msgstr ""
+
 msgid "Restart Firewall"
 msgstr ""
 
@@ -361,6 +394,9 @@ msgstr "Omskriv til kilde %s"
 msgid "Rewrite to source %s, %s"
 msgstr "Omskriv til kilde %s, %s"
 
+msgid "Routing/NAT Offloading"
+msgstr ""
+
 msgid "Rule is disabled"
 msgstr ""
 
@@ -374,6 +410,12 @@ msgid "SNAT port"
 msgstr "SNAT port"
 
 msgid "Saturday"
+msgstr ""
+
+msgid "Software based offloading for routing/NAT"
+msgstr ""
+
+msgid "Software flow offloading"
 msgstr ""
 
 msgid "Source IP address"
@@ -507,6 +549,15 @@ msgstr ""
 "porter på ruteren."
 
 msgid "Tuesday"
+msgstr ""
+
+msgid "Unnamed SNAT"
+msgstr ""
+
+msgid "Unnamed forward"
+msgstr ""
+
+msgid "Unnamed rule"
 msgstr ""
 
 msgid "Via %s"

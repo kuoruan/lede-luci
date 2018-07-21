@@ -272,6 +272,11 @@ if not net:is_virtual() then
 		translate("Enables the Spanning Tree Protocol on this bridge"))
 	stp:depends("type", "bridge")
 	stp.rmempty = true
+
+	igmp = s:taboption("physical", Flag, "igmp_snooping", translate("Enable <abbr title=\"Internet Group Management Protocol\">IGMP</abbr> snooping"),
+		translate("Enables IGMP snooping on this bridge"))
+	igmp:depends("type", "bridge")
+	igmp.rmempty = true
 end
 
 
@@ -280,6 +285,7 @@ if not net:is_floating() then
 	ifname_single.template = "cbi/network_ifacelist"
 	ifname_single.widget = "radio"
 	ifname_single.nobridges = true
+	ifname_single.noaliases = false
 	ifname_single.rmempty = false
 	ifname_single.network = arg[1]
 	ifname_single:depends("type", "")
@@ -290,12 +296,18 @@ if not net:is_floating() then
 	end
 
 	function ifname_single.write(self, s, val)
-		local i
+		local _, i
 		local new_ifs = { }
 		local old_ifs = { }
 
-		for _, i in ipairs(net:get_interfaces() or { net:get_interface() }) do
-			old_ifs[#old_ifs+1] = i:name()
+		local alias = net:is_alias()
+
+		if alias then
+			old_ifs[1] = '@' .. alias
+		else
+			for _, i in ipairs(net:get_interfaces() or { net:get_interface() }) do
+				old_ifs[#old_ifs+1] = i:name()
+			end
 		end
 
 		for i in ut.imatch(val) do
@@ -330,6 +342,7 @@ if not net:is_virtual() then
 	ifname_multi = s:taboption("physical", Value, "ifname_multi", translate("Interface"))
 	ifname_multi.template = "cbi/network_ifacelist"
 	ifname_multi.nobridges = true
+	ifname_multi.noaliases = true
 	ifname_multi.rmempty = false
 	ifname_multi.network = arg[1]
 	ifname_multi.widget = "checkbox"
@@ -346,7 +359,6 @@ if has_firewall then
 
 	fwzone.template = "cbi/firewall_zonelist"
 	fwzone.network = arg[1]
-	fwzone.rmempty = false
 
 	function fwzone.cfgvalue(self, section)
 		self.iface = section
@@ -355,21 +367,15 @@ if has_firewall then
 	end
 
 	function fwzone.write(self, section, value)
-		local zone = fw:get_zone(value)
-
-		if not zone and value == '-' then
-			value = m:formvalue(self:cbid(section) .. ".newzone")
-			if value and #value > 0 then
-				zone = fw:add_zone(value)
-			else
-				fw:del_network(section)
-			end
-		end
-
+		local zone = fw:get_zone(value) or fw:add_zone(value)
 		if zone then
 			fw:del_network(section)
 			zone:add_network(section)
 		end
+	end
+
+	function fwzone.remove(self, section)
+		fw:del_network(section)
 	end
 end
 

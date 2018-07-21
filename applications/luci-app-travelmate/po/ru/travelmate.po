@@ -15,12 +15,6 @@ msgstr ""
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
-msgid "Actions"
-msgstr "Действия"
-
-msgid "Add Interface"
-msgstr "Добавить интерфейс"
-
 msgid "Add Uplink"
 msgstr "Подключение к сети"
 
@@ -70,8 +64,8 @@ msgstr ""
 msgid "Connection Limit"
 msgstr "Ограничение соединений"
 
-msgid "Create Uplink Interface"
-msgstr "Создать интерфейс сети"
+msgid "Create Uplink interface"
+msgstr ""
 
 msgid ""
 "Create a new wireless wan uplink interface, configure it to use dhcp and"
@@ -87,6 +81,9 @@ msgstr "Удалить сеть"
 
 msgid "Device"
 msgstr "Устройство"
+
+msgid "Down"
+msgstr ""
 
 msgid "EAP-Method"
 msgstr "Метод EAP"
@@ -315,6 +312,9 @@ msgstr ""
 "Страница просмотра системного журнала, показаны только события связанные с "
 "работой утилиты TravelMate."
 
+msgid "This step has only to be done once."
+msgstr ""
+
 msgid "Travelmate"
 msgstr "TravelMate"
 
@@ -333,6 +333,9 @@ msgstr ""
 msgid "Unknown"
 msgstr "Неизвестно"
 
+msgid "Up"
+msgstr ""
+
 msgid "Uplink / Trigger interface"
 msgstr "Включить интерфейс<br />внешней сети"
 
@@ -341,9 +344,6 @@ msgstr "BSSID внешней сети"
 
 msgid "Uplink SSID"
 msgstr "SSID внешней сети"
-
-msgid "Uplink interface"
-msgstr "Интерфейс внешней сети"
 
 msgid "View AP QR-Codes"
 msgstr ""
@@ -375,15 +375,32 @@ msgstr "Найденные точки доступа Wi-Fi"
 msgid "Wireless Stations"
 msgstr "Клиенты беспроводной сети"
 
-msgid ""
-"add it to the wan zone of the firewall. This step has only to be done once."
-msgstr "добавить в wan зону межсетевого экрана. Можно сделать только один раз."
+msgid "add it to the wan zone of the firewall.<br />"
+msgstr ""
 
 msgid "hidden"
 msgstr "скрытый"
 
 msgid "n/a"
 msgstr "нет данных"
+
+#~ msgid "Actions"
+#~ msgstr "Действия"
+
+#~ msgid "Add Interface"
+#~ msgstr "Добавить интерфейс"
+
+#~ msgid "Create Uplink Interface"
+#~ msgstr "Создать интерфейс сети"
+
+#~ msgid "Uplink interface"
+#~ msgstr "Интерфейс внешней сети"
+
+#~ msgid ""
+#~ "add it to the wan zone of the firewall. This step has only to be done "
+#~ "once."
+#~ msgstr ""
+#~ "добавить в wan зону межсетевого экрана. Можно сделать только один раз."
 
 #~ msgid "Enable 'automatic' mode"
 #~ msgstr "Включить режим 'автоматически'"

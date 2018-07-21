@@ -25,6 +25,9 @@ msgstr "Aktivera UPnP-omdirigeringar"
 msgid "Advanced Settings"
 msgstr "Avancerade inställningar"
 
+msgid "Advertise as IGDv1 device instead of IGDv2"
+msgstr ""
+
 msgid "Allow adding forwards only to requesting ip addresses"
 msgstr ""
 
@@ -64,6 +67,9 @@ msgstr "Enhetens UUID"
 msgid "Downlink"
 msgstr "Nerlänk"
 
+msgid "Enable IGDv1 mode"
+msgstr ""
+
 msgid "Enable NAT-PMP functionality"
 msgstr "Aktivera NAT-PMP-funktionalitet"
 
@@ -84,6 +90,9 @@ msgstr "Externa portar"
 
 msgid "General Settings"
 msgstr "Generella inställningar"
+
+msgid "Host"
+msgstr ""
 
 msgid "Internal addresses"
 msgstr "Interna adresser"
@@ -136,6 +145,9 @@ msgstr "Hyr-fil för UPnP"
 
 msgid "Universal Plug & Play"
 msgstr "Universiell Plug & Play"
+
+msgid "Unknown"
+msgstr ""
 
 msgid "Uplink"
 msgstr "Upplänk"
